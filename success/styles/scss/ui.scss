@@ -1,0 +1,116 @@
+//ui kit
+.buttonScrollToDown{
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    border:solid 1px #E4632C;
+    position: relative;
+    transition: .6s ease-in-out;
+    & > .arrow{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        z-index: 2;
+        background: url(/success/resourse/icons/arrow_bottom.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+        margin-top: 5px;
+    }
+    &::before{
+        content: "";
+        width: 23px;
+        height: 94px;
+        position: absolute;
+        top:-1px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #0E0E0F;
+        z-index: 1;
+        transition: inherit;
+    }
+    &::after{
+        content: "";
+        width: 94px;
+        height: 23px;
+        position: absolute;
+        top:50%;
+        left: -1px;
+        transform: translateY(-50%);
+        background: #0E0E0F;
+        z-index: 1;
+        transition: inherit;
+    }
+    &:hover{
+        &::before{
+            transform: translateX(-50%) rotate(360deg);
+            opacity: 0;
+        }
+        &::after{
+            transform: translateY(-50%) rotate(360deg);
+            opacity: 0;
+        }
+        background: #C85422;
+    }
+}
+.btn-ui-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    width: 250px;
+    height: 70px;
+    background: #E4632C;
+    border-radius: 35px;
+    font-size: 17px;
+    transition: .5s ease-in-out;
+    & > svg{
+        margin-left: 32px;
+        width: 10px;
+        height: 10px;
+    }
+    &:hover{
+        background: #C85422;
+    }
+}
+.btn-ui-2 , .btn-ui-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#E4632C;
+    width: 166px;
+    height: 70px;
+    background: white;
+    border-radius: 35px;
+    font-size: 17px;
+    transition: .5s ease-in-out;
+    & > svg{
+        margin-left: 32px;
+        width: 10px;
+        height: 10px;
+        & .colorSvg{
+            transition: .6s ease-in-out;
+        }
+    }
+    &:hover{
+        background: #C85422;
+        color:white;
+        & > svg .colorSvg{
+            fill:white;
+        }
+    }
+
+    &.btn-ui-3{
+        background: transparent;
+        border:solid 1px #C85422;
+        color:white;
+        & > svg .colorSvg{
+            fill:white; 
+        }
+        &:hover{
+            background: #C85422;
+        }
+    }
+}
