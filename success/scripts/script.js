@@ -24,4 +24,25 @@ $(document).ready(function(){
             $(this).text("Більше модулів");
         }
     });
+    $("#answer_sect > li > .open").click(function(){
+        let parent = $(this).parent();
+        let block = $(parent).children(".block");
+        if(block.is(":hidden")){
+            block.show(500);
+            $(this).children(".left").css({
+                "transform":"translate(-50% , -50%) rotate(450deg)"
+            });
+            $(this).children(".right").css({
+                "transform":"translate(-50% , -50%) rotate(360deg)"
+            });
+        }else{
+            block.hide(500);
+            $(this).children(".left").css({
+                "transform":"translate(-50% , -50%) rotate(0deg)"
+            });
+            $(this).children(".right").css({
+                "transform":"translate(-50% , -50%) rotate(0deg)"
+            });
+        }
+    });
 });
