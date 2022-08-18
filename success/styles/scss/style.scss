@@ -1598,9 +1598,6 @@ body{
     {
         margin-top: 165px;
     }
-    body>header>.container>.menu_burger{
-        align-items: flex-start;
-    }
     body>.section-main>.container>.middle>.textHeader
     {
         top:50px;
@@ -2368,7 +2365,7 @@ body{
     }
     body>.section-more>.container>.header>h2
     {
-        width: 80%;
+        width: 100%;
     }
     body>.section-more>.container>.controlls_button>.title
     {
@@ -2663,7 +2660,7 @@ body{
     }
     body>.section-more>.container>.header>h2
     {
-        font-size: 25px !important;
+        font-size: 34px !important;
     }
     body > .section-more > .container > .controlls_button > .title
     {
@@ -2791,6 +2788,13 @@ body{
         & h3 , p{
             padding-left: 30px;
         }
+    }
+    body .background_images > .bg_3
+    {
+        width: 228px;
+    }
+    body>.section-main>.container>.right, body>.section-main>.container>.right>.wrapper .btn-ui-1{
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width:390px) {
