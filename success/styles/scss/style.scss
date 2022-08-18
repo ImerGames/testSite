@@ -120,6 +120,7 @@ body{
                 z-index: 1;
                 & > .wrapper{
                     & > .by{
+                        white-space: nowrap;
                         display: block;
                         margin-top: 200px;
                         font-size: 20px;
@@ -218,7 +219,7 @@ body{
                     font-size: 22px;
                     position: absolute;
                     bottom: 10px;
-                    left: 0;
+                    left: 20px;
                 }
                 & > h2{
                     font-family: $font_DT;
@@ -243,6 +244,9 @@ body{
                     border-left: none;
                     position: relative;
                     margin-left: 35px;
+                    &:first-child{
+                        margin-left: 0;
+                    }
                     &.XL{
                         padding-left: 50px;
                     }
@@ -419,12 +423,17 @@ body{
         z-index: 1;
         position: relative;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         & > .container{
             position: relative;
             width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
             & > h2{
-                text-align: center;
+                right: 0;
+                width: 1240px;
+                text-align: start;
                 font-family: $font_DT;
                 font-size: 71px;
                 font-weight: 700;
@@ -593,7 +602,7 @@ body{
                             }
                             &:first-child{
                                 padding-right: 30px;
-                                margin-right: 50px;
+                                margin-right: 30px;
                                 border-right:solid 1px #3A3A3F;
                             }
                         }
@@ -1032,7 +1041,7 @@ body{
         padding-bottom: 150px;
         background: #151516;
         & > .container{
-            width: 85%;
+            width: 75%;
             & > h2{
                 text-transform: uppercase;
                 font-family: $font_DT;  
@@ -1330,6 +1339,10 @@ body{
     }
 }
 @media screen and (max-width:1500px) {
+    body>.section-main>.container>.middle>.textHeader
+    {
+        font-size: 100px;
+    }
     .containerModules .module
     {
         max-width: 350px;
@@ -1581,6 +1594,10 @@ body{
             display: none;
         }
     }
+    body>.section-main>.container>.right>.wrapper
+    {
+        margin-top: 165px;
+    }
     body>header>.container>.menu_burger{
         align-items: flex-start;
     }
@@ -1694,6 +1711,10 @@ body{
     {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+    body .background_images>.bg_2
+    {
+        display: none;
     }
 }
 @media screen and (max-width:900px) {
@@ -1854,7 +1875,7 @@ body{
     }
     body > .section-result > .container > .container_block > .wrapper > li > .right > .list li
     {
-        margin-top: 15px;
+        margin-top: 20px;
     }
     body > .section-format > .container > .header > h2
     {
@@ -2333,11 +2354,6 @@ body{
         font-size: 14px;
         letter-spacing: 5.5px;
     }
-    body>section h2
-    {
-        font-size: 25px !important;
-        white-space: pre-wrap;
-    }
     body>.section-for>.container>.list>.card>h3 , body>.section-for>.container>.list>.card>.dec>span
     {
         font-size: 20px;
@@ -2622,8 +2638,29 @@ body{
         padding-top: 80px;
         padding-bottom: 80px;
     }
+    body > .section-about-me > .container > .containerColumn > .CTX:last-child > .image_container:first-child
+    {
+        margin-left: 10px;
+    }
+    body>.section-callback
+    {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    body>.section-for>.container .header>.nav_text
+    {
+        left:0;
+    }
+    body>.section-comments>.container>.list .comment>h3
+    {
+        font-size: 19px;
+    }
 }
 @media screen and(max-width:550px) {
+    body>.section-main>.container>.right>.wrapper
+    {
+        margin-top: 100px;
+    }
     body>.section-more>.container>.header>h2
     {
         font-size: 25px !important;
@@ -2646,8 +2683,8 @@ body{
     }
     body>section h2
     {
-        font-size: 30px !important;
-        width: 234px;
+        font-size: 35px !important;
+        width: 100%;
     }
     body .background_images>.bg_2{
         display:none;
@@ -2682,7 +2719,7 @@ body{
     }
     body > .section-about-me > .container > .containerColumn > .CTX:last-child > .image_container:first-child
     {
-        width: 217px;
+        width: 250px;
     }
     body>.section-price
     {
@@ -2732,9 +2769,6 @@ body{
         width: 15px !important;
         height: 15px !important;
         bottom: 10px;
-        &.youtube{
-            
-        }
     }
     body>.section-about-me>.container>.containerColumn>.CTX:last-child>.image_container:first-child>.link
     {
@@ -2744,9 +2778,26 @@ body{
     {
         left: 70px;
     }
+    body>.section-variants>.container>.containerGrid>li
+    {
+        padding: 30px;
+    }
+    body>.section-variants>.container>.containerGrid>li.send
+    {
+        padding-left: 0;
+        & .btn-ui-1{
+            width: 100%;
+        }
+        & h3 , p{
+            padding-left: 30px;
+        }
+    }
 }
 @media screen and (max-width:390px) {
     body>.section-more>.container>.columns_container>.wrapper{
         zoom: .28;
+    }
+    body>.section-main>.container>.right>.wrapper .btn-ui-1 , body>.section-main>.container>.right{
+        width: 100%;
     }
 }
