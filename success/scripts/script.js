@@ -1,6 +1,8 @@
 $(document).ready(function(){
     let mouseOffset = { x : "110" , y : "110" }
     let targetOffset = { x : "0" , y : "0" } 
+
+
     $("#btn_open_close_more_modules").click(function(){
         let isOpen = $(this).attr("data-open");
         
@@ -9,30 +11,18 @@ $(document).ready(function(){
             $(".secondOrderModules").show(300);
             $(this).attr("data-open" , "false");
             $(this).text("Менше модулів");
-            i=0;
-            let animOpen = setInterval( function(){
-                $(".containerModules>div>div.secondOrderModules").eq(i).css({"opacity":"1"});
-                if(i == $(".secondOrderModules").length){
-                    clearInterval(animOpen);
-                }
-                i++;
-            }, 400);
+            $(".containerModules>div>div.secondOrderModules").show(300);
+            setTimeout(function(){
+                $('.containerModules').masonry();
+            },320);
         }else{
             //close
-            i=$(".secondOrderModules").length -1;
-            let animClose = setInterval( function(){
-                $(".containerModules>div>div.secondOrderModules").eq(i).css({"opacity":"0"});
-                if(i == 0){
-                    clearInterval(animClose);
-                }
-                i--;
-            }, 400);
-            let time = 400 * ($(".secondOrderModules").length +1);
-            setTimeout(function(){
-                $(".secondOrderModules").hide(300);
-            },time);
+            $(".secondOrderModules").hide(300);
             $(this).attr("data-open" , "true");
             $(this).text("Більше модулів");
+            setTimeout(() => {
+                $('.containerModules').masonry();
+            }, 320);
         }
     });
     $("#answer_sect > li > .open").click(function(){

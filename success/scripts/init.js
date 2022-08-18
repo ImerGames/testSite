@@ -1,10 +1,22 @@
 $(document).ready(function(){
-    let settingsColumn = 3;
-    let waterfall = new Waterfall({ 
-        containerSelector: '.containerModules',
-        boxSelector: '.module',
-        minBoxWidth: 250
-    });
+    console.log(screen.width);
+    if(screen.width <= 900){
+        $('.containerModuless , body>.section-comments>.container>.list').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows:false,
+            dots:false,
+            adaptiveHeight: true
+        });
+    }else{
+        $('.containerModuless').masonry({
+            itemSelector: '.module',
+            fitWidth: true,
+            horizontalOrder: true
+        });
+    }
+
     $("#input_phone_callback").inputmask({"mask": "+38 (999) 999-99-99"});
     $("#input_email_callback").inputmask("email");
     

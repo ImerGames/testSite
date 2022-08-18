@@ -1,3 +1,33 @@
 $font_M: "Manrope" , sans-serif;
 $font_DW: "Druk Wide" , sans-serif;
 $font_DT: "Druk Text WideCyTT" , sans-serif;
+
+.mobile{
+    display: none !important;
+}
+section h2{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.swipe-dec
+{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: $font_M;
+    padding-right: 14px;
+    &::after{
+        content: url(/success/resourse/icons/arrow-swap.svg);
+        position: relative;
+        margin-left: 14px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .desktop{
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    .mobile{
+        display: block !important;
+    }
+}
