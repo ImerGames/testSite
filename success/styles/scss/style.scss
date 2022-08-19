@@ -13,7 +13,65 @@ body{
     background: #0E0E0F;
     font-family: $font_M;
     color:white;
-    height: 10000px;
+    & > .section-polis{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        & > .container-left{
+            width: 90%;
+            padding-bottom: 100px;
+            & > h1{
+                line-height: 1.1;
+                width: 715px;
+                font-size: 30px;
+                font-family: $font_DT;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+                font-weight: 900;
+            }
+            & > h2{
+                color:white;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: none;
+                width: 840px;
+                font-family: $font_M;
+                margin-bottom: 30px;
+                &.liq{
+                    padding-left: 10px;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        background: white;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            & > h3{
+                color:white;
+                font-size: 18px;
+                font-weight: 400;
+                text-transform: none;
+                width: 840px;
+                font-family: $font_M;
+                margin-bottom: 30px;
+            }
+            & > p{
+                color:#858585;
+                width: 840px;
+                font-size: 18px;
+                font-family: $font_M;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+        }
+    }
     & .background_images{
         position: absolute;
         top: 0;
@@ -1145,6 +1203,13 @@ body{
                             width: 800px;
                             font-size: 19px;
                             color:#606060;
+                            & > a{
+                                color:rgb(199, 199, 199);
+                                transition: .3s ease-in-out;
+                                &:hover{
+                                    opacity: .8;
+                                }
+                            }
                         }
                     }
                     & > .open{
@@ -1719,6 +1784,25 @@ body{
     }
 }
 @media screen and (max-width:900px) {
+    body>.section-polis>.container-left>h1
+    {
+        width: 100%;
+    }
+    body>.section-polis
+    {
+        margin-top: 50px;
+    }
+    body>.section-polis>.container-left
+    {
+        width: 95% !important;
+    }
+    body>.section-polis>.container-left>p{
+        width: 100%;
+        padding-right: 20px;
+    }
+    body>.section-polis>.container-left>h2 , body>.section-polis>.container-left>h3{
+        width: 100%;
+    }
     body>header
     {
         padding-top: 50px;
@@ -2663,6 +2747,26 @@ body{
     }
 }
 @media screen and(max-width:550px) {
+    body>.section-polis>.container-left>h1{
+        width: 243px;
+        font-size: 16px;
+    }
+    body>.section-polis>.container-left
+    {
+        padding-bottom: 30px;
+    }
+    body > .section-polis
+    {
+        margin-top: 20px;
+    }
+    body>.section-polis>.container-left>p
+    {
+        font-size: 14px;
+    }
+    body>.section-polis>.container-left>h2 , body>.section-polis>.container-left>h3
+    {
+        font-size: 14px !important;
+    }
     body>.section-main>.container>.right>.wrapper
     {
         margin-top: 100px;
@@ -2813,4 +2917,7 @@ body{
     body>.section-main>.container>.right>.wrapper .btn-ui-1 , body>.section-main>.container>.right{
         width: 100%;
     }
+}
+body>header>.container>.info>div.logo{
+    margin-bottom: 0 !important;
 }
