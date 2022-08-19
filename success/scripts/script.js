@@ -2,7 +2,16 @@ $(document).ready(function(){
     let mouseOffset = { x : "110" , y : "110" }
     let targetOffset = { x : "0" , y : "0" } 
 
-
+    $("#close_burger").click(function(){
+        $(".section-menu>.main").css("right" , "-390px");
+        $(".section-menu").fadeOut(500);
+        $("body").css("overflow-y" , "auto");
+    });
+    $(".burger").click(function(){
+        $(".section-menu>.main").css("right" , "0px");
+        $(".section-menu").fadeIn(500);
+        $("body").css("overflow-y" , "hidden");    
+    });
     $("#btn_open_close_more_modules").click(function(){
         let isOpen = $(this).attr("data-open");
         

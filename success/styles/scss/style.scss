@@ -97,6 +97,10 @@ body{
                 align-items: center;
                 justify-content: flex-end;
                 & > .burger{
+                    transition: .3s;
+                    &:hover{
+                        opacity: .6;
+                    }
                     cursor: pointer;
                     width: 100px;
                     height: 10px;
@@ -2220,6 +2224,11 @@ body{
 
 }
 @media screen and (max-width:600px){
+    .section-menu>.main{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     body>.section-main>.container>.middle>img
     {
         left: 43%;

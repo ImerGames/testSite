@@ -1,4 +1,79 @@
 //ui kit
+.section-menu
+{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background: #0000009c;
+    top:0;
+    left: 0;
+    display: none;
+    transition: .5s ease-in-out;
+    & > .main{
+        transition: .5s ease-in-out;
+        position: absolute;
+        right: -390px;
+        top:0;
+        width: 365px;
+        padding: 50px;
+        background: #1D1D1E;
+        height: 100vh;
+        & > .footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 50px;
+            & > span{
+                display: block;
+                margin-bottom: 15px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                font-size: 20px;
+                font-weight: 600;
+                color:#898989;
+                text-transform: uppercase;
+            }
+        }
+        & > .list{
+            & > li{
+                margin-bottom: 20px;
+                cursor: pointer;
+                &:hover{
+                    opacity: .7;
+                }
+                transition: .3s ease-in-out;
+                & > span{
+                    font-size: 20px;
+                    font-family: $font_M;
+                    font-weight: 400;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        & > .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+            & > .close{
+                background: url(/success/resourse/icons/close.svg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 26px;
+                height: 26px;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover{
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
 .buttonScrollToDown{
     width: 94px;
     height: 94px;
