@@ -59,7 +59,7 @@ $(document).ready(function(){
                     horizontalOrder: true
                 });
                 $(".secondOrderModules").css({"opacity":"1"});
-            },320);
+            },400);
         }else{
             //close
             $(".secondOrderModules").hide(300);
@@ -71,7 +71,7 @@ $(document).ready(function(){
                     fitWidth: true,
                     horizontalOrder: true
                 });
-            }, 320);
+            }, 400);
         }
     });
     $("#answer_sect > li > .open").click(function(){
