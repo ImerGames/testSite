@@ -119,6 +119,18 @@ body{
         width: 100%;
         height: 100%;
         z-index: -1;
+        & > .bg_div{
+            display:none;
+            position:absolute;
+            z-index:3;
+            width:1px;
+            height:1px;
+            box-shadow: 0 0 180px 80px #ff4c00;
+            opacity:.8;
+            right:40px;
+            top:300px;
+            border-radius:50%;
+        }
         & > .mobile-bg{
             position: absolute;
             bottom: -100px;
@@ -2302,7 +2314,8 @@ body{
     }
     body .background_images>.bg_1
     {
-        top:600px;
+        top:650px;
+        width:90%;
     }
     body>.section-more>.container>.columns_container>.wrapper
     {
@@ -2418,10 +2431,153 @@ body{
 
 }
 @media screen and (max-width:600px){
+    .blockMobile{
+        display:block;
+        font-family:$font_M;
+        font-size:20px;
+        margin-bottom:15px;
+        font-weight:600;
+    }
+    body>.section-format>.container>.header>h2
+    {
+        font-size:30px !important;
+        width:285px !important;
+    } 
+    body>.section-format>.container>.wrapper>.containerBlock>.textInfoConteiner>.block>h3
+    {
+        font-size:16px;
+    }
+    body>.section-format>.container>.wrapper>.containerBlock>.textInfoConteiner>.block>span
+    {
+        font-size:14px;
+    }
+    body > .section-format > .container > .header > .textNav
+    {
+        left:0 !important;
+    }
+    body > .section-format > .container > .header > h2
+    {
+        padding-left:0 !important;
+    }
+    body>.section-format>.container>.wrapper>.containerBlock>.content>li>.wrapper>h4
+    {
+        
+        width:120px;
+        height:120px;
+        border-radius:50%;
+        background:#E4632C;
+        position:absolute;
+        right:-65px;
+        bottom:-82px;
+        z-index:1;
+        font-size:0px;
+        &::after{
+            content:"01";
+            position:absolute;
+            left:25px;
+            top:25px;
+            font-size:16px;
+            font-size:16px;
+            font-weight:700;
+            border-radius:40%;
+            background:transparent;
+            z-index:2;
+            
+        }
+    }
+    body>.section-format>.container>.wrapper>.containerBlock>.content>li>p
+    {
+        font-size:14px;
+        font-weight:400px;
+    }
+    body>.section-format>.container>.wrapper>.containerBlock>.content>li>.wrapper
+    {
+        position:static;
+    }
+    body>.section-format>.container>.wrapper>.containerBlock>.textInfoConteiner
+    {
+        margin-bottom:50px;
+    }
+    body>.section-format>.container>.wrapper>.containerBlock>.content{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        grid-gap:10px;
+        & > li{
+            overflow:hidden;
+            position:relative;
+            padding:30px;
+            border-radius:10px;
+            width:90%;
+            height:157px;
+            background:#1E1E1F;
+            &:nth-child(1){
+                & h4{
+                    &:after{ content:"01"}
+                }
+            }
+            &:nth-child(2){
+                & h4{
+                    &:after{ content:"02"}
+                }
+            }
+            &:nth-child(3){
+                & h4{
+                    &:after{ content:"03"}
+                }
+            }
+            &:nth-child(4){
+                & h4{
+                    &:after{ content:"04"}
+                }
+            }
+            &:nth-child(5){
+                & h4{
+                    &:after{ content:"05"}
+                }
+            }
+            &:nth-child(6){
+                & h4{
+                    &:after{ content:"06"}
+                }
+            }
+            &:nth-child(7){
+                & h4{
+                    &:after{ content:"07"}
+                }
+            }
+            &:nth-child(8){
+                & h4{
+                    &:after{ content:"08"}
+                }
+            }
+            &:nth-child(9){
+                & h4{
+                    &:after{ content:"09"}
+                }
+            }
+        }
+    }
+    body>.section-format>.container>.wrapper>.containerBlock{
+        padding-left:0;
+    }
+    body>.section-format>.container>.wrapper>.containerBlock>.content>li>.wrapper:before
+    {
+        top:0;
+        background:transparent;
+    }
+    body>.section-format>.container>.wrapper>.containerBlock>.content
+    {
+        border-right:transparent;
+    }
     .section-menu>.main>.footer
     {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    body .background_images > .bg_div
+    {
+        display:block;
     }
     .popups-comment>.main>.content>.name
     {
@@ -2501,11 +2657,6 @@ body{
     {
         margin-top: 20px;
     }
-    body>.section-format>.container>.wrapper>.containerBlock>.textInfoConteiner
-    {
-        margin-bottom: 30px;
-        display: flex;
-    }
     body > .section-format > .container > .wrapper > .containerBlock > .content > li > p
     {
         font-size: 14px;
@@ -2568,14 +2719,13 @@ body{
     }
     body .background_images>.bg_2   
     {
-        top: -350px;
+        top: -300px;
     }
     body>.section-more>.container>.columns_container>.wrapper{
         zoom: .4;
     }
-    body>.section-main>.container>.left
-    {
-        display: none;
+    body>.section-main>.container>.left>.wrapper>button{
+        display:none;
     }
     body>.section-more>.container>.columns_container
     {
@@ -2663,19 +2813,6 @@ body{
     {
         width: 150px;
         height: 150px;
-    }
-    body>.section-format>.container>.wrapper>.containerBlock>.textInfoConteiner>.block>h3
-    {
-        font-size: 20px;
-    }
-    body>.section-format>.container>.wrapper>.containerBlock>.textInfoConteiner>.block>span
-    {
-        font-size: 18px;
-    }
-    body>.section-format>.container>.wrapper>.containerBlock>.content>li>.wrapper>h4
-    {
-        width: 44px;height: 44px;
-        font-size: 16px;
     }
     .textNav
     {
@@ -2796,15 +2933,7 @@ body{
     {
         padding-bottom: 0 !important;
     }
-    body>.section-format>.container>.wrapper>.containerBlock>.textInfoConteiner>.block>h3
-    {
-        font-size: 16px;
-        text-transform: uppercase;
-    }
-    body>.section-format>.container>.wrapper>.containerBlock>.textInfoConteiner>.block>span
-    {
-        font-size: 14px;
-    }
+    
     body>.section-price
     {
         padding-top: 80px;
@@ -2913,11 +3042,6 @@ body{
     {
         font-size: 19px;
     }
-    body>.section-format>.container>.wrapper>.containerBlock
-    {
-        width: 100%;
-        padding-left: 20px;
-    }
     body>.section-format>.container>.header>.textNav
     {
         left: 20px;
@@ -2932,15 +3056,85 @@ body{
     {
         margin-top:-90px;
     }
+    body>.section-main>.container>.right
+    {
+        margin-top:60px;
+    }
+    body>.section-main>.container>.middle
+    {
+        top:40px;
+    }
+    body>.section-main>.container>.left>.wrapper>.by
+    {
+        display:block;
+        position:absolute;
+        margin:0;
+        padding:0;
+        left:0;
+        top:45px;
+        color:#303030;
+        font-size:12px;
+    }
+    body>.section-main>.container>.left
+    {
+        position:absolute;
+    }
+    body .background_images>.mobile-bg{
+        bottom:0;
+    }
+    body>.section-result>.container>.container_block>.wrapper>li>.left
+    {
+        display:flex;
+        flex-direction:row;
+        & > h3{
+            order:0;
+        }
+        & > span{
+            order:1;
+            display:block;
+        }
+    }
+    body>.section-result{
+        justify-content:center;
+    }
+    body>.section-result>.container>.container_block>.wrapper>li>.left>h3
+    {
+        font-size:30px;
+        width:198px;
+    }
+    body > .section-result > .container > .container_block > .wrapper > li > .right > .list li > .dec
+    {
+        top:-8px;
+    }
+    
+    body > .section-result > .container > .container_block > .wrapper > li > .right > .list li
+    {
+        margin-bottom:25px;
+    }
+    body>.section-result>.container>.container_block>.wrapper>li
+    {
+        border-bottom:0px transparent !important;
+        border-top:solid 1px #2A2A2D!important;
+        padding-bottom:10px;
+    }
+    body>.section-result>.container>.container_block>.wrapper>li>.right>.list li>span
+    {
+        color:#AEAEAE;
+    }
+    body>.section-result>.container>.container_block>.wrapper>li
+    {
+        padding-top:30px;
+        margin-top:30px;
+    }
 }
 @media screen and(max-width:550px) {
     
-    body{
-        padding-left:5px;
-        padding-right:5px;
+    section{
+        padding-left:10px;
+        padding-right:10px;
     }
     body>.section-main>.container>.right>.wrapper>p{
-        margin-bottom:55px;
+        margin-bottom:90px;
     }
     body>.section-comments>.container>.list .comment>p>span
     {
@@ -3008,7 +3202,7 @@ body{
     }
     body > .section-main > .container > .middle > img
     {
-        bottom: -670px;
+        bottom: -550px;
     }
     .containerModules>div>div, body>.section-price>.container>.price_list>li{
         max-width: 90%;
@@ -3064,7 +3258,7 @@ body{
     }
     body>.section-for
     {
-        margin-top: 350px !important;
+        margin-top: 300px !important;
     }
     body .background_images>.bg_2
     {
@@ -3072,7 +3266,7 @@ body{
     }
     body .background_images>.bg_1
     {
-        top:600px;
+        top:650px;
     }
     body>.section-about-me>.container>.containerColumn>.CTX:last-child>.image_container:first-child>.link
     {
@@ -3123,9 +3317,12 @@ body{
     body>.section-variants>.container>.containerGrid>li
     {
         padding: 50px;
-        margin-left:30px;
-        margin-right:30px;
-        width:80%;
+        width:100%;
+    }
+    body>.section-variants>.container>.containerGrid
+    {
+        display:grid;
+        grid-gap:10px;
     }
     body>.section-variants>.container>.containerGrid>li.send
     {
@@ -3147,11 +3344,6 @@ body{
     .section-success>img{
         left: auto;
         right: -300px ;
-    }
-     body>.section-format>.container>.wrapper>.containerBlock
-    {
-        width: 100%;
-        padding-left: 5px;
     }
     body>.section-format>.container>.header>h2
     {
@@ -3184,6 +3376,9 @@ body{
     .containerModuless .module>.main>.mainText>.containerBlock>p
     {
         padding-right:20px;
+    }
+    body>.section-format>.container>.wrapper>.containerBlock>.content>li{
+        width:100%;
     }
 }
 @media screen and (max-width:390px) {
