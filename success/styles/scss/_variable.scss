@@ -5,7 +5,11 @@ $font_DT: "Druk Text WideCyTT" , sans-serif;
 .mobile{
     display: none !important;
 }
-
+a{
+    color:inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
 .swipe-dec
 {
     font-size: 14px;
