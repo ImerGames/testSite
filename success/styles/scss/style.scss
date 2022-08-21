@@ -456,7 +456,6 @@ body{
                 position: relative;
                 top:-100px;
                 & > .wrapper{
-                    margin-top: 200px;
                     width: 1280px;
                     display: flex;
                     align-items: flex-end;
@@ -2757,6 +2756,11 @@ body{
         font-size: 16px;
         position: relative;
         top:-2px;
+        white-space:nowrap;
+    }
+    .containerModuless .module>.main>.mainText>.containerBlock>.titleContainer>.tags>li
+    {
+        margin-left:5px;
     }
     .containerModuless .module>.result>p
     {
@@ -3116,7 +3120,7 @@ body{
     }
     body>.section-more>.container>.columns_container>.wrapper
     {
-        margin-top:-90px;
+        margin-top:70px;
     }
     body>.section-main>.container>.right
     {
