@@ -10,11 +10,13 @@ $(document).ready(function(){
             adaptiveHeight: true
         });
     }else{
-        $('.containerModuless').masonry({
-            itemSelector: '.module',
-            fitWidth: true,
-            horizontalOrder: true
-        });
+        setTimeout(function(){
+            $('.containerModuless').masonry({
+                itemSelector: '.module',
+                fitWidth: true,
+                horizontalOrder: true
+            });
+        },500);
     }
 
     $("#input_phone_callback").inputmask({"mask": "+38 (999) 999-99-99"});
