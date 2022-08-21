@@ -50,6 +50,9 @@ section h2{
     }
 }
 body{
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    user-select:none;
     background: #0E0E0F;
     font-family: $font_M;
     color:white;
@@ -2478,10 +2481,6 @@ body{
 
 }
 @media screen and (max-width:600px){
-    body > .section-result > .container > .container_block > .wrapper > li:hover .btn-ui-1_1
-    {
-        display:none;
-    }
     .blockMobile{
         display:block;
         font-family:$font_M;
@@ -3317,7 +3316,7 @@ body{
     body>.section-result
     {
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 50px;
     }
     body > .section-result > .container > h2
     {
