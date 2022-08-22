@@ -320,7 +320,8 @@
     position: absolute;
     z-index: 2;
     font-size: 17px;
-    transition: .5s ease-in-out;
+    transition: .2s;
+    transition-timing-function:steps(50 , start);
     & > svg{
         margin-left: 32px;
         width: 10px;
@@ -437,7 +438,7 @@
                 opacity: 0;
                 transition: opacity .3s ease-in-out;
             }
-            background: rgba(27 27 27);
+            background: rgb(27, 27, 27);
             border-radius: 20px;
             margin: 10px;
             margin-top: 40px;

@@ -1,6 +1,23 @@
 $(document).ready(function(){
-    let mouseOffset = { x : "110" , y : "110" }
-    let targetOffset = { x : "0" , y : "0" } 
+    let configButton = {
+        "1920" : [-400 , -600],
+        "1800" : [-300 , -550],
+        "1750" : [-250 , -500],
+        "1700" : [-200 , -450],
+        "1650" : [-150 , -400],
+        "1600" : [-100 , -350],
+        "1550" : [-50 , -300],
+        "1500" : [0 , -250],
+        "1450" : [50 , -200],
+        "1400" : [100 , -150],
+        "1350" : [150 , -100],
+        "1300" : [200 , -50],
+        "1250" : [100 , -100],
+        "1200" : [100 , -100],
+        "1150" : [100 , -100],
+        "1100" : [100 , -100],
+        "1050" : [100 , -100],
+    }; 
 
     $("#close_popup_FSQ").click(function(){
         $(".popups").fadeOut(300);
@@ -108,6 +125,95 @@ $(document).ready(function(){
     $("#close_popup_FSQs").click(function(){
         $(".popups-comment").fadeOut(300);
     });
+    //function 
+    $("body>.section-result>.container>.container_block>.wrapper > li").mousemove(function(e){
+        //viriable
+        let cursorPosition = getPositionCursorToBlock($(this).offset() , e);
+        let button = $(this).find('button');
+        let buttonPosition = button.offset();
+        let conf = getVirSize();
+
+        $("body>.section-result>.container>.container_block>.wrapper > li").mouseenter(function(){
+            $(this).find('button').css({opacity : 1});
+        });
+        $("body>.section-result>.container>.container_block>.wrapper > li").mouseleave(function(){
+            $(this).find('button').css({opacity : 0});
+            $(this).find('button').css({top:0});
+        });
+
+        if(conf == 'mobile'){
+            $("body>.section-result>.container>.container_block>.wrapper > li").find('button').css({
+                left:'auto',
+                right:'100px'
+            });
+            return;
+        }
+
+        if( cursorPosition.left - buttonPosition.left > conf.left ){ //#1
+            console.log(1);
+            button.css({ left:cursorPosition.left-250  });
+        }else if(cursorPosition.left - buttonPosition.left < conf.right ){ //#2
+            console.log(2);
+            button.css({ left:cursorPosition.left  });
+        }
+        if( cursorPosition.top - buttonPosition.top < -1200 ){ //#3
+            button.css({ top:cursorPosition.top-100  });
+            //console.log(2);
+        } 
+       });
+    //func
+    function getVirSize(){
+        let conf = {};
+        if($(window).width() >= 1850){
+            conf = {left : configButton['1920'][0] , right : configButton['1920'][1] };
+        }else if($(window).width() >= 1800){
+            conf = {left : configButton['1800'][0] , right : configButton['1800'][1] };
+        }else if($(window).width() >= 1750){
+            conf = {left : configButton['1750'][0] , right : configButton['1750'][1] };
+        }else if($(window).width() >= 1700){
+            conf = {left : configButton['1700'][0] , right : configButton['1700'][1] };
+        }else if($(window).width() >= 1650){
+            conf = {left : configButton['1650'][0] , right : configButton['1650'][1] };
+        }else if($(window).width() >= 1600){
+            conf = {left : configButton['1600'][0] , right : configButton['1600'][1] };
+        }else if($(window).width() >= 1550){
+            conf = {left : configButton['1550'][0] , right : configButton['1550'][1] };
+        }else if($(window).width() >= 1500){
+            conf = {left : configButton['1500'][0] , right : configButton['1500'][1] };
+        }else if($(window).width() >= 1450){
+            conf = {left : configButton['1450'][0] , right : configButton['1450'][1] };
+        }else if($(window).width() >= 1400){
+            conf = {left : configButton['1400'][0] , right : configButton['1400'][1] };
+        }else if($(window).width() >= 1350){
+            conf = {left : configButton['1350'][0] , right : configButton['1350'][1] };
+        }else if($(window).width() >= 1300){
+            conf = {left : configButton['1300'][0] , right : configButton['1300'][1] };
+        }else if($(window).width() >= 1250){
+            conf = {left : configButton['1250'][0] , right : configButton['1250'][1] };
+        }else if($(window).width() >= 1200){
+            conf = {left : configButton['1200'][0] , right : configButton['1200'][1] };
+        }else if($(window).width() >= 1150){
+            conf = {left : configButton['1150'][0] , right : configButton['1150'][1] };
+        }else if($(window).width() >= 1100){
+            conf = {left : configButton['1100'][0] , right : configButton['1100'][1] };
+        }else if($(window).width() >= 1050){
+            conf = {left : configButton['1050'][0] , right : configButton['1050'][1] };
+        }else if($(window).width() < 1050){
+            conf = 'mobile';
+        }else{
+            conf = {left : configButton['1920'][0] , right : configButton['1920'][1] };
+        }
+
+        return conf;
+    }
+    function getPositionCursorToBlock(positionElem , e){
+        let elem_left = positionElem.left;
+        let elem_top = positionElem.top;
+        // положение курсора внутри элемента
+        var x = e.pageX - elem_left;
+        var y = e.pageY - elem_top;
+        return {left: x , top: y};
+    }
     //scroll section
     $(".scrollToElem").click(function(){
         let block = $(this).attr("data-scroll-to");
