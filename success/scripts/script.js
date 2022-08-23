@@ -150,15 +150,12 @@ $(document).ready(function(){
         }
 
         if( cursorPosition.left - buttonPosition.left > conf.left ){ //#1
-            console.log(1);
             button.css({ left:cursorPosition.left-250  });
         }else if(cursorPosition.left - buttonPosition.left < conf.right ){ //#2
-            console.log(2);
             button.css({ left:cursorPosition.left  });
         }
         if( cursorPosition.top - buttonPosition.top < -1200 ){ //#3
             button.css({ top:cursorPosition.top-100  });
-            //console.log(2);
         } 
        });
     //func
