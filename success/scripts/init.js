@@ -86,13 +86,10 @@ $(document).ready(function(){
                 $('.containerModuless').css("opacity","0");
                 let block = $(this).parent().parent().children('.hidden_block');
                 block.show(200);
+                $('.containerModuless').css("opacity","1");
                 setTimeout(function(){
                     $('.containerModuless').slick('resize');
                 },300);
-                setTimeout(function(){
-                    $('.containerModuless').css("opacity","1");
-                    $()
-                },500);
             }
             $(this).text("Менше модулів");
             $(this).parent().children('.dec').addClass("reverse");
@@ -111,12 +108,10 @@ $(document).ready(function(){
                 $('.containerModuless').css("opacity","0");
                 let block = $(this).parent().parent().children('.hidden_block');
                 block.hide(200);
+                $('.containerModuless').css("opacity","1");
                 setTimeout(function(){
                     $('.containerModuless').slick('resize');
-                },300);
-                setTimeout(function(){
-                    $('.containerModuless').css("opacity","1");
-                },500);
+                },400);
             }
             $(this).text("Більше модулів");
             $(this).parent().children('.dec').removeClass("reverse");

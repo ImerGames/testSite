@@ -3540,6 +3540,21 @@ body>.section-for>.container .header>.nav_text
         top:390px;
         z-index:2;
     }
+    .containerModuless .module
+    {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .containerModuless .module>.main>.mainText .containerBlock>p
+    {
+        padding-right: 30px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .containerModuless .module>.main>.mainText .containerBlock>.titleContainer>.tags>li
+    {
+        margin-left: 5px;
+    }
 }
 @media screen and(max-width:550px) {
     body>.section-about-me>.container>.containerColumn>.CTX:first-child>.row>.column>h3
