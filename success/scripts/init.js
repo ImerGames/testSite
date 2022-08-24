@@ -19,29 +19,28 @@ $(document).ready(function(){
         },500);
     }
 
-    $("body>.section-comments>.container>.container>.right>.list").slick({
+    $("body>.section-comments>.container>.wrapper>.list").slick({
         infinite: false,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows:true,
-        prevArrow:$('.controllsCommentsSlide > .prev'),
-        nextArrow:$('.controllsCommentsSlide > .next'),
+        prevArrow:$('.sliderCommentsButtonPrev'),
+        nextArrow:$('.sliderCommentsButtonNext'),
         dots:false,
-        centerMode:true,
         responsive: [
             {
-              breakpoint: 1500,
-              settings: {
-                slidesToShow: 1
-
-              }
+                breakpoint: 1200,
+                settings: {
+                  slidesToShow: 2
+                }
             },
             {
                 breakpoint: 1000,
                 settings: {
-                  slidesToShow: 2,
-                  arrows:false,
-                  centerMode:false  
+                    slidesToShow: 2,
+                    arrows: false,
+                    prevArrow:false,
+                    nextArrow:false,
                 }
             },
             {
@@ -54,15 +53,6 @@ $(document).ready(function(){
             }
           ]
     });
-    
-    if($(window).width() > 1500){
-        $("body>.section-comments>.container>.container>.right>.list").slick('slickNext');
-    }
-    $('body>.section-comments>.container>.container>.right>.list').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        $(".activeSlide").text( "0" + (nextSlide +1) );
-    });
-
-    $(".allSlides").text( "0" + $("body>.section-comments>.container>.container>.right>.list .comment").length );
     $("#input_phone_callback").inputmask({"mask": "+38 (999) 999-99-99"});
     //init limit program
     let limit = 4;
