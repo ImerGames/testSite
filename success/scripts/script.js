@@ -74,7 +74,7 @@ $(document).ready(function(){
                     itemSelector: '.module',
                     fitWidth: true,
                     horizontalOrder: true,
-                    gutter: 10
+                    gutter: 50
                 });
                 $(".secondOrderModules").css({"opacity":"1"});
             },500);
@@ -88,7 +88,7 @@ $(document).ready(function(){
                     itemSelector: '.module',
                     fitWidth: true,
                     horizontalOrder: true,
-                    gutter: 10
+                    gutter: 50
                 });
             }, 500);
         }

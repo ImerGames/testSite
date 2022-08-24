@@ -2,6 +2,21 @@
 .blockMobile{
     display:none;
 }
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    height: 100%;
+    background: rgb(34, 34, 34);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(48, 48, 48); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
 .popups-comment{
     position: fixed;
     top:0;
@@ -65,10 +80,11 @@
                 }
             }
             & > .txt{
+                position: relative;
                 font-size: 20px;
                 font-family: $font_M;
                 font-weight: 400;
-                width: 480px;
+                width: 90%;
                 display: block;
                 white-space: wrap;
                 word-wrap: break-word;

@@ -15,7 +15,7 @@ $(document).ready(function(){
                 itemSelector: '.module',
                 fitWidth: true,
                 horizontalOrder: true,
-                gutter: 10
+                gutter: 50
             });
         },500);
     }
@@ -79,7 +79,7 @@ $(document).ready(function(){
                         itemSelector: '.module',
                         fitWidth: true,
                         horizontalOrder: true,
-                        gutter: 10
+                        gutter: 50
                     });
                 },500);
             }else{
@@ -88,8 +88,11 @@ $(document).ready(function(){
                 block.show(200);
                 setTimeout(function(){
                     $('.containerModuless').slick('resize');
+                },300);
+                setTimeout(function(){
                     $('.containerModuless').css("opacity","1");
-                },200);
+                    $()
+                },500);
             }
             $(this).text("Менше модулів");
             $(this).parent().children('.dec').addClass("reverse");
@@ -101,7 +104,7 @@ $(document).ready(function(){
                         itemSelector: '.module',
                         fitWidth: true,
                         horizontalOrder: true,
-                        gutter: 10
+                        gutter: 50
                     });
                 },500);
             }else{
@@ -110,9 +113,10 @@ $(document).ready(function(){
                 block.hide(200);
                 setTimeout(function(){
                     $('.containerModuless').slick('resize');
+                },300);
+                setTimeout(function(){
                     $('.containerModuless').css("opacity","1");
-                    console.log('start');
-                },200);
+                },500);
             }
             $(this).text("Більше модулів");
             $(this).parent().children('.dec').removeClass("reverse");

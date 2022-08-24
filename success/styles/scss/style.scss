@@ -627,11 +627,11 @@ body{
     & > .section-modules{
         display: flex;
         justify-content: center;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         & > .container{
-            width: 90%;
-            max-width: 1500px;
+            width: 95%;
+            max-width: 1700px;
             & > h2{
                 font-family: $font_DT;
                 font-size: 71px;
@@ -650,8 +650,8 @@ body{
     }
     & > .section-format{
         width: 100%;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         background: #151516;
         display: flex;
         justify-content: center;
@@ -743,8 +743,8 @@ body{
     }
     & > .section-about-me{
         width: 100%;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         display: flex;
         justify-content: center;
         position: relative;
@@ -863,8 +863,8 @@ body{
         display: flex;
         justify-content: center;
         background: #151516;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         & > .container{
             width: 90%;
             max-width: 1570px;
@@ -1281,6 +1281,9 @@ body{
                     right: -100px;
                 }
                 & > .list{
+                    & .slick-list{
+                        display: -webkit-box;
+                    }
                     width: 100%;
                     grid-template-columns: 1fr 1fr;
                     grid-gap:65px;
@@ -1290,7 +1293,6 @@ body{
                             margin-right: 0;
                         }
                         width: 100%;
-                        height: 100%;
                         border-radius: 20px;
                         background: #1E1E1F;
                         position: relative;
@@ -1351,8 +1353,8 @@ body{
     & > .section-answer{
         display: flex;
         justify-content: center;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         & > .container{
             width: 70%;
             & > h2{
@@ -1436,8 +1438,8 @@ body{
         background: #151516;
         display: flex;
         justify-content: center;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         & > .container{
             width: 70%;
             & > h2{
@@ -1608,6 +1610,7 @@ body>.section-for>.container .header>.nav_text
     }
 }
 @media screen and (max-width:1500px) {
+
     .containerModuless .module
     {
         max-width: 370px;
@@ -2661,8 +2664,8 @@ body>.section-for>.container .header>.nav_text
     }
     body>.section-result
     {
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     body>.section-modules>.container>h2
     {
@@ -2771,6 +2774,10 @@ body>.section-for>.container .header>.nav_text
 
 }
 @media screen and (max-width:600px){
+    body>.section-comments>.container>.wrapper>.list .slick-list
+    {
+        display: block;
+    }
     body>.section-comments>.container>.wrapper>.list .comment>.wrapperPhoto>.photo
     {
         position: absolute;
@@ -3821,6 +3828,18 @@ body>.section-for>.container .header>.nav_text
 @media screen and (max-width:380px) {
     body>.section-main>.container>.middle>.textHeader{
         font-size:31px;
+    }
+}
+
+
+@media screen and (max-height:600px) {
+    .popups-comment>.main>.content{
+        height: 350px;
+    }
+}
+@media screen and (max-height:500px) {
+    .popups-comment>.main>.content{
+        height: 250px;
     }
 }
 body>header>.container>.info>div.logo{
