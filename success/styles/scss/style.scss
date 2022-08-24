@@ -122,6 +122,12 @@ body{
         width: 100%;
         height: 100%;
         z-index: -1;
+        & > .bg_comments{
+            position: absolute;
+            left: 0;
+            top:100px;
+            z-index: 2;
+        }
         & > .bg_div{
             display:none;
             position:absolute;
@@ -1189,11 +1195,13 @@ body{
         }
     }
     & > .section-comments{
+        z-index: 1;
+        position: relative;
         display: flex;
         justify-content: center;
         width: 100%;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         background: #151516;
         & > .container{
             width: 100%;
@@ -2128,6 +2136,9 @@ body>.section-for>.container .header>.nav_text
     }
 }
 @media screen and (max-width:900px) {
+    body .background_images>.bg_comments{
+        display: none;
+    }
     body>.section-comments>.container , body>.section-comments>.container
     {
         width: 95% !important;
