@@ -73,10 +73,11 @@ $(document).ready(function(){
                 $('.containerModuless').masonry({
                     itemSelector: '.module',
                     fitWidth: true,
-                    horizontalOrder: true
+                    horizontalOrder: true,
+                    gutter: 10
                 });
                 $(".secondOrderModules").css({"opacity":"1"});
-            },400);
+            },500);
         }else{
             //close
             $(".secondOrderModules").hide(300);
@@ -86,9 +87,10 @@ $(document).ready(function(){
                 $('.containerModuless').masonry({
                     itemSelector: '.module',
                     fitWidth: true,
-                    horizontalOrder: true
+                    horizontalOrder: true,
+                    gutter: 10
                 });
-            }, 400);
+            }, 500);
         }
     });
     $("#answer_sect > li > .open").click(function(){

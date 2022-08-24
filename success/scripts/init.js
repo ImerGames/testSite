@@ -14,7 +14,8 @@ $(document).ready(function(){
             $('.containerModuless').masonry({
                 itemSelector: '.module',
                 fitWidth: true,
-                horizontalOrder: true
+                horizontalOrder: true,
+                gutter: 10
             });
         },500);
     }
@@ -77,9 +78,10 @@ $(document).ready(function(){
                     $('.containerModuless').masonry({
                         itemSelector: '.module',
                         fitWidth: true,
-                        horizontalOrder: true
+                        horizontalOrder: true,
+                        gutter: 10
                     });
-                },320);
+                },500);
             }else{
                 $('.containerModuless').css("opacity","0");
                 let block = $(this).parent().parent().children('.hidden_block');
@@ -98,9 +100,10 @@ $(document).ready(function(){
                     $('.containerModuless').masonry({
                         itemSelector: '.module',
                         fitWidth: true,
-                        horizontalOrder: true
+                        horizontalOrder: true,
+                        gutter: 10
                     });
-                },320);
+                },500);
             }else{
                 $('.containerModuless').css("opacity","0");
                 let block = $(this).parent().parent().children('.hidden_block');

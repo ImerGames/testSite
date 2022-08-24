@@ -1320,6 +1320,7 @@ body{
                         }
                         & > .wrapperPhoto{
                             display: flex;
+                            margin-bottom: 10px;
                             & > .photo{
                                 min-width: 74px;
                                 min-height: 74px;
@@ -1594,7 +1595,7 @@ body>.section-for>.container .header>.nav_text
 }
 @media screen and (max-width:1750px) {
     .section-about-me .textNav{
-        top:-10px;
+        top:-20px;
     }
     .containerModuless .module
     {
@@ -1607,6 +1608,10 @@ body>.section-for>.container .header>.nav_text
     }
 }
 @media screen and (max-width:1500px) {
+    .containerModuless .module
+    {
+        max-width: 370px;
+    }
     body>.section-comments>.container{
         width: 85%;
     }
@@ -1693,7 +1698,7 @@ body>.section-for>.container .header>.nav_text
     }
     body>.section-format>.container>.header>.textNav
     {
-        top:-10px;
+        top:-20px;
     }
 }
 @media screen and (max-width:1400px) {
@@ -1971,7 +1976,7 @@ body>.section-for>.container .header>.nav_text
         width: auto;
         font-size: 18px;
         letter-spacing: 7px;
-        top:-15px;
+        top:-20px;
     }
     .link.youtube.mobile{
         display:none !important;
@@ -3649,7 +3654,7 @@ body>.section-for>.container .header>.nav_text
     }
     body > .section-about-me > .container > .containerColumn > .CTX:last-child > .image_container:first-child
     {
-        width: 250px;
+        width: 300px;
     }
     body>.section-price
     {
