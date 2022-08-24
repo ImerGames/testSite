@@ -451,6 +451,9 @@
     width: 100%;
     font-family: $font_M;
     overflow: hidden;
+    & > .slick-list{
+        //overflow: visible;
+    }
     & .module{
             &.secondOrderModules{
                 display: none;

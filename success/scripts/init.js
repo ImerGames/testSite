@@ -83,13 +83,13 @@ $(document).ready(function(){
                     });
                 },500);
             }else{
-                $('.containerModuless').css("opacity","0");
                 let block = $(this).parent().parent().children('.hidden_block');
-                block.show(200);
-                $('.containerModuless').css("opacity","1");
+                $('.containerModuless').css({opacity:0});
                 setTimeout(function(){
+                    block.show();
                     $('.containerModuless').slick('resize');
-                },300);
+                    $('.containerModuless').css({opacity:1});
+                },500);
             }
             $(this).text("Менше модулів");
             $(this).parent().children('.dec').addClass("reverse");
@@ -105,11 +105,11 @@ $(document).ready(function(){
                     });
                 },500);
             }else{
-                $('.containerModuless').css("opacity","0");
                 let block = $(this).parent().parent().children('.hidden_block');
-                block.hide(200);
-                $('.containerModuless').css("opacity","1");
+                $('.containerModuless').css("opacity","0");
                 setTimeout(function(){
+                    block.hide();
+                    $('.containerModuless').css("opacity","1");
                     $('.containerModuless').slick('resize');
                 },400);
             }
