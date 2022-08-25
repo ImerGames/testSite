@@ -339,15 +339,12 @@
     position: absolute;
     z-index: 2;
     font-size: 17px;
-    transition: .2s;
-    transition-timing-function:steps(50 , start);
+    transition: .1s;
+    transition-timing-function:steps(12 ,start);
     & > svg{
         margin-left: 32px;
         width: 10px;
         height: 10px;
-    }
-    &:hover{
-        background: #BB5225;
     }
 }
 .btn-ui-1{
