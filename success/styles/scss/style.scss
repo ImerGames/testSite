@@ -1289,11 +1289,16 @@ body{
                     & .slick-list{
                         display: -webkit-box;
                     }
-                    width: 100%;
-                    grid-template-columns: 1fr 1fr;
-                    grid-gap:65px;
-                    & .comment{
+                    & .slick-slide{
                         margin-right: 20px;
+                    }
+                    & .slick-slide > div , & .slick-slide{
+                        height: 100%;
+                    }
+                    width: 100%;
+                    & .comment{
+                        display: table-caption;
+                        height: 100%;
                         &:last-child{
                             margin-right: 0;
                         }
