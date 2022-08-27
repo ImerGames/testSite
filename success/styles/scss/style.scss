@@ -532,9 +532,6 @@ body{
                     width: 1240px;
                     & > li{
                         position: relative;
-                        &:hover .btn-ui-1_1{
-                            opacity: 1;
-                        }
                         padding-top: 50px;
                         padding-bottom: 50px;
                         border-top: solid 1px #2A2A2D;
@@ -1524,7 +1521,6 @@ body{
     }
     & > footer{
         padding-top: 100px;
-        padding-bottom: 100px;
         display: flex;
         justify-content: center;
         & > .container{
@@ -1629,7 +1625,7 @@ body{
 }
 body>.section-for>.container .header>.nav_text
 {
-    left: 5px !important;
+    left: 2px !important;
 }
 @media screen and (max-width:1750px) {
     .containerModules>div>div , body>.section-price>.container>.price_list>li{
@@ -2999,10 +2995,6 @@ body>.section-for>.container .header>.nav_text
     {
         font-size:14px;
     }
-    body > .section-format > .container > .header > .textNav
-    {
-        left:5px !important;
-    }
     body > .section-format > .container > .header > h2
     {
         padding-left:0 !important;
@@ -3600,7 +3592,7 @@ body>.section-for>.container .header>.nav_text
     }
     body>.section-format>.container>.header>.textNav
     {
-        left: 20px;
+        left: 2px !important;
     }
     body>.section-format>.container>.header>h2
     {
@@ -3611,6 +3603,10 @@ body>.section-for>.container .header>.nav_text
     body>.section-more>.container>.columns_container>.wrapper
     {
         margin-top:70px;
+    }
+    body>.section-more>.container>.header>.text_nav
+    {
+        left: 2px !important;
     }
     body>.section-main>.container>.right
     {
@@ -3985,9 +3981,6 @@ body>.section-for>.container .header>.nav_text
         width: 100%;
         position: static;
         padding-left: 5px;
-    }
-    body>.section-format>.container>.header>.textNav{
-        left: 5px   ;
     }
     body>.section-main>.container>.right>.wrapper .btn-ui-1 , body>.section-main>.container>.right{
         width: 100%;

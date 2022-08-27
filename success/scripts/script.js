@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    let activeBlock = 0;
     let configButton = {
         "1920" : [-400 , -600],
         "1800" : [-300 , -550],
@@ -147,19 +148,19 @@ $(document).ready(function(){
         $(".popups-comment").fadeOut(300);
     });
     //function 
-    $("body>.section-result>.container>.container_block>.wrapper > li").mousemove(function(e){
+    $("body>.section-result>.container>.container_block>.wrapper").mousemove(function(e){
         //viriable
+        console.log(e);
         let cursorPosition = getPositionCursorToBlock($(this).offset() , e);
         let button = $(this).find('button');
         let buttonPosition = button.offset();
         let conf = getVirSize();
 
-        $("body>.section-result>.container>.container_block>.wrapper > li").mouseenter(function(){
-            $(this).find('button').css({opacity : 1});
+        $("body>.section-result>.container>.container_block>.wrapper").mouseenter(function(){
+            $(this).find('button').fadeIn(300);
         });
-        $("body>.section-result>.container>.container_block>.wrapper > li").mouseleave(function(){
-            $(this).find('button').css({opacity : 0});
-            $(this).find('button').css({top:0});
+        $("body>.section-result>.container>.container_block>.wrapper").mouseleave(function(){
+            $(this).find('button').fadeOut(300);
         });
 
         if(conf == 'mobile'){
@@ -169,10 +170,33 @@ $(document).ready(function(){
             });
             return;
         }
+        console.log(e.pageY);
+        if(e.pageY >=3260 && e.pageY <=3580 && activeBlock !== 1){
+            activeBlock = 1;
+            console.log("one");
+            $(this).find('button').fadeOut(300);
+            setTimeout(()=>{
+                $(this).find('button').fadeIn(300);
+            },300);
+        }else if(e.pageY >=3580 && e.pageY <=3915 && activeBlock != 2){
+            activeBlock = 2;
+            console.log("two");
+            $(this).find('button').fadeOut(300);
+            setTimeout(()=>{
+                $(this).find('button').fadeIn(300);
+            },300);
+        }else if(e.pageY >=3915 && activeBlock != 3){
+            console.log("three");
+            activeBlock = 3;
+            $(this).find('button').fadeOut(300);
+            setTimeout(()=>{
+                $(this).find('button').fadeIn(300);
+            },300);
+        }
 
         if( cursorPosition.left - buttonPosition.left > conf.left ){ //#1
             button.css({ left:cursorPosition.left-250  });
-        }else if(cursorPosition.left - buttonPosition.left < conf.right ){ //#2
+        }else if(cursorPosition.left - buttonPosition.left < conf.right - 20 ){ //#2
             button.css({ left:cursorPosition.left  });
         }
         if( cursorPosition.top - buttonPosition.top < -1200 ){ //#3

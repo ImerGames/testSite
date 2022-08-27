@@ -348,21 +348,20 @@
     }
 }
 .btn-ui-1_1{
-    display: flex;
     align-items: center;
     justify-content: center;
     color:white;
     width: 252px;
     height: 252px;
     right: 100px;
-    opacity: 0;
+    display: none;
     background: #E4632C;
     border-radius: 50%;
     position: absolute;
     z-index: 2;
     font-size: 17px;
-    transition: .4s;
-    transition-timing-function:steps(1000 ,start);
+    transition: .2s;
+    transition-timing-function:steps(1 ,start);
     & > svg{
         margin-left: 32px;
         width: 10px;
@@ -703,7 +702,7 @@
     text-transform: uppercase;
     letter-spacing: 13px;
     position: absolute;
-    left: 5px;
+    left: 2px;
     top: 50px;
 }
 
