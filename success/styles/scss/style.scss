@@ -2936,13 +2936,12 @@ body>.section-for>.container .header>.nav_text
     }
 }
 @media screen and (max-width:600px){
-    .popups-comment>.main.comment-video
-    {
-        width: 70%;
+    .popups-comment>.main.comment-video{
+        width: 80%;
     }
     .popups-comment>.main.comment-video>.close
     {
-        right: -35px;
+        right: -25px;
         width: 15px;
         height: 15px;
     }
@@ -3378,7 +3377,7 @@ body>.section-for>.container .header>.nav_text
     }
     body>.section-about-me>.container>.header>.text>p
     {
-        width: 240px;
+        width: 270px;
         font-size: 16px;
     }
     body>.section-about-me>.container>.containerColumn>.CTX:first-child>.row
