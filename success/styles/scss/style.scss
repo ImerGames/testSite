@@ -2932,6 +2932,10 @@ body>.section-for>.container .header>.nav_text
     }
 }
 @media screen and (max-width:600px){
+    body>.section-for>.container .header>.nav_text , body>.section-more>.container>.header>.text_nav , body>.section-format>.container>.header>.textNav , .section-result .textNav , .section-about-me .textNav
+    {
+        top:-30px !important;
+    }
     .popups-comment>.main.comment-video{
         width: 80%;
     }
@@ -4018,6 +4022,14 @@ body>.section-for>.container .header>.nav_text
             margin-right:0;
             padding-right:0;
         }
+    }
+    body>.section-main>.container>.right
+    {
+        margin-bottom: -15px !important;
+    }
+    body>header
+    {
+        padding-top: 20px;
     }
 }
 
