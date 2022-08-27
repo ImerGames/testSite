@@ -884,6 +884,67 @@ body{
                 margin-bottom: 100px;
                 & > .container{
                     min-width: 200px;
+                    & > .timer{
+                        display: flex;
+                        justify-content: space-between;
+                        background: transparent;
+                        border-top:solid 1px #5B5B5B;
+                        border-bottom:solid 1px #5B5B5B;
+                        border-radius: 0;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        margin-top: 50px;
+                        padding-left: 0;
+                        padding-right: 0;
+                        & > .text{
+                            display: flex;
+                            align-items: center;
+                            & > p{
+                                white-space: nowrap;
+                                font-size: 20px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
+                        }
+                        & > .time{
+                            & > span{
+                                & > span{
+                                    white-space: nowrap !important;
+                                    word-wrap: nowrap !important;
+                                    
+                                    &:last-child{
+                                        & > .countdown-amount
+                                        {
+                                            &:after{
+                                                content: "";
+                                                opacity: 0;
+                                            }
+                                        }  
+                                    }
+                                    &:first-child{
+                                        & > .countdown-amount{
+                                            color:#E4632C;
+                                        }
+                                    }
+                                    & > .countdown-period{
+                                        display: none;
+                                    }
+                                    & > .countdown-amount{
+                                        font-size: 31px;
+                                        white-space: nowrap !important;
+                                        font-family: $font_DT;
+                                        text-transform: uppercase;
+                                        color:white;
+                                        &:after{
+                                            position: relative;
+                                            content: ":";
+                                            font-size: 31px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     & > div{
                             &.vip{
                                 background: #E4632C;
@@ -1087,63 +1148,6 @@ body{
                                 }
                             }
                         }
-                }
-            }
-            & > .timer{
-                width: 100%;
-                border-top:solid 1px #5B5B5B;
-                border-bottom:solid 1px #5B5B5B;
-                padding-top: 50px;
-                padding-bottom: 50px;
-                display: flex;
-                & > .wrapper{
-                    &:nth-child(1){
-                        width: 20%;
-                        display: flex;
-                        flex-direction: column;
-                        & > .label1{
-                            display: block;
-                            font-family: $font_M;
-                            font-size: 18px;
-                            font-weight: 500;
-                            color:#E4632C;
-                            white-space: nowrap;
-                            margin-bottom: 56px;
-                        }
-                        & > .label2{
-                            display: block;
-                            font-family: $font_M;
-                            font-size: 25px;
-                            font-weight: 400;
-                            color:white;
-                            white-space: nowrap;
-                            text-transform: uppercase;
-                        }
-                    }
-                    &:nth-child(2){
-                        width: 80%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: flex-end;
-                        & > .text_nav{
-                            color:#2A2A2D;
-                            text-transform: uppercase;
-                            font-size: 22px;
-                            margin-bottom: 7px;
-                            font-weight: 600;
-                            letter-spacing: 5px;
-                        }
-                        & > .time{
-                            font-size: 80px;
-                            font-weight: 900;
-                            font-family: $font_DT;
-                            text-transform: uppercase;
-                            & > span{
-                                color: #E4632C;
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -1653,6 +1657,10 @@ body>.section-for>.container .header>.nav_text
     {
         max-width: 100%;
     }
+    body>.section-price>.container>.price_list>.container>.timer>.text>p
+    {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width:1550px) {
     body>.section-price>.container>.timer>.wrapper:nth-child(2)>.time{
@@ -1762,6 +1770,14 @@ body>.section-for>.container .header>.nav_text
     }
 }
 @media screen and (max-width:1400px) {
+    body>.section-price>.container>.price_list>.container>.timer > .time
+    {
+        position: relative;
+        bottom: 3px !important;
+    }
+    body>.section-price>.container>.price_list>.container>.timer>.time>span>span>.countdown-amount{
+        font-size: 22px;
+    }
     .containerModuless .module>.main
     {
         padding-left: 20px;
@@ -1924,6 +1940,10 @@ body>.section-for>.container .header>.nav_text
     }
 }
 @media screen and (max-width:1150px) {
+    body>.section-price>.container>.price_list>.container>.timer>.text>p
+    {
+        font-size: 11px;
+    }
     body>.section-comments>.container
     {
         width: 85% !important;
@@ -2206,8 +2226,33 @@ body>.section-for>.container .header>.nav_text
     {
         max-height: none;
     }
+    body>.section-price>.container>.price_list>.container>.timer{
+        flex-direction: column;
+    }
+    body>.section-price>.container>.price_list>.container>.timer>.text>p
+    {
+        margin-bottom: 20px;
+    }
+    body>.section-price>.container>.price_list>.container>.timer>.text>p
+    {
+        font-size: 18px;
+    }
+    body>.section-price>.container>.price_list>.container>.timer>.time>span>span>.countdown-amount
+    {
+        font-size: 30px;
+    }
+    body>.section-price>.container>.price_list>.container>div>.price>.priceDiscount.dsc>.price , body>.section-price>.container>.price_list>.container>div>.price>.priceDiscount>.price
+    {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width:900px) {
+    body>.section-price>.container>.price_list>.container>.timer>.time>span>span>.countdown-amount{
+        font-size: 44px;
+        &::after{
+            font-size: 44px;
+        }
+    }
     body>.section-price>.container>.price_list>.container>div
     {
         max-width: 100%;

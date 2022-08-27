@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    console.log(screen.width);
+    let countdown = new Date(2022, 08, 01);
+    $('.time').countdown({until: countdown, format: 'HMS' , padZeroes: true});
     if(screen.width <= 900){
         $('.containerModuless').slick({
             infinite: false,
