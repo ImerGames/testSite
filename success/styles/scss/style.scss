@@ -3736,6 +3736,13 @@ body>.section-for>.container .header>.nav_text
     body>.section-about-me>.container>.containerColumn>.CTX:last-child>.image_container:first-child{
         margin-left: 10px !important;
     }
+    body>.section-price
+    {
+        padding-bottom: 0;
+    }
+    body>.section-variants{
+        padding-bottom: 120px !important;
+    }
 }
 @media screen and(max-width:550px) {
     body>.section-about-me>.container>.header>.text>h2{
