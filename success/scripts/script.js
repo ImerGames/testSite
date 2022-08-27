@@ -127,8 +127,14 @@ $(document).ready(function(){
         let name = $(this).closest(".comment").attr("data-name");
         let link = $(this).closest(".comment").attr("data-link");
         let text = $(this).closest(".comment").attr("data-text");
+        let social = $(this).closest(".comment").attr("data-social");
 
         $(".popups-comment").find(".name").html(name);
+        if(social == "telegram"){
+            $(".popups-comment").find(".link").text("Telegram");
+        }else{
+            $(".popups-comment").find(".link").text("Instagram");
+        }
         $(".popups-comment").find(".link").attr("href",link);
         $(".popups-comment").find(".txt").html(text);
         $(".popups-comment").fadeIn(300);
