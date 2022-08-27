@@ -49,7 +49,8 @@ $(document).ready(function(){
                 settings: {
                   slidesToShow: 1,
                   arrows:false,
-                  centerMode:false  
+                  centerMode:false,
+                  adaptiveHeight:true,
                 }
             }
           ]
@@ -91,7 +92,7 @@ $(document).ready(function(){
                     $('.containerModuless').css({opacity:1});
                 },500);
             }
-            $(this).text("Менше модулів");
+            $(this).text("Менше уроків");
             $(this).parent().children('.dec').addClass("reverse");
         }else{
             $(this).parent().parent().children('.hidden_block').hide(300);
@@ -113,7 +114,7 @@ $(document).ready(function(){
                     $('.containerModuless').slick('resize');
                 },400);
             }
-            $(this).text("Більше модулів");
+            $(this).text("Більше уроків");
             $(this).parent().children('.dec').removeClass("reverse");
         }
     });

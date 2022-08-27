@@ -114,7 +114,16 @@ $(document).ready(function(){
             });
         }
     });
+    $('.video').click(function(){
+        $(".popups-comment .comment").hide();
+        $(".popups-comment .comment-video").show();
+        let link = $(this).closest(".comment").attr("data-link");
+        $('.popups-comment .comment-video > iframe').attr('src' , link);
+        $(".popups-comment").fadeIn(300);
+    });
     $(".open-comments").click(function(){
+        $(".popups-comment .comment").show();
+        $(".popups-comment .comment-video").hide();
         let name = $(this).closest(".comment").attr("data-name");
         let link = $(this).closest(".comment").attr("data-link");
         let text = $(this).closest(".comment").attr("data-text");
@@ -124,7 +133,11 @@ $(document).ready(function(){
         $(".popups-comment").find(".txt").html(text);
         $(".popups-comment").fadeIn(300);
     });
-    $("#close_popup_FSQs").click(function(){
+    $(".close_popup_FSQvideo").click(function(){
+        $(".popups-comment").fadeOut(300);
+        $(this).parent().children('iframe').attr("src" , "");
+    });
+    $(".close_popup_FSQs").click(function(){
         $(".popups-comment").fadeOut(300);
     });
     //function 
