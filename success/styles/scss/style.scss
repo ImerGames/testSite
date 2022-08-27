@@ -3743,6 +3743,13 @@ body>.section-for>.container .header>.nav_text
     body>.section-variants{
         padding-bottom: 120px !important;
     }
+    body>.section-about-me>.container>.header>.text>p
+    {
+        margin-left: 2px;
+    }
+    .popups-comment>.main.comment-video > iframe{
+        height: 180px;
+    }
 }
 @media screen and(max-width:550px) {
     body>.section-about-me>.container>.header>.text>h2{
