@@ -1,1924 +1,845 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="description" content="Description" /> TODO -->
-    <!-- <meta name="keywords" content="Words" /> TODO -->
-    <link rel="shortcut icon" href="/success/resourse/tyutyu.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/success/styles/style.css">
-    <link rel="stylesheet" href="/success/styles/animate.css">
-    <link rel="stylesheet" href="/success/styles/jquery.countdown.css">
-    <script src="/success/scripts/lib/jqury.min.js"></script>
-    <script src="/success/scripts/lib/jquery.masonry.min.js"></script>
-    <script src="/success/scripts/lib/jquery.inputmask.min.js"></script>
-    <script src="/success/scripts/lib/slick.js"></script>
-    <script src="/success/scripts/lib/wow.min.js"></script>
-    <script src="/success/scripts/lib/jquery.plugin.min.js"></script>
-    <script src="/success/scripts/lib/jquery.countdown.min.js"></script>
+    <link rel="stylesheet" href="/success/style/style.min.css" />
+    <link rel="shortcut icon" href="/success/resourse/service/icons/favicon.png" type="image/png">
+    <meta property="og:url" content="" /> <!--TODO-->
+    <meta property="og:title" content="Академия performance рекламы для E-commerce ниш" />
+    <meta property="og:description" content="Обучающие программы, комьюнити единомышленников, бесплатная база знаний от практикующих специалистов – это все то, что вы сможете получить в нашей академии" />
+    <meta property="og:image" content="/success/resourse/service/meta/main.jpg" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"></script>
+    <script src="/success/js/components/libs/jquery.inputmask.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <title>Edu.pro</title>
 </head>
 <body>
-    <section class="preloader"></section>
+
+    <!-- dev tools -->
+    <div class="video-popup">
+        <div class="wrapper">
+            <div class="close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="31.6181" height="1.80286" transform="matrix(0.709614 0.704591 -0.709614 0.704591 1.2793 0)" fill="#F1F1F1"/>
+                    <rect width="31.6181" height="1.80286" transform="matrix(0.709614 -0.704591 0.709614 0.704591 0.283203 22.7297)" fill="#F1F1F1"/>
+                    </svg>                    
+            </div>
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    <div id="burger_menu" class="burger_menu">
+        <div class="container">
+            <div class="background_images">
+                <img class="menu_bg" src="/success/resourse/service/backgrunds/p1_bg_display_1.1.svg" alt="stock"/>
+            </div>
+            <div class="header">
+                <div class="logo"> <img src="/success/resourse/service/icons/logo-min.svg" alt="logo"/> <p>Академия performance рекламы для E-commerce ниш</p> </div>
+                <div class="right">
+                    <a href="https://www.youtube.com/channel/UCTRM3Rpbt7GT2ACuaCqhvrQ">YouTube</a>
+                    <div class="close" id="close_burger_menu">
+                        <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1.41406" width="80" height="2" transform="rotate(45 1.41406 0)" fill="#06080C"/>
+                            <rect x="0.414062" y="57" width="80" height="2" transform="rotate(-45 0.414062 57)" fill="#06080C"/>
+                        </svg>                        
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="left">
+                    <img src="/success/resourse/service/icons/fit-export.gif" alt="fit"/>
+                    <h1>
+                        Почему E-commerce <br>
+                        Об академии<br>
+                        Бесплатные статьи<br>
+                        Программы обучения<br>
+                    </h1>
+                </div>
+                <div class="right">
+                    <nav>
+                        <a href="#">Выпускники</a>
+                        <a href="#">отзывы</a>
+                        <a href="#">команда</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <a href="mailto:support@edu.pro">support@edu.pro</a>
+                    <a href="tel:+1380635933205">38 063 593 32 05</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback">
+        <div class="wrapper">
+            <div class="close"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="31.6181" height="1.80286" transform="matrix(0.709614 0.704591 -0.709614 0.704591 1.2793 0)" fill="#06080C"/><rect width="31.6181" height="1.80286" transform="matrix(0.709614 -0.704591 0.709614 0.704591 0.283203 22.7297)" fill="#06080C"/></svg></div>
+            <h2>Заполните данные</h2>
+            <p>И мы свяжемся с Вами</p>
+
+            <div class="wrapper_input">
+                <input type="text" class="ui-input name-mask" placeholder="Введите ваше имя *" required />
+                <input type="text" class="ui-input phone-mask" placeholder="38 (0__) ___-__-__" />
+                <input type="text" class="ui-input telegram-maks" placeholder="Телеграм *" required />
+            </div>
+            <button class="ui-button-2 send_feedback">Отправить</button>
+        </div>
+    </div>
+    <!-- pages -->
     <header>
         <div class="container">
-            <div class="info">
-                <div class="logo"> <img src="/success/resourse/icons/logo_min.svg" alt="logo"/> </div>
-                <div class="text_info desktop"><span>//</span>Старт: 7.09.2022</div>
-                <div class="text_info desktop"><span>//</span>Тривалість: 7 тижнів</div>
+            <div class="logo">
+                <img src="/success/resourse/service/icons/logo-min.svg" alt="logo"/>
             </div>
-
-            <div class="menu_burger"> 
-                <div class="burger"></div>    
+            <div class="text">
+                <p>Академия performance рекламы для E-commerce ниш</p>
+            </div>
+            <div class="burger-wrapper">
+                <a href="tel:+38 063 593 32 05">38 063 593 32 05</a>
+                <div class="burger" id="btn_burger_open"></div>
             </div>
         </div>
     </header>
-    <!-- menu -->
-    <div class="section-menu">
-        <div class="main">
-            <div class="header">
-                <a href="#"><img src="/success/resourse/icons/logo_min.svg" alt="logo"/></a>
+    <main class="main-page">
+        <section class="section__main">
+            <div class="container">
+                <div class="background_images">
+                    <img class="bg_1" src="/success/resourse/service/backgrunds/p1_bg_display_1.1.svg" alt="bg" />
+                    <img class="bg_2" src="/success/resourse/service/backgrunds/p1_bg_display_1.2.svg" alt="bg" />
+                </div>
 
-                <div class="close" id="close_burger"></div>
-            </div>
-            <ul class="list">
-                <li class="scrollToElem" data-scroll-to=".section-for"><span>Для кого</span></li>
-                <li class="scrollToElem" data-scroll-to=".section-result"><span>Результати</span></li>
-                <li class="scrollToElem" data-scroll-to=".section-modules"><span>Програма</span></li>
-                <li class="scrollToElem" data-scroll-to=".section-format"><span>Формат</span></li>
-                <li class="scrollToElem" data-scroll-to=".section-price"><span>Тарифи</span></li>
-                <li class="scrollToElem" data-scroll-to=".section-answer"><span>Faq</span></li>
-            </ul>
-            <div class="footer">
-                <span>+38 063 593 32 05</span>
-                <span>SUPPORT@EDUPRO.TECH</span>
-            </div>
-        </div>
-    </div>
-    <div class="popups">
-        <div class="main">
-            <div class="header">
-                <div id="close_popup_FSQ" class="close"><img src="/success/resourse/icons/close.svg" alt="close"/></div>
-            </div>
-            <div class="img"> <img src="/success/resourse/icons/success.svg" alt="success"> </div>
-            <div class="wrapper">
-                <p>
-                    <span>Дякую!</span> Ваша заявка прийнята. Найближчим часом з вами зв'яжеться наш менеджер
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="popups-comment">
-        <div class="main comment-video">
-            <div class="close close_popup_FSQvideo"><img src="/success/resourse/icons/close.svg" alt="close"/></div>
-            <iframe width="100%" height="500px" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="main comment">
-            <div class="header">
-                <div class="close close_popup_FSQs"><img src="/success/resourse/icons/close.svg" alt="close"/></div>
-            </div>
-           <div class="content">
-                <span class="name"></span>
-                <a href="#" target="_blank" class="link">Instagram</a>
-                <div class="txt"></div>
-           </div>
-            <!-- <div class="text">
-                <div class="wrapper">
-                    <span class="txt">Точка А - 0 клиентов в E&nbsp-&nbspcommerce. 3 клиента - ср.чек 250$.</span>
-                    <span class="txt2"></span>
-                </div>
-                <div class="wrapper">
-                    <span class="txt">Точка Б - 7 проектов (4 E-com) - ср.чек 250-350$.</span>
-                    <span class="txt2"></span>
-                </div>
-                <span class="price">
-                    Доход 1800$
-                </span>
-            </div> -->
-        </div>
-    </div>
-    <section class="section-main">
-        <div class="background_images">
-            <img src="/success/resourse/icons/bg_1.svg" class="bg_1" 
-            alt="bg_1" />
-            <div class="bg_div"></div>
-            <div class="bg_div snd"></div>
-            <img src="/success/resourse/icons/bg_2_mb.svg" class="mobile-bg" alt="bg"/>
-        </div>
-        <div class="container">
-            <div class="left">
-                <div class="wrapper">
-                    <span class="by">Курс Дмитра Прискоки</span>
-                    <button class="buttonScrollToDown scrollToElem" data-scroll-to=".section-for"> <div class="arrow"></div> </button>
-                </div>
-            </div>
-            <div class="middle">
-                <span class="textHeader wow fadeInLeftCustom">E-commerce</span>
-                <span class="textHeader wow fadeInRightCustom">Media Buyer</span>
-                <img src="/success/resourse/photos/bg_1.png" alt="photo-main"/>
-            </div>
-            <div class="right">
-                <div class="wrapper">
+                <div class="header-block">
+                    <div class="images">
+                        <img src="/success/resourse/service/icons/basket.gif" alt="basket"/>
+                    </div>
                     <h1>
-                        <span>Навчись</span> працювати з&nbsp;рекламою Meta для <span class="nowrap" style="color:white;">E-commerce</span> ніш
+                        <span class="text">в Гугле можно</span>
+                        <span class="text">найти все,</span>
+                        <span class="text">кроме нашего</span>
+                        <span class="text">опыта</span>
                     </h1>
-                    <p>Вийди на закордонні проекти та збільш свій чек на послугу</p>
-                    <button class="btn-ui-1 scrollToElem" data-scroll-to=".section-price"><span>Взяти участь</span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1627 1.89151L1.3606 10.6175L1.72954 11L10.5317 2.27402L10.1627 1.89151ZM11.0801 10.9037L11.1183 1.32293L10.9492 1.32226V1.25077H1.45247V1.78214H10.5851L10.5487 10.9015L11.0801 10.9037Z" fill="#fffff"/>
-                        <path d="M1.3606 10.6175L1.06796 10.8998L0.789541 10.6111L1.07435 10.3288L1.3606 10.6175ZM10.1627 1.89151L9.8765 1.60277L10.1692 1.31258L10.4554 1.60925L10.1627 1.89151ZM1.72954 11L2.01578 11.2887L1.72306 11.5789L1.4369 11.2823L1.72954 11ZM10.5317 2.27402L10.8243 1.99176L11.1027 2.28041L10.8179 2.56276L10.5317 2.27402ZM11.1183 1.32293L11.1199 0.916357L11.5265 0.917976L11.5249 1.32455L11.1183 1.32293ZM11.0801 10.9037L11.4867 10.9053L11.4851 11.3118L11.0785 11.3102L11.0801 10.9037ZM10.9492 1.32226L10.9476 1.72884L10.5426 1.72722V1.32226H10.9492ZM10.9492 1.25077V0.844195H11.3558V1.25077H10.9492ZM1.45247 1.25077H1.0459V0.844195H1.45247V1.25077ZM1.45247 1.78214V2.18871H1.0459V1.78214H1.45247ZM10.5851 1.78214V1.37556H10.9933L10.9917 1.78376L10.5851 1.78214ZM10.5487 10.9015L10.5471 11.3081L10.1405 11.3065L10.1422 10.8999L10.5487 10.9015ZM1.07435 10.3288L9.8765 1.60277L10.449 2.18025L1.64684 10.9062L1.07435 10.3288ZM1.4369 11.2823L1.06796 10.8998L1.65323 10.3352L2.02218 10.7177L1.4369 11.2823ZM10.8179 2.56276L2.01578 11.2887L1.4433 10.7113L10.2454 1.98528L10.8179 2.56276ZM10.4554 1.60925L10.8243 1.99176L10.2391 2.55628L9.87011 2.17377L10.4554 1.60925ZM11.5249 1.32455L11.4867 10.9053L10.6735 10.902L10.7117 1.32131L11.5249 1.32455ZM10.9508 0.915684L11.1199 0.916357L11.1167 1.72951L10.9476 1.72884L10.9508 0.915684ZM10.5426 1.32226V1.25077H11.3558V1.32226H10.5426ZM10.9492 1.65735H1.45247V0.844195H10.9492V1.65735ZM1.85905 1.25077V1.78214H1.0459V1.25077H1.85905ZM1.45247 1.37556H10.5851V2.18871H1.45247V1.37556ZM10.1422 10.8999L10.1785 1.78051L10.9917 1.78376L10.9553 10.9032L10.1422 10.8999ZM11.0785 11.3102L10.5471 11.3081L10.5504 10.495L11.0817 10.4971L11.0785 11.3102Z" fill="#ffffff"/>
-                        </svg></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-for">
-        <div class="background_images">
-            <img src="/success/resourse/icons/bg_2.svg" class="bg_2" alt="bg_2"/>
-        </div>
-        <div class="container">
-            <div class="header">
-                <span class="nav_text">for whom</span>
-                <h2>Для кого <span>курс</span></h2>
-            </div>
-            <ul class="list">
-                <li class="card">
-                    <div class="dec"><span>/</span></div>
-                    <h3>Junior Media Buyer</h3>
-                    <p class="wow fadeInUp">Якщо ви раніше не працювали <br>
-                        з E&nbsp-&nbspcommerce проектами, але бажаєте базово освоїти знання, взяти перший проект та реалізувати його</p>
-                </li>
-                <li class="card XL">
-                    <div class="dec"><span>//</span></div>
-                    <h3>Middle Media Buyer</h3>
-                    <p class="wow fadeInUp">Навчіться ефективно працювати <br>
-                        з E&nbsp-&nbspcommerce проектами будь-якої складності, отримайте поглиблені технічні знання для роботи з СНД та західними ринками та збільште свій середній чек за послугу</p>
-                </li>
-                <li class="card XL">
-                    <div class="dec"><span>///</span></div>
-                    <h3>Senior Media Buyer</h3>
-                    <p class="wow fadeInUp">Ви отримаєте особисту роботу над <br> точковими запитами. Зможете масштабувати свій дохід, працюючи
-                        із західними проектами або масштабуючись на СНД ринку.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    
-    <section class="section-more">
-        <div class="background_images">
-            <img src="/success/resourse/icons/bg_3.svg" class="bg_3" alt="circleBg" />
-            <img src="/success/resourse/icons/bg_4.svg" class="bg_4" alt="bg_dec" />
-        </div>
-        <div class="container">
-                <div class="header">
-                    <span class="text_nav">З кожним роком</span>
-                    <span class="text_nav right">statistics</span>
-                    <h2>На ринку <br>е-коммерс  проектIв Ста<b style="font-family:'Druk Wide Heavy' , sans-serif; font-weight:900;">Є</b> дедалI <span>бIльше</span></h2>
-                </div>
-                <div class="controlls_button">
-                    <span class="title">Переглянути статистику в:</span>
-                    <div class="controlls">
-                        <a href="https://www.shopify.com/blog/global-ecommerce-sales" target="_blank">
-                            <button class="btn-ui-3"> <span>США</span> <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1627 1.89151L1.3606 10.6175L1.72954 11L10.5317 2.27402L10.1627 1.89151ZM11.0801 10.9037L11.1183 1.32293L10.9492 1.32226V1.25077H1.45247V1.78214H10.5851L10.5487 10.9015L11.0801 10.9037Z" fill="#090B08"/>
-                                <path class="colorSvg" d="M1.3606 10.6175L1.06796 10.8998L0.789541 10.6111L1.07435 10.3288L1.3606 10.6175ZM10.1627 1.89151L9.8765 1.60277L10.1692 1.31258L10.4554 1.60925L10.1627 1.89151ZM1.72954 11L2.01578 11.2887L1.72306 11.5789L1.4369 11.2823L1.72954 11ZM10.5317 2.27402L10.8243 1.99176L11.1027 2.28041L10.8179 2.56276L10.5317 2.27402ZM11.1183 1.32293L11.1199 0.916357L11.5265 0.917976L11.5249 1.32455L11.1183 1.32293ZM11.0801 10.9037L11.4867 10.9053L11.4851 11.3118L11.0785 11.3102L11.0801 10.9037ZM10.9492 1.32226L10.9476 1.72884L10.5426 1.72722V1.32226H10.9492ZM10.9492 1.25077V0.844195H11.3558V1.25077H10.9492ZM1.45247 1.25077H1.0459V0.844195H1.45247V1.25077ZM1.45247 1.78214V2.18871H1.0459V1.78214H1.45247ZM10.5851 1.78214V1.37556H10.9933L10.9917 1.78376L10.5851 1.78214ZM10.5487 10.9015L10.5471 11.3081L10.1405 11.3065L10.1422 10.8999L10.5487 10.9015ZM1.07435 10.3288L9.8765 1.60277L10.449 2.18025L1.64684 10.9062L1.07435 10.3288ZM1.4369 11.2823L1.06796 10.8998L1.65323 10.3352L2.02218 10.7177L1.4369 11.2823ZM10.8179 2.56276L2.01578 11.2887L1.4433 10.7113L10.2454 1.98528L10.8179 2.56276ZM10.4554 1.60925L10.8243 1.99176L10.2391 2.55628L9.87011 2.17377L10.4554 1.60925ZM11.5249 1.32455L11.4867 10.9053L10.6735 10.902L10.7117 1.32131L11.5249 1.32455ZM10.9508 0.915684L11.1199 0.916357L11.1167 1.72951L10.9476 1.72884L10.9508 0.915684ZM10.5426 1.32226V1.25077H11.3558V1.32226H10.5426ZM10.9492 1.65735H1.45247V0.844195H10.9492V1.65735ZM1.85905 1.25077V1.78214H1.0459V1.25077H1.85905ZM1.45247 1.37556H10.5851V2.18871H1.45247V1.37556ZM10.1422 10.8999L10.1785 1.78051L10.9917 1.78376L10.9553 10.9032L10.1422 10.8999ZM11.0785 11.3102L10.5471 11.3081L10.5504 10.495L11.0817 10.4971L11.0785 11.3102Z" fill="#E4632C"/>
-                                </svg>
-                                 </button>
-                        </a>
+                    <h1 class="mobile_h1">
+                        в Гугле<br>
+                        можно найти<br>
+                        все, кроме<br>
+                        нашего опыта<br>
+                    </h1>
+                    <div class="text_p">
+                        <p>Обучающие программы, комьюнити единомышленников, бесплатная база знаний от практикующих специалистов – это все то, что вы сможете получить в нашей академии</p>
                     </div>
                 </div>
-                <div class="columns_container">
-                    <div class="wrapper wow fadeInUpBig">
-                        <img src="/success/resourse/icons/bg_collumns.svg"/>
-                        <!-- <div class="column">
-                            <span class="price">$5.908</span>
-                            <div class="cube-main"></div>
-                            <div class="cube-right"></div>
-                            <div class="cube-top"></div>
-                        </div>
-                        <div class="column">
-                            <span class="price">$5.908</span>
-                            <div class="cube-main"></div>
-                            <div class="cube-right"></div>
-                            <div class="cube-top"></div>
-                        </div> -->
-                    </div>
-                </div>
-        </div>
-    </section>
-    <section class="section-result">
-        <div class="container">
-            <h2>Результат курсу</h2>
-            <span class="textNav">result</span>
-            <div class="container_block">
-                <ul class="wrapper">
-                    <li class="first">
-                        <div class="left">
-                            <h3>Junior Media Buyer</h3>
-                            <span>01</span>
-                        </div>
-                        <div class="right">
-                            <div class="header">
-                                <span class="title">Результат:</span>
-                                <span class="dec">/</span>
-                            </div>
-                            <ul class="list">
-                                <li>
-                                    <div class="dec"></div>
-                                     <span>
-                                        Сформуєте чітке розуміння, як&nbsp;запускати
-                                        E&nbsp-&nbspcommerce проекти від А до Я та масштабувати
-                                        результати без втрати якості</span> </li>
-                                <li>
-                                    <div class="dec"></div>
-                                     <span>Запакуєте кейси і знайдете перші&nbsp;проекти</span> </li>
-                                <li>
-                                    <div class="dec"></div>
-                                     <span>Будете частиною сильного ком'юніті, яке мотивуватиме і&nbsp;підтримуватиме вас під час та&nbsp;після&nbsp;навчання.</span> </li>
-                            </ul>
-                        </div>
-
-                        <button class="btn-ui-1_1 scrollToElem" data-scroll-to=".section-price" id="btn_move_1"> <span>Взяти участь</span> <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.18926 1.57563L1 9.69403L1.27911 9.9834L9.46837 1.86501L9.18926 1.57563ZM9.96419 9.92689L9.99972 1.01327L9.88897 1.01283V0.992659H1.05351V1.39464H9.59621L9.56221 9.92529L9.96419 9.92689Z" fill="#090B08"/>
-                            <path d="M1 9.69403L0.778616 9.90756L0.567989 9.68919L0.783453 9.47559L1 9.69403ZM9.18926 1.57563L8.97271 1.3572L9.19416 1.13766L9.41064 1.3621L9.18926 1.57563ZM1.27911 9.9834L1.49566 10.2018L1.27421 10.4214L1.05773 10.1969L1.27911 9.9834ZM9.46837 1.86501L9.68975 1.65147L9.90038 1.86984L9.68491 2.08344L9.46837 1.86501ZM9.99972 1.01327L10.0009 0.705694L10.3085 0.706921L10.3073 1.0145L9.99972 1.01327ZM9.96419 9.92689L10.2718 9.92812L10.2705 10.2357L9.96297 10.2345L9.96419 9.92689ZM9.88897 1.01283L9.88774 1.32041L9.58139 1.31919V1.01283H9.88897ZM9.88897 0.992659V0.685076H10.1966V0.992659H9.88897ZM1.05351 0.992659H0.745931V0.685076H1.05351V0.992659ZM1.05351 1.39464V1.70223H0.745931V1.39464H1.05351ZM9.59621 1.39464V1.08706H9.90502L9.90379 1.39587L9.59621 1.39464ZM9.56221 9.92529L9.56099 10.2329L9.25341 10.2316L9.25463 9.92406L9.56221 9.92529ZM0.783453 9.47559L8.97271 1.3572L9.4058 1.79407L1.21655 9.91246L0.783453 9.47559ZM1.05773 10.1969L0.778616 9.90756L1.22138 9.48049L1.5005 9.76986L1.05773 10.1969ZM9.68491 2.08344L1.49566 10.2018L1.06256 9.76496L9.25182 1.64657L9.68491 2.08344ZM9.41064 1.3621L9.68975 1.65147L9.24698 2.07854L8.96787 1.78917L9.41064 1.3621ZM10.3073 1.0145L10.2718 9.92812L9.65661 9.92566L9.69214 1.01205L10.3073 1.0145ZM9.8902 0.705253L10.0009 0.705694L9.99849 1.32086L9.88774 1.32041L9.8902 0.705253ZM9.58139 1.01283V0.992659H10.1966V1.01283H9.58139ZM9.88897 1.30024H1.05351V0.685076H9.88897V1.30024ZM1.3611 0.992659V1.39464H0.745931V0.992659H1.3611ZM1.05351 1.08706H9.59621V1.70223H1.05351V1.08706ZM9.25463 9.92406L9.28863 1.39342L9.90379 1.39587L9.86979 9.92651L9.25463 9.92406ZM9.96297 10.2345L9.56099 10.2329L9.56344 9.61771L9.96542 9.61931L9.96297 10.2345Z" fill="white"/>
-                            </svg>
-                            </button>
-
-                    </li>
-                    <li>
-                        <div class="left">
-                            <h3>Middle Media Buyer</h3>
-                            <span>02</span>
-                        </div>
-                        <div class="right">
-                            <div class="header">
-                                <span class="title">Результат:</span>
-                                <span class="dec">//</span>
-                            </div>
-                            <ul class="list">
-                                <li>
-                                    <div class="dec"></div>
-                                     <span>
-                                        Навчитесь працювати з каталогом, динамічною рекламою, Google Tag Manager та Google Analytics</span> </li>
-                                <li>
-                                    <div class="dec"></div>
-                                     <span>Упакуєте кейси та зрозумієте, як&nbsp;закривати клієнтів на чеки від&nbsp;$500+</span> </li>
-                                <li>
-                                    <div class="dec"></div>
-                                     <span>Навчитесь мислити як маркетолог, а&nbsp;не будете збіркою технічної інформації.</span> </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left">
-                            <h3>Senior Media Buyer</h3>
-                            <span>03</span>
-                        </div>
-                        <div class="right">
-                            <div class="header">
-                                <span class="title">Результат:</span>
-                                <span class="dec">///</span>
-                            </div>
-                            <ul class="list">
-                                <li>
-                                    <div class="dec"></div>
-                                     <span>
-                                        Почнете роботу з клієнтами по&nbsp;всьому світу</span> </li>
-                                <li>
-                                    <div class="dec"></div>
-                                     <span>Сформуєте чіткий план масштабування як фрілансера або агенції за рахунок поглиблених знань та збільшення чеку на свої послуги</span> </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="section-modules">
-        <div class="container">
-            <h2>Програма курсу</h2>
-            <div class="mobile">
-                <span class="swipe-dec">Свайп</span>
-            </div>
-            <div class="containerModuless wow fadeInDown">
-                <div class="module">
-                    <div class="infoText">Модуль 0</div>
-                    <div class="main">
-                        <h3>Як отримати максимум від навчання та&nbsp; вийти на новий рівень у&nbsp; своїх результатах та&nbsp; доході</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Вступний урок</span>
-                                    </div>
-                                    <p>Як отримати максимум від навчання та&nbsp; зробити результат уже під час проходження курсу.</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні отримають корисні матеріали, які допоможуть отримати максимум від навчання.</p>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="infoText">Модуль 1</div>
-                    <div class="main">
-                        <h3>Введення в&nbsp;роботу <span class='nowrap'>E-commerce</span> проектів</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 1.1</span>
-                                    </div>
-                                    <p>Чим відрізняється запуск реклами для <span class='nowrap'>E-commerce</span> проектів
-                                        від інших вертикалей?</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 1.2</span>
-                                    </div>
-                                    <p>Різницяу&nbsp; запусках реклами для <span class="nowrap">Е-кому</span> на СНД та&nbsp; зарубіжних ринках (США, Канада, Європа тощо)</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 1.3</span>
-                                    </div>
-                                    <p>Які перспективи мають фахівці з&nbsp;реклами, які працюватимуть з&nbsp;<span class="nowrap">Е-ком</span> проектами?
-                                    </p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні дізнаються про тонкощі роботи&nbsp; E&nbsp;-&nbspcommerce нішами на СНД та&nbsp;західних ринках.</p>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="infoText">Модуль 2</div>
-                    <div class="main">
-                        <h3><span class="nowrap">Unit-економіка</span> проекту</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 2.1</span>
-                                    </div>
-                                    <p>Розбір поняття <span class="nowrap">Unit-економіка</span>
-                                      &nbsp;і чому важливо її рахувати в&nbsp;проектах</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 2.2</span>
-                                    </div>
-                                    <p>Приклад аналізу <span class="nowrap">Unit-економіка</span>
-                                        в&nbsp;<span class='nowrap'>E-commerce</span> проекті</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 2.3</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Розбір кейсу.&nbsp;як  зміна однієї змінної економіки  у&nbsp;проекті збільшило чистий прибуток магазину на 15%</p>
-                                </div>
-                            </div>
-                            <div class="containerTitle">
-                                <span class="title" style="margin-left: 32px;">Матеріали</span>
-                            </div>
-                            <ul class="list">
-                                <li><div class="dec"></div> <span> Таблиця по разрахунку <span class="nowrap">Unit-економіки</span> проекту</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні навчаться розуміти важливі бізнес-метрики для
-                            E&nbsp;-&nbspcommerce ніш та&nbsp;навчаться правильно рахувати рентабельність інвестицій</p>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="infoText">Модуль 3</div>
-                    <div class="main">
-                        <h3>Customer Journey Map</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 3.1</span>
-                                    </div>
-                                    <p>Розбір Customer Journey Mapу&nbsp; <span class="nowrap">Е-ком</span> проектах.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 3.2</span>
-                                    </div>
-                                    <p>Різниця у&nbsp; побудові воронки продажів для <span class="nowrap">Е-ком</span> проектів на українському та&nbsp; зарубіжному ринку (з&nbsp;точки зору маркетингу).</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 3.3</span>
-                                    </div>
-                                    <p>Різниця у&nbsp; побудові воронки продажів для <span class="nowrap">Е-ком</span> проектів на українському та&nbsp; зарубіжному ринку (з&nbsp;точки зору маркетингу).</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 3.4</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Реалізація Customer Journey на прикладі реального проекту.</p>
-                                </div>
-                            </div>
-                            <div class="containerTitle">
-                                <span class="title" style="margin-left: 32px;">Матеріали</span>
-                            </div>
-                            <ul class="list">
-                                <li><div class="dec"></div> <span> Таблиця по розбіру концепту 3 рівнів трафіку та&nbsp; адаптація до РК</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні навчаться розуміти&nbsp;як  працювати з&nbsp;воронкою продажів в&nbsp;E&nbsp;-&nbspcommerce нішах та&nbsp; застосовувати її у&nbsp;своїх проектах.</p>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="infoText">Модуль 4</div>
-                    <div class="main">
-                        <h3>Робота з&nbsp;Commerce Manager та&nbsp; Data Feeds</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 4.1</span>
-                                    </div>
-                                    <p>Створення файлу фіда даних та&nbsp; розбір важливих 
-                                        атрибутів фіда.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 4.2</span>
-                                    </div>
-                                    <p>
-                                        ТЗ на завантаження Data Feeds</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 4.3</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Розбір плагінів та&nbsp; інтеграцій для вивантаження фіда даних у&nbsp; популярних CMS системах [Shopify, Wordpress, OpenCart, Хорошоп, Tilda, Magento]</p>
-                                </div>
-                            </div>
-                            <div class="containerTitle">
-                                <span class="title" style="margin-left: 32px;">Матеріали</span>
-                            </div>
-                            <ul class="list">
-                                <li><div class="dec"></div> <span> ТЗ на налаштування динамічної реклами під проект</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні освоять базовий інструмент просування E&nbsp;-&nbspcommerce проектів через каталог та&nbsp; зрозуміють тонкощі інтеграції каталогу з&nbsp;популярними CMS.</p>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="infoText">Модуль 5</div>
-                    <div class="main">
-                        <h3>Facebook Dynamic Ads</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 5.1</span>
-                                    </div>
-                                    <p>Встановлення стандартних <span class="nowrap">Е-ком</span> подій на сайті та&nbsp; передача кастомних параметрів Meta Pixel через код.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 5.2</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Розбір плагінів для інтеграції динамічної реклами з&nbsp;популярними системами CMS [Shopify, Wordpress, OpenCart, Хорошоп, Tilda, Magento]</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 5.3</span>
-            
-                                    </div>
-                                    <p>Розбір рекламної мети "Catalog Sales" та&nbsp; створення оголошення в&nbsp;Instant Experience.</p>
-                                </div>
-                            </div>
-                            <div class="containerTitle">
-                                <span class="title" style="margin-left: 32px;">Матеріали</span>
-                            </div>
-                            <ul class="list">
-                                <li><div class="dec"></div> <span> ТЗ на налаштування динамічної реклами під проект</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні опанують базовий інструмент для роботи з&nbsp;ретаргетинговими кампаніями.</p>
-                    </div>
-                </div>
-            
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 6</div>
-                    <div class="main">
-                        <h3>Робота с Google Tag Manager</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 6.1</span>
-                                    </div>
-                                    <p>Що таке Google Tag Manager та&nbsp; розбір його функціоналу.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 6.2</span>
-                                    </div>
-                                    <p>Встановлення Google Tag Manager на сайт</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 6.3</span>
-                                    </div>
-                                    <p>Що таке dataLayer + робота з&nbsp;тегами, тригерами та&nbsp; змінними.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 6.4</span>
-                                    </div>
-                                    <p>Встановлення Google Analytics та&nbsp; Meta Pixel на сайт
-                                        за допомогою GTM</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 6.5</span>
-                                    </div>
-                                    <p>Встановлення Google Analytics та&nbsp; Meta Pixel на сайт
-                                        за допомогою GTM</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 6.6</span>
-                                    </div>
-                                    <p>Налаштовуємо відстеження конверсій та&nbsp; подій на сайті</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні навчаться працювати з&nbsp;системою керування тегів для правильного встановлення трекерів на сайт та&nbsp; відстеження конверсій.</p>
-                    </div>
-                </div>
-            
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 7</div>
-                    <div class="main">
-                        <h3>Розбір креативів та&nbsp; комунікаційної стратегії у&nbsp;рекламі</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 7.1</span>
-                                    </div>
-                                    <p>Розбір продаючих креативів в&nbsp;рекламі для <span class="nowrap">Е-ком</span> ніш на українському та&nbsp; зарубіжних ринках (різниця в&nbsp;менталітеті та&nbsp; підходів до створення крео).</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 7.2</span>
-                                    </div>
-                                    <p>Розбір комунікаційної стратегії на прикладі таблиці
-                                        по роботі з&nbsp;проектом</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 7.3</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Розбір комунікаційної стратегії на прикладі таблиці
-                                        по роботі з&nbsp;проектом</p>
-                                </div>
-                            </div>
-                            <div class="containerTitle">
-                                <span class="title" style="margin-left: 32px;">Матеріали</span>
-                            </div>
-                            <ul class="list">
-                                <li><div class="dec"></div> <span> Таблиця по розбіру комунікаційної стратегії на прикладі проекта</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні навчаться писати продаючі тексти&nbsp;і створювати креативи, що залучають увагу.</p>
-                    </div>
-                </div>
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 8</div>
-                    <div class="main">
-                        <h3>Сет-ап та&nbsp; проектування рекламних кампаній</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 8.1</span>
-                                    </div>
-                                    <p>Проектування рекламних кампаній виходячи з&nbsp;
-                                        специфіки проекту та&nbsp; ГЕО.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 8.2</span>
-                                    </div>
-                                    <p>Різниця в&nbsp;сет-апі та&nbsp; запуску рекламних кампаній на СНД
-                                        та&nbsp; зарубіжних ринках (розбір різних стратегій запуску)</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 8.3</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Pозбір частих помилок у запусках кампаній на СНД та зарубіжних ринках (як не злити бюджет).</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 8.4</span>
-                                    </div>
-                                    <p>Як використовувати кастомні звіти та&nbsp;налаштовувати розбивки під свій проект</p>
-                                </div>
-                            </div>
-                            <div class="containerTitle">
-                                <span class="title" style="margin-left: 32px;">Матеріали</span>
-                            </div>
-                            <ul class="list">
-                                <li><div class="dec"></div> <span> Таблиця-приклад по проектуванні рекламних кампаній</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Опис результату даного модуля. Те, який результат отримає учень після цього модуля</p>
-                    </div>
-                </div>
-            
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 9</div>
-                    <div class="main">
-                        <h3>Масштабування кампаній</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 9.1</span>
-                                    </div>
-                                    <p>Розбір стратегії горизонтального та&nbsp; вертикального масштабування (у яких ситуаціях найкраще використовувати)</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 9.2</span>
-                                    </div>
-                                    <p>Виключення аудиторій для Acquisition та&nbsp; Retention кампаній.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 9.3</span>
-                                        
-                                    </div>
-                                    <p>Способи тестування гіпотез</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 9.4</span>
-                                        
-                                    </div>
-                                    <p>Особливості масштабування кампаній на зарубіжних ринках (USA, Canada, UK, EU)</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 9.5</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Розбір частих помилок при масштабуванні
-                                        рекламних кампаній (з&nbsp;прикладу різних бюджетів).</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 9.6</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Розбір частих помилок при масштабуванні
-                                        рекламних кампаній (з&nbsp;прикладу різних бюджетів).</p>
-                                </div>
-            
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 9.7</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Кейс.&nbsp;як  змасштабувати проект з&nbsp;75к$ прибутку до 142к$ прибутку за 30 днів (ділимося своїм досвідом та&nbsp; комбінаціями) </p>
-                                </div>
-                            </div>
-            
-                            <div class="containerTitle">
-                                <span class="title" style="margin-left: 32px;">Матеріали</span>
-                            </div>
-                            <ul class="list">
-                                <li><div class="dec"></div> <span> Таблиця-приклад по тестування гіпотезу&nbsp; проекті</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні навчаться правильно масштабувати результати рекламних кампаній без різких перепадів та&nbsp; втрати якості.
-                        </p>
-                    </div>
-                </div>
-            
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 10</div>
-                    <div class="main">
-                        <h3>Робота з&nbsp;Google Analytics</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 10.1</span>
-                                    </div>
-                                    <p>Розбір інструментів Google Analytics (GA Universal/GA4)</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 10.2</span>
-                                    </div>
-                                    <p>Як вимірювати ефективність рекламних кампаній&nbsp;і джерел трафіку та&nbsp; працювати зі звітами користувача</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 10.3</span>
-                                    </div>
-                                    <p>Налаштування електронної торгівлі в&nbsp;GA</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 10.4</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Аналіз асоційованих конверсій та&nbsp;багатоканальних послідовностей</p>
-                                </div>
-                            </div>
-                            <div class="containerTitle">
-                                <span class="title" style="margin-left: 32px;">Матеріали</span>
-                            </div>
-                            <ul class="list">
-                                <li><div class="dec"></div> <span> ТЗ на налаштування ектронної торгівлі</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні навчаться правильно аналізувати результати кампаній та&nbsp; джерел трафіку через Google Analytics.</p>
-                    </div>
-                </div>
-            
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 11</div>
-                    <div class="main">
-                        <h3>Трекінг та&nbsp; аналітика результатів
-                        </h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 11.1</span>
-                                    </div>
-                                    <p>Як оновлення iOS 14 вплинуло на аналітику та&nbsp; трекінг результатів для СНД та&nbsp; зарубіжних Е-комів.
-                                    </p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 11.2</span>
-                                    </div>
-                                    <p>Відмінності трекінгу та&nbsp; аналітики продажів для СНД
-                                        та&nbsp; зарубіжних ринків.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 11.3</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Як відстежувати та&nbsp; рахувати конверсії з&nbsp;одного та&nbsp; різних джерел трафіку в&nbsp;рамках одного проекту (наш досвід).</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 11.4</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Розбір популярних сервісів з&nbsp;багатоканального трекінгу конверсій для СНД та&nbsp; зарубіжжя (Shopify, Google Analytics, Triple Whale)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні дізнаються тонкощі трекінгу результатів усередині одного та&nbsp; кількох джерел трафіку.</p>
-                    </div>
-                </div>
-            
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 12</div>
-                    <div class="main">
-                        <h3>Поліпшення конверсії сайту [спікер Тарас Герасимюк]</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 12.1</span>
-                                    </div>
-                                    <p>Аналіз ефективності інтернет-магазину. Вивчаємо поведінку користувачів через Google Analytics, Shopify Analytics, Hotjar..</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 12.2</span>
-                                    </div>
-                                    <p>Основи A/B тестування. Особливості тесту на Shopify. Інструменти: додатки Shopify та&nbsp; Google Optimize.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 12.3</span>
-                                        
-                                    </div>
-                                    <p>Запуск тесту, робота з&nbsp;редактором. Аналіз показників сайту.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 12.4</span>
-                                        
-                                    </div>
-                                    <p>Топ додатків, які збільшать конверсію та&nbsp; середній чек вашого магазину.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні дізнаються&nbsp;як  правильно робити А/Б тести сайту, правильно аналізувати та&nbsp; покращувати конверсію сайту.</p>
-                    </div>
-                </div>
-            
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 13</div>
-                    <div class="main">
-                        <h3>
-                            Формування звітності</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 13.1</span>
-                                    </div>
-                                    <p>Як правильно формувати щотижневу та&nbsp; щомісячну звітність щодо проекту перед клієнтом.</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 13.2</span>
-                                    </div>
-                                    <p>Автоматизація звітності щодо проектів у Google Data Studio.</p>
-                                </div>
-                            </div>
-                            <div class="containerTitle">
-                                <span class="title" style="margin-left: 32px;">Матеріали</span>
-                            </div>
-                            <ul class="list">
-                                <li><div class="dec"></div> <span>Шаблон звітності щодо проектів у&nbsp; Google Data Studio.</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні навчаться правильно формувати звітність для клієнтів та&nbsp; для своїх проектів</p>
-                    </div>
-                </div>
-            
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 14</div>
-                    <div class="main">
-                        <h3>Робота з&nbsp;Email-маркетингом на західному ринку
-                            [спікер Дядик Назарій]</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 14.1</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Введення в&nbsp;роботу email-маркетингу
-                                        (Про інструмент, розбір сервісів: Klaviyo, Omnisend)</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 14.2</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Основа email-маркетингу та&nbsp; вибудовування воронки продажів усередині сервісів (форми/кампанії/скрипти)</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 14.3</span>
-                                        <ul class="tags">
-                                            <li>STANDART</li>
-                                            <li>VIP</li>
-                                        </ul>
-                                    </div>
-                                    <p>Кейс:&nbsp;як  за допомогою email-маркетингу дотискати клієнтів та&nbsp; робити більше 20% виручки від загального доходу магазину.</p>
-                                </div>
-                            </div>
-                            <div class="containerTitle">
-                                <span class="title" style="margin-left: 32px;">Матеріали</span>
-                            </div>
-                            <ul class="list">
-                                <li><div class="dec"></div> <span> Кастомні приклади вибудовування воронки продажіву&nbsp; Klavio, Omnisend</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні дізнаються&nbsp;як  правильно працювати з&nbsp;Емейл маркетингом&nbsp;іяких результатів можна досягти за допомогою цього інструменту</p>
-                    </div>
-                </div>
-            
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 15</div>
-                    <div class="main">
-                        <h3>Як продавати свої послуги на СНД та&nbsp; закордонні ринки через LinkedIn
-                            [спікер Кирило Романцов]</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 15.1</span>
-                                    </div>
-                                    <p>Розбір майданчика LinkedIn&nbsp;як  джерело пошуку клієнтів на свої послуги</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 15.2</span>
-                                    </div>
-                                    <p>Пошук та&nbsp; генерація лідів, робота через Sales Navigator та&nbsp; формування розсилок</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні дізнаються&nbsp;як  правильно упаковувати себе та&nbsp; продавати свої послуги на СНД та&nbsp; західний ринок через LinkedIn</p>
-                    </div>
-                </div>
-            
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 16</div>
-                    <div class="main">
-                        <h3>Як продавати свої послуги на закордонні ринки через UpWork [спікер Миша Діль]</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 16.1</span>
-                                    </div>
-                                    <p>Знайомство з&nbsp;платформою UpWork</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 16.2</span>
-                                    </div>
-                                    <p>Як вибудувати воронку з&nbsp;конверсією від 20% лід-продаж та&nbsp; пришвидшити цикл продажу</p>
-                                </div>
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 16.3</span>
-                                    </div>
-                                    <p>Як упакувати свій профільу&nbsp; UpWork та&nbsp; почати продавати 
-                                        свої послуги</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні дізнаються&nbsp;як  правильно запакувати себе та&nbsp; продавати свої послуги на західний ринок через UpWork</p>
-                    </div>
-                </div>
-                <div class="module secondOrderModules">
-                    <div class="infoText">Модуль 17</div>
-                    <div class="main">
-                        <h3>Як продавати свої послуги
-                            на СНД ринки
-                            [спікер Володимир Ясинський]</h3>
-                        <div class="mainText">
-                            <div class="wrk">
-                                <div class="containerBlock">
-                                    <div class="titleContainer">
-                                        <div class="dec"></div>
-                                        <span class="title">Урок 17.1</span>
-                                    </div>
-                                    <p>Як упакувати себе та&nbsp; продавати в&nbsp;холодну digital послуги для E&nbsp;-&nbspcommerce брендів на СНД ринку</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result">
-                        <h4>Результат:</h4>
-                        <p>Учні дізнаються&nbsp;як  правильно запакувати себе та&nbsp; продавати свої послуги на СНД ринок</p>
-                    </div>
-                </div>
-            </div>
-            <div class="buttonContainer">
-                <button class="btn-ui-4"data-open="true" id="btn_open_close_more_modules">Більше модулів</button>
-            </div>
-        </div>
-    </section>
-    <section class="section-format">
-        <div class="container">
-            <div class="header">
-                <span class="textNav">format</span>
-                <h2>Формат участI</h2>
-            </div>
-            <div class="wrapper">
-                <div class="containerBlock">
-                    <div class="textInfoConteiner">
-                        <div class="block">
-                            <h3>Старт</h3>
-                            <span>7 вересня</span>
-                        </div>
-                        <div class="block">
-                            <h3>ТривалIсть курсу</h3>
-                            <span>7 тижнів</span>
-                        </div>
-                    </div>
-                    <ul class="content">
-                        <li class="wow fadeIn" data-wow-delay="0">
-                            <h3 class="blockMobile">Уроки</h3>
-                            <div class="wrapper">
-                                <h4>01</h4>
-                            </div>
-                            <p>Короткі уроки, <br> без води</p>
-                        </li>
-                        <li class="wow fadeIn" data-wow-delay="300">
-                            <h3 class="blockMobile">Зв'язок</h3>
-                            <div class="wrapper">
-                               
-                                <h4>02</h4>
-                            </div>
-                            <p>Постійне перебування <br>
-                                з учнями на зв'язку</p>
-                        </li>
-                        <li class="wow fadeIn" data-wow-delay="600">
-                            <h3 class="blockMobile">Порядок</h3>
-                            <div class="wrapper">
-                                <h4>03</h4>
-                            </div>
-                            <p>Уроки організовані в порядку, <br>
-                                як би ви працювали з реальним <br> проектом</p>
-                        </li>
-                        <li class="wow fadeIn" data-wow-delay="900">
-                            <div class="wrapper">
-                                
-                                <h4>04</h4>
-                            </div>
-                            <h3 class="blockMobile">Платформа</h3>
-                            <p>Освітня платформа <br> Teachable</p>
-                        </li>
-                        <li class="wow fadeIn" data-wow-delay="1200">
-                            <div class="wrapper">
-                                <h4>05</h4>
-                            </div>
-                            <h3 class="blockMobile">ZOOM-сесії </h3>
-                            <p>Щотижневі ZOOM-сесії питання/відповідь <br> для всіх тарифів</p>
-                        </li>
-                        <li class="wow fadeIn" data-wow-delay="1500">
-                            <div class="wrapper">
-                                <h4>06</h4>
-                            </div>
-                            <h3 class="blockMobile">ДЗ</h3>
-                            <p>Структурні модулі <br>
-                                та домашні знання</p>
-                        </li>
-                        <li class="wow fadeIn" data-wow-delay="1800">
-                            <div class="wrapper">
-                                <h4>07</h4>
-                            </div>
-                            <h3 class="blockMobile">Перевірка</h3>
-                            <p>Перевірка домашніх <br> завдань куратором <br>
-                                та спікером курсу</p>
-                        </li>
-                        <li class="wow fadeIn" data-wow-delay="2100">
-                            <div class="wrapper">
-                                <h4>08</h4>
-                            </div>
-                            <h3 class="blockMobile">Розбір</h3>
-                            <p>Розбір поточних <br> проектів учнів</p>
-                        </li>
-                        <li class="wow fadeIn" data-wow-delay="2400">
-                            <div class="wrapper">
-                                <h4>09</h4>
-                            </div>
-                            <h3 class="blockMobile">Чати</h3>
-                            <p>Чати для всіх <br> пакетів курсу</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>  
-    </section>
-    <section class="section-about-me">
-        <div class="background_images">
-            <img src="/success/resourse/icons/bg_3.svg" class="bg_5" alt="bg"/>
-        </div>
-        <div class="container">
-            <div class="header">
-                <span class="textNav">course expert</span>
-                <div class="text">
-                    <h2> <span>ПривIт!</span> Мене звати Дмитро</h2>
-                    <p>Я засновник освітньої програми<br> E&nbsp-&nbspcommerce Media Buyer</p>
-                </div>
-            </div>
-            <div class="containerColumn">
-                <div class="CTX">
-                    <div class="row">
-                        <div class="column"><span class="title">Мій шлях</span></div>
-                        <div class="column">
-                            <h3>розпочався ще у 2018 роцI</h3>
-                            <p>Коли вперше дізнався про таргетовану рекламу. Тоді я присвятив 2 роки роботи
-                                у&nbsp;топових маркетингових агентств України відточуючи навички реклами
-                                у&nbsp;нішах інтернет-магазинів</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column"><span class="title">Пізніше</span></div>
-                        <div class="column">
-                            <h3>Створив блог в Iнстаграм</h3>
-                            <p>Де почав розповідати про створення власної performance-маркетингової агенції,виходи на закордонні ринки та роботу з відомими E&nbsp-&nbspcommerce брендами</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column"><span class="title">З часом</span></div>
-                        <div class="column">
-                            <h3>Блог перерIс
-                                в освIтню платформу</h3>
-                            <p>Де я вперше поділився досвідом роботи
-                                з&nbsp;рекламою Facebook для E&nbsp-&nbspcommerce ринку. Тоді прийшла ідея створити комплексне навчання з реклами для ніш електронної комерції</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="CTX">
-                    <div class="image_container wow fadeInLeft">
-                        <a class="link" href="https://instagram.com/dmitriy.priskoka?igshid=YmMyMTA2M2Y=" target="_blank">
-                            <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="svgColor" d="M23.9935 16.1073C19.5867 16.1073 15.9903 19.7056 15.9903 24.1149C15.9903 28.5241 19.5867 32.1224 23.9935 32.1224C28.4004 32.1224 31.9968 28.5241 31.9968 24.1149C31.9968 19.7056 28.4004 16.1073 23.9935 16.1073ZM47.9973 24.1149C47.9973 20.7989 48.0273 17.513 47.8412 14.2031C47.6551 10.3585 46.7785 6.94645 43.9687 4.13511C41.1528 1.31777 37.7486 0.446733 33.9061 0.260511C30.5919 0.0742901 27.3077 0.104326 23.9996 0.104326C20.6854 0.104326 17.4012 0.0742901 14.093 0.260511C10.2505 0.446733 6.84028 1.32377 4.03043 4.13511C1.21458 6.95246 0.344011 10.3585 0.157888 14.2031C-0.028234 17.519 0.00178584 20.8049 0.00178584 24.1149C0.00178584 27.4248 -0.028234 30.7167 0.157888 34.0266C0.344011 37.8712 1.22059 41.2832 4.03043 44.0946C6.84628 46.9119 10.2505 47.783 14.093 47.9692C17.4072 48.1554 20.6914 48.1254 23.9996 48.1254C27.3137 48.1254 30.5979 48.1554 33.9061 47.9692C37.7486 47.783 41.1588 46.9059 43.9687 44.0946C46.7845 41.2772 47.6551 37.8712 47.8412 34.0266C48.0333 30.7167 47.9973 27.4308 47.9973 24.1149ZM23.9935 36.4355C17.1791 36.4355 11.6795 30.933 11.6795 24.1149C11.6795 17.2968 17.1791 11.7942 23.9935 11.7942C30.808 11.7942 36.3076 17.2968 36.3076 24.1149C36.3076 30.933 30.808 36.4355 23.9935 36.4355ZM36.812 14.167C35.2209 14.167 33.9361 12.8815 33.9361 11.2896C33.9361 9.69772 35.2209 8.4122 36.812 8.4122C38.403 8.4122 39.6879 9.69772 39.6879 11.2896C39.6883 11.6676 39.6143 12.042 39.4699 12.3913C39.3256 12.7406 39.1137 13.058 38.8466 13.3253C38.5794 13.5926 38.2622 13.8045 37.9131 13.949C37.564 14.0934 37.1898 14.1675 36.812 14.167Z" fill="#E4632C"/>
-                                </svg> 
-                        </a>
-                        <a class="link youtube mobile" href="https://www.youtube.com/channel/UCTRM3Rpbt7GT2ACuaCqhvrQ/featured" target="_blank">
-                            <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16.4374 1.67723C16.3468 1.35392 16.1704 1.06122 15.9268 0.830239C15.6764 0.592151 15.3694 0.421842 15.035 0.335385C13.7831 0.00526023 8.7678 0.0052603 8.7678 0.0052603C6.67696 -0.0185403 4.58665 0.0861406 2.50864 0.318712C2.17414 0.411556 1.86777 0.585671 1.61676 0.825571C1.37013 1.06299 1.19148 1.35577 1.09816 1.67656C0.873987 2.88485 0.765068 4.11171 0.772872 5.34061C0.764873 6.56841 0.873525 7.79487 1.09816 9.00466C1.18948 9.32412 1.36746 9.61556 1.61476 9.85098C1.86206 10.0864 2.17002 10.2565 2.50864 10.3465C3.77713 10.676 8.7678 10.676 8.7678 10.676C10.8613 10.6998 12.9543 10.5951 15.035 10.3625C15.3694 10.2761 15.6764 10.1057 15.9268 9.86766C16.1703 9.63672 16.3466 9.34398 16.4368 9.02067C16.6668 7.81285 16.7786 6.58548 16.7707 5.35595C16.788 4.12122 16.6763 2.88806 16.4374 1.67656V1.67723ZM7.17334 7.62414V3.05775L11.3461 5.34128L7.17334 7.62414Z" fill="#E4632C"/>
+                <div class="footer-block">
+                    <a target="_blank" href="https://www.youtube.com/channel/UCTRM3Rpbt7GT2ACuaCqhvrQ" class="ui-link-1">YouTube</a>
+                    <div class="button__feedback">
+                        <span class="title">Об академии</span>
+                        <button class="ui-button-feedback">
+                            <svg width="167" height="166" viewBox="0 0 167 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="83.6172" cy="83" r="83" fill="#E4622A"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M98.4876 69.4011L98.603 98.3713L69.0066 69L67.6172 70.439L97.4053 100H67.9929V102H99.9581V101.644L100.616 101.641L100.488 69.3932L98.4876 69.4011Z" fill="white"/>
+                                <path d="M98.603 98.3713L98.2508 98.7262L99.1078 99.5767L99.103 98.3693L98.603 98.3713ZM98.4876 69.4011L98.4856 68.9011L97.9856 68.9031L97.9876 69.4031L98.4876 69.4011ZM69.0066 69L69.3588 68.6451L68.999 68.288L68.6469 68.6527L69.0066 69ZM67.6172 70.439L67.2575 70.0916L66.9149 70.4464L67.265 70.7939L67.6172 70.439ZM97.4053 100V100.5H98.6189L97.7575 99.6456L97.4053 100ZM67.9929 100V99.5005H67.4929V100H67.9929ZM67.9929 102H67.4929V102.5H67.9929V102ZM99.9581 102V102.5H100.458V102H99.9581ZM99.9581 101.644L99.9561 101.144L99.4581 101.146V101.644H99.9581ZM100.616 101.641L100.618 102.141L101.118 102.139L101.116 101.639L100.616 101.641ZM100.488 69.3932L100.988 69.3912L100.986 68.8912L100.486 68.8932L100.488 69.3932ZM99.103 98.3693L98.9876 69.3991L97.9876 69.4031L98.103 98.3733L99.103 98.3693ZM68.6544 69.3549L98.2508 98.7262L98.9552 98.0164L69.3588 68.6451L68.6544 69.3549ZM67.9769 70.7863L69.3663 69.3473L68.6469 68.6527L67.2575 70.0916L67.9769 70.7863ZM97.7575 99.6456L67.9694 70.0841L67.265 70.7939L97.0531 100.355L97.7575 99.6456ZM67.9929 100.5H97.4053V99.5005H67.9929V100.5ZM68.4929 102V100H67.4929V102H68.4929ZM99.9581 101.5H67.9929V102.5H99.9581V101.5ZM99.4581 101.644V102H100.458V101.644H99.4581ZM100.614 101.141L99.9561 101.144L99.9601 102.144L100.618 102.141L100.614 101.141ZM99.9875 69.3952L100.116 101.643L101.116 101.639L100.988 69.3912L99.9875 69.3952ZM98.4895 69.9011L100.49 69.8932L100.486 68.8932L98.4856 68.9011L98.4895 69.9011Z" fill="white"/>
                                 </svg>                                
-                        </a>
-                        <img src="/success/resourse/photos/bg_2.png" alt="photo"/>
+                        </button>
                     </div>
-
-                    <div class="image_container wow fadeInRight">
-                        <a class="link" href="https://www.youtube.com/channel/UCTRM3Rpbt7GT2ACuaCqhvrQ/featured" target="_blank">
-                            <svg width="48" height="33" viewBox="0 0 48 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="svgColor" d="M46.9949 5.30219C46.7232 4.33228 46.1938 3.45418 45.4631 2.76122C44.7118 2.04696 43.7909 1.53603 42.7875 1.27666C39.032 0.286288 23.986 0.286289 23.986 0.286289C17.7135 0.214887 11.4426 0.52893 5.20853 1.22664C4.20505 1.50518 3.28592 2.02752 2.53289 2.74722C1.79299 3.45949 1.25707 4.33782 0.977103 5.30019C0.304579 8.92504 -0.0221786 12.6056 0.0012342 16.2923C-0.0227626 19.9757 0.303194 23.6551 0.977103 27.2845C1.25107 28.2429 1.78499 29.1172 2.52689 29.8235C3.26879 30.5297 4.19267 31.0399 5.20853 31.31C9.01402 32.2984 23.986 32.2984 23.986 32.2984C30.2665 32.3699 36.5454 32.0559 42.7875 31.358C43.7909 31.0987 44.7118 30.5877 45.4631 29.8735C46.1935 29.1807 46.7223 28.3024 46.9929 27.3325C47.683 23.7091 48.0185 20.0269 47.9948 16.3384C48.0467 12.6342 47.7116 8.93469 46.9949 5.30019V5.30219ZM19.2027 23.1429V9.44375L31.721 16.2943L19.2027 23.1429Z" fill="#E4632C"/>
-                                </svg>
-                                
-                        </a>
-                        <img src="/success/resourse/photos/bg_3.png" alt="photo"/>
+                    <div class="scroll-wrapper">
+                        <span class="title">Scroll</span>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.3505 26.5258C21.3505 16.2768 29.6896 7.93774 39.9386 7.93774C50.1876 7.93774 58.5266 16.2768 58.5266 26.5258V53.4742C58.5266 63.7233 50.1876 72.0623 39.9386 72.0623C29.6896 72.0623 21.3505 63.7233 21.3505 53.4742V26.5258ZM39.9386 69.4652C48.7563 69.4652 55.9295 62.292 55.9295 53.4742V26.5258C55.9295 17.708 48.7563 10.5348 39.9386 10.5348C31.1208 10.5348 23.9477 17.708 23.9477 26.5258V53.4742C23.9477 62.292 31.1208 69.4652 39.9386 69.4652Z" fill="#101010" fill-opacity="0.2" stroke="#F1F1F1" stroke-width="1.33"/>
+                            <path d="M38.4062 24.0211C38.4062 23.3356 39.0431 22.6482 40.0004 22.6482C40.9577 22.6482 41.5947 23.3356 41.5947 24.0211V34.1607C41.5947 34.8456 40.9571 35.5336 40.0004 35.5336C39.0433 35.5336 38.4062 34.8458 38.4062 34.1607V24.0211Z" fill="#06080C" stroke="#F1F1F1" stroke-width="1.66"/>
+                            </svg>
+                            
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="section-price">
-        <div class="container">
-            <h2>ЦIни та тарифи</h2>
-            <div class="price_list">
-                <div class="container">
-                    <div class="card">
-                        <div class="header_dec"></div>
-                        <div class="info">20 осіб та вище</div>
-                        <h3>Basic</h3>
-                        <ul class="list">
-                            <li> <div class="dec"></div> Доступ до 45 уроків навчання</li>
-                            <li> <div class="dec"></div> Перевірка домашніх завдань куратором</li>
-                            <li> <div class="dec"></div> Додаткові матеріали після кожного уроку</li>
-                            <li> <div class="dec"></div> 4 групових Zoom-сесій питання/відповідь з куратором</li>
-                            <li> <div class="dec"></div> Загальний чат потоку</li>
-                            <li> <div class="dec"></div> Доступ до курсу на 3 місяці</li>
-                        </ul>
-                        <div class="price">
-                            <span class="title">Вартість:</span>
-                            <div class="priceDiscount">
-                                <span class="price">12 500 грн</span>
-                                <span class="title">Без знижки</span>
-                            </div>
-                            <div class="priceDiscount">
-                                <span class="price">10 700 грн</span>
-                                <span class="title">Ціни у блозі</span>
-                            </div>
-                            <div class="priceDiscount dsc">
-                                <span class="price">7000 грн</span>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <button class="btn-ui-1"><span>Купити навчання</span> <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.87099 1.79483L1.06885 10.5208L1.43779 10.9033L10.2399 2.17734L9.87099 1.79483ZM10.7884 10.8077L10.8265 1.22699L10.6574 1.22631V1.15458H1.16073V1.68594H10.2933L10.257 10.8056L10.7884 10.8077Z" fill="#090B08"/>
-                                <path d="M1.06885 10.5208L0.776211 10.8031L0.497793 10.5144L0.782605 10.2321L1.06885 10.5208ZM9.87099 1.79483L9.58475 1.50609L9.87748 1.2159L10.1636 1.51257L9.87099 1.79483ZM1.43779 10.9033L1.72403 11.1921L1.43131 11.4823L1.14516 11.1856L1.43779 10.9033ZM10.2399 2.17734L10.5326 1.89508L10.811 2.18373L10.5262 2.46608L10.2399 2.17734ZM10.8265 1.22699L10.8282 0.82041L11.2347 0.822029L11.2331 1.22861L10.8265 1.22699ZM10.7884 10.8077L11.1949 10.8093L11.1933 11.2159L10.7867 11.2143L10.7884 10.8077ZM10.6574 1.22631L10.6558 1.63289L10.2509 1.63128V1.22631H10.6574ZM10.6574 1.15458V0.748004H11.064V1.15458H10.6574ZM1.16073 1.15458H0.754148V0.748004H1.16073V1.15458ZM1.16073 1.68594V2.09252H0.754148V1.68594H1.16073ZM10.2933 1.68594V1.27936H10.7015L10.6999 1.68756L10.2933 1.68594ZM10.257 10.8056L10.2554 11.2122L9.8488 11.2105L9.85042 10.804L10.257 10.8056ZM0.782605 10.2321L9.58475 1.50609L10.1572 2.08357L1.35509 10.8096L0.782605 10.2321ZM1.14516 11.1856L0.776211 10.8031L1.36148 10.2386L1.73043 10.6211L1.14516 11.1856ZM10.5262 2.46608L1.72403 11.1921L1.15155 10.6146L9.9537 1.8886L10.5262 2.46608ZM10.1636 1.51257L10.5326 1.89508L9.9473 2.4596L9.57836 2.07709L10.1636 1.51257ZM11.2331 1.22861L11.1949 10.8093L10.3818 10.8061L10.42 1.22537L11.2331 1.22861ZM10.6591 0.819736L10.8282 0.82041L10.8249 1.63356L10.6558 1.63289L10.6591 0.819736ZM10.2509 1.22631V1.15458H11.064V1.22631H10.2509ZM10.6574 1.56116H1.16073V0.748004H10.6574V1.56116ZM1.56731 1.15458V1.68594H0.754148V1.15458H1.56731ZM1.16073 1.27936H10.2933V2.09252H1.16073V1.27936ZM9.85042 10.804L9.88676 1.68432L10.6999 1.68756L10.6636 10.8072L9.85042 10.804ZM10.7867 11.2143L10.2554 11.2122L10.2586 10.399L10.79 10.4011L10.7867 11.2143Z" fill="white"/>
-                                </svg>
-                                </button>
-                        </div>
-                        <div class="footer_dec"></div>
-                    </div>
-                    <div class="timer">
-                        <div class="text">
-                            <p>Знижка закінчується:</p>
-                        </div>
-                        <div class="time"></div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="card">
-                        <div class="header_dec"></div>
-                        <div class="info">25 осіб та вище</div>
-                        <h3>STANDART</h3>
-                        <ul class="list">
-                            <li> <div class="dec"></div> Доступ до всіх 60 уроків навчання</li>
-                            <li> <div class="dec"></div> Перевірка домашніх завдань куратором</li>
-                            <li> <div class="dec"></div>Додаткові матеріали після кожного уроку</li>
-                            <li> <div class="dec"></div> 5 групових Zoom-сесій питання/відповідь</li>
-                            <li> <div class="dec"></div> Загальний чат потоку</li>
-                            <li> <div class="dec"></div> Розбір та аудит проектів куратором</li>
-                            <li> <div class="dec"></div> Найкращим студентам – 1 особиста консультація зі мною</li>
-                            <li> <div class="dec"></div> Можливість потрапити у команду</li>
-                            <li> <div class="dec"></div> Доступ до курсу на 4 місяці</li>
-                        </ul>
-                        <div class="price">
-                            <span class="title">Вартість:</span>
-                            <div class="priceDiscount">
-                                <span class="price">16 600 грн</span>
-                                <span class="title">Без знижки</span>
-                            </div>
-                            <div class="priceDiscount">
-                                <span class="price">14 700 грн</span>
-                                <span class="title">Ціни у блозі</span>
-                            </div>
-                            <div class="priceDiscount dsc">
-                                <span class="price">11 000 грн</span>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <button class="btn-ui-1"><span>Купити навчання</span> <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.87099 1.79483L1.06885 10.5208L1.43779 10.9033L10.2399 2.17734L9.87099 1.79483ZM10.7884 10.8077L10.8265 1.22699L10.6574 1.22631V1.15458H1.16073V1.68594H10.2933L10.257 10.8056L10.7884 10.8077Z" fill="#090B08"/>
-                                <path d="M1.06885 10.5208L0.776211 10.8031L0.497793 10.5144L0.782605 10.2321L1.06885 10.5208ZM9.87099 1.79483L9.58475 1.50609L9.87748 1.2159L10.1636 1.51257L9.87099 1.79483ZM1.43779 10.9033L1.72403 11.1921L1.43131 11.4823L1.14516 11.1856L1.43779 10.9033ZM10.2399 2.17734L10.5326 1.89508L10.811 2.18373L10.5262 2.46608L10.2399 2.17734ZM10.8265 1.22699L10.8282 0.82041L11.2347 0.822029L11.2331 1.22861L10.8265 1.22699ZM10.7884 10.8077L11.1949 10.8093L11.1933 11.2159L10.7867 11.2143L10.7884 10.8077ZM10.6574 1.22631L10.6558 1.63289L10.2509 1.63128V1.22631H10.6574ZM10.6574 1.15458V0.748004H11.064V1.15458H10.6574ZM1.16073 1.15458H0.754148V0.748004H1.16073V1.15458ZM1.16073 1.68594V2.09252H0.754148V1.68594H1.16073ZM10.2933 1.68594V1.27936H10.7015L10.6999 1.68756L10.2933 1.68594ZM10.257 10.8056L10.2554 11.2122L9.8488 11.2105L9.85042 10.804L10.257 10.8056ZM0.782605 10.2321L9.58475 1.50609L10.1572 2.08357L1.35509 10.8096L0.782605 10.2321ZM1.14516 11.1856L0.776211 10.8031L1.36148 10.2386L1.73043 10.6211L1.14516 11.1856ZM10.5262 2.46608L1.72403 11.1921L1.15155 10.6146L9.9537 1.8886L10.5262 2.46608ZM10.1636 1.51257L10.5326 1.89508L9.9473 2.4596L9.57836 2.07709L10.1636 1.51257ZM11.2331 1.22861L11.1949 10.8093L10.3818 10.8061L10.42 1.22537L11.2331 1.22861ZM10.6591 0.819736L10.8282 0.82041L10.8249 1.63356L10.6558 1.63289L10.6591 0.819736ZM10.2509 1.22631V1.15458H11.064V1.22631H10.2509ZM10.6574 1.56116H1.16073V0.748004H10.6574V1.56116ZM1.56731 1.15458V1.68594H0.754148V1.15458H1.56731ZM1.16073 1.27936H10.2933V2.09252H1.16073V1.27936ZM9.85042 10.804L9.88676 1.68432L10.6999 1.68756L10.6636 10.8072L9.85042 10.804ZM10.7867 11.2143L10.2554 11.2122L10.2586 10.399L10.79 10.4011L10.7867 11.2143Z" fill="white"/>
-                                </svg>
-                                </button>
-                        </div>
-                        <div class="footer_dec"></div>
-                    </div>
-                    <div class="timer">
-                        <div class="text">
-                            <p>Знижка закінчується:</p>
-                        </div>
-                        <div class="time"></div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="card vip">
-                        <div class="header_dec"></div>
-                        <div class="info">До 5 осіб та вище</div>
-                        <h3>VIP</h3>
-                        <ul class="list">
-                            <li> <div class="dec"></div> Доступ до всіх 60 уроків навчання</li>
-                            <li> <div class="dec"></div> Особиста перевірка домашніх робіт</li>
-                            <li> <div class="dec"></div> Додаткові матеріали після кожного уроку</li>
-                            <li> <div class="dec"></div> 5 групових Zoom-сесій питання/відповідь</li>
-                            <li> <div class="dec"></div> Закритий чат VIP пакета</li>
-                            <li> <div class="dec"></div> Особистий розбір та аудит проектів</li>
-                            <li> <div class="dec"></div> 2 особисті консультації зі мною з питань трафіку
-                                та виходу на зарубіжні ринки</li>
-                            <li> <div class="dec"></div> Можливість потрапити
-                                у команду</li>
-                            <li> <div class="dec"></div> Доступ до курсу 6 місяців</li>
-                        </ul>
-                        <div class="price">
-                            <span class="title">Вартість:</span>
-                            <div class="priceDiscount">
-                                <span class="price">28 400 грн</span>
-                                <span class="title">Без знижки</span>
-                            </div>
-                            <div class="priceDiscount">
-                                <span class="price">26 500 грн</span>
-                                <span class="title">Ціни у блозі</span>
-                            </div>
-                            <div class="priceDiscount dsc">
-                                <span class="price">22 800 грн</span>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <button class="btn-ui-1 vip"><span>Купити навчання</span> <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.87099 1.79483L1.06885 10.5208L1.43779 10.9033L10.2399 2.17734L9.87099 1.79483ZM10.7884 10.8077L10.8265 1.22699L10.6574 1.22631V1.15458H1.16073V1.68594H10.2933L10.257 10.8056L10.7884 10.8077Z" fill="#090B08"/>
-                                <path class="svgColor" d="M1.06885 10.5208L0.776211 10.8031L0.497793 10.5144L0.782605 10.2321L1.06885 10.5208ZM9.87099 1.79483L9.58475 1.50609L9.87748 1.2159L10.1636 1.51257L9.87099 1.79483ZM1.43779 10.9033L1.72403 11.1921L1.43131 11.4823L1.14516 11.1856L1.43779 10.9033ZM10.2399 2.17734L10.5326 1.89508L10.811 2.18373L10.5262 2.46608L10.2399 2.17734ZM10.8265 1.22699L10.8282 0.82041L11.2347 0.822029L11.2331 1.22861L10.8265 1.22699ZM10.7884 10.8077L11.1949 10.8093L11.1933 11.2159L10.7867 11.2143L10.7884 10.8077ZM10.6574 1.22631L10.6558 1.63289L10.2509 1.63128V1.22631H10.6574ZM10.6574 1.15458V0.748004H11.064V1.15458H10.6574ZM1.16073 1.15458H0.754148V0.748004H1.16073V1.15458ZM1.16073 1.68594V2.09252H0.754148V1.68594H1.16073ZM10.2933 1.68594V1.27936H10.7015L10.6999 1.68756L10.2933 1.68594ZM10.257 10.8056L10.2554 11.2122L9.8488 11.2105L9.85042 10.804L10.257 10.8056ZM0.782605 10.2321L9.58475 1.50609L10.1572 2.08357L1.35509 10.8096L0.782605 10.2321ZM1.14516 11.1856L0.776211 10.8031L1.36148 10.2386L1.73043 10.6211L1.14516 11.1856ZM10.5262 2.46608L1.72403 11.1921L1.15155 10.6146L9.9537 1.8886L10.5262 2.46608ZM10.1636 1.51257L10.5326 1.89508L9.9473 2.4596L9.57836 2.07709L10.1636 1.51257ZM11.2331 1.22861L11.1949 10.8093L10.3818 10.8061L10.42 1.22537L11.2331 1.22861ZM10.6591 0.819736L10.8282 0.82041L10.8249 1.63356L10.6558 1.63289L10.6591 0.819736ZM10.2509 1.22631V1.15458H11.064V1.22631H10.2509ZM10.6574 1.56116H1.16073V0.748004H10.6574V1.56116ZM1.56731 1.15458V1.68594H0.754148V1.15458H1.56731ZM1.16073 1.27936H10.2933V2.09252H1.16073V1.27936ZM9.85042 10.804L9.88676 1.68432L10.6999 1.68756L10.6636 10.8072L9.85042 10.804ZM10.7867 11.2143L10.2554 11.2122L10.2586 10.399L10.79 10.4011L10.7867 11.2143Z" fill="white"/>
-                                </svg>
-                                </button>
-                        </div>
-                        <div class="footer_dec"></div>
-                    </div>
-                    <div class="timer">
-                        <div class="text">
-                            <p>Знижка закінчується:</p>
-                        </div>
-                        <div class="time"></div>
-                    </div>
-                </div>
+        </section>
+        <section class="section__shop">
+            <div class="background_images">
+                <img src="/success/resourse/service/backgrunds/p1_bg_display_2.1.svg" class="bg_3" alt="bg"/>
+                <img src="/success/resourse/service/backgrunds/p1_bg_display_2.2.svg" class="bg_4" alt="bg"/>
             </div>
-        </div>
-    </section>
-    <section class="section-variants">
-        <div class="background_images">
-            <img src="/success/resourse/icons/bg_5.svg" class="bg_6" alt="bg"/>
-        </div>
-        <div class="container">
-            <h2>ВарIанти участI</h2>
-            <ul class="containerGrid">
-                <li class="wow fadeIn" data-wow-delay="0">
-                    <h3>100%</h3>
-                    <p>Повна оплата</p>
-                </li>
-                <li class="wow fadeIn" data-wow-delay="300">
-                    <h3>6</h3>
-                    <p>Оплата частинами до 6 місяців [комісію покриває наша команда]</p>
-                </li>
-                <li class="wow fadeIn" data-wow-delay="600"> 
-                    <h3>2-24</h3>
-                    <p>Розстрочка від банку від 2 до 24 місяців</p>
-                </li>
-                <li class="wow fadeIn" data-wow-delay="900">
-                    <h3>50</h3>
-                    <p>Бронь у розмірі 1000грн, щоб зафіксувати своє місце
-                        та зберегти знижку</p>
-                </li>
-                <li class="wow fadeIn" data-wow-delay="1200">
-                    <h3>100%</h3>
-                    <p>Довірча розстрочка від Дмитра Прискоки</p>
-                </li>
-                <li class="send wow fadeIn" data-wow-delay="1500">
-                    <h3>Візьми участь</h3>
-                    <p>Та опануй навички роботи з&nbsp;рекламою Meta для <span class="nowrap">E-commerce</span> ніш</p>
-                    <button class="btn-ui-1 scrollToElem" data-scroll-to=".section-price"> <span>Взяти участь</span> <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.80215 1.85904L1 10.585L1.36894 10.9675L10.1711 2.24155L9.80215 1.85904ZM10.7195 10.8709L10.7577 1.29022L10.5886 1.28955V1.21879H1.09188V1.75015H10.2245L10.1881 10.8688L10.7195 10.8709Z" fill="#090B08"/>
-                        <path d="M1 10.585L0.707364 10.8673L0.428946 10.5786L0.713757 10.2963L1 10.585ZM9.80215 1.85904L9.5159 1.5703L9.80863 1.28011L10.0948 1.57678L9.80215 1.85904ZM1.36894 10.9675L1.65519 11.2563L1.36246 11.5465L1.07631 11.2498L1.36894 10.9675ZM10.1711 2.24155L10.4637 1.95929L10.7421 2.24794L10.4573 2.53029L10.1711 2.24155ZM10.7577 1.29022L10.7593 0.883642L11.1659 0.885262L11.1643 1.29184L10.7577 1.29022ZM10.7195 10.8709L11.1261 10.8726L11.1245 11.2791L10.7179 11.2775L10.7195 10.8709ZM10.5886 1.28955L10.587 1.69612L10.182 1.69451V1.28955H10.5886ZM10.5886 1.21879V0.812213H10.9952V1.21879H10.5886ZM1.09188 1.21879H0.6853V0.812213H1.09188V1.21879ZM1.09188 1.75015V2.15673H0.6853V1.75015H1.09188ZM10.2245 1.75015V1.34357H10.6327L10.6311 1.75177L10.2245 1.75015ZM10.1881 10.8688L10.1865 11.2754L9.77995 11.2738L9.78157 10.8672L10.1881 10.8688ZM0.713757 10.2963L9.5159 1.5703L10.0884 2.14778L1.28624 10.8738L0.713757 10.2963ZM1.07631 11.2498L0.707364 10.8673L1.29264 10.3028L1.66158 10.6853L1.07631 11.2498ZM10.4573 2.53029L1.65519 11.2563L1.0827 10.6788L9.88485 1.95281L10.4573 2.53029ZM10.0948 1.57678L10.4637 1.95929L9.87846 2.52381L9.50951 2.1413L10.0948 1.57678ZM11.1643 1.29184L11.1261 10.8726L10.3129 10.8693L10.3511 1.2886L11.1643 1.29184ZM10.5902 0.882969L10.7593 0.883642L10.7561 1.69679L10.587 1.69612L10.5902 0.882969ZM10.182 1.28955V1.21879H10.9952V1.28955H10.182ZM10.5886 1.62537H1.09188V0.812213H10.5886V1.62537ZM1.49846 1.21879V1.75015H0.6853V1.21879H1.49846ZM1.09188 1.34357H10.2245V2.15673H1.09188V1.34357ZM9.78157 10.8672L9.81791 1.74853L10.6311 1.75177L10.5947 10.8704L9.78157 10.8672ZM10.7179 11.2775L10.1865 11.2754L10.1898 10.4622L10.7211 10.4644L10.7179 11.2775Z" fill="white"/>
-                        </svg>
-                         </button>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="section-comments">
-        <div class="background_images">
-            <img src="/success/resourse/icons/bg_comments.svg" class="bg_comments" alt="bg"/>
-        </div>
-        <div class="container">
-            <h2>вIдгуки</h2>
-            <div class="mobile">
-                <span class="swipe-dec">Свайп</span>
-            </div>
-            <div class="wrapper">
-                <button class="sliderCommentsButtonPrev"> 
-                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.442165 5.85995L6.16524 0.133941C6.35471 -0.0491352 6.65662 -0.0438789 6.8396 0.145683C7.01811 0.330604 7.01811 0.623755 6.8396 0.808648L1.45371 6.1973L6.8396 11.586C7.0258 11.7723 7.0258 12.0743 6.8396 12.2607C6.65335 12.447 6.35146 12.447 6.16524 12.2607L0.442165 6.53466C0.255969 6.34831 0.255969 6.04627 0.442165 5.85995Z" class="btn_svg_QSQE" fill="white"/>
-                    </svg>                        
-                </button>
-                <button class="sliderCommentsButtonNext">
-                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.40195 7.14005L1.67888 12.8661C1.48941 13.0491 1.1875 13.0439 1.00451 12.8543C0.826004 12.6694 0.826004 12.3762 1.00451 12.1914L6.39041 6.8027L1.00451 1.41404C0.818319 1.22772 0.818319 0.925651 1.00451 0.739331C1.19077 0.553041 1.49265 0.553041 1.67888 0.739331L7.40195 6.46534C7.58815 6.65169 7.58815 6.95373 7.40195 7.14005Z" class="btn_svg_QSQE" fill="white"/>
-                    </svg>        
-                </button>
-                <div class="list">
-                    <div class="comment"
-                    data-name="Александр <br> Ясиновский"
-                    data-link="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link"
-                    data-text="
-                Точка а&nbsp;- 0 клиентов в&nbsp;E&nbsp;-&nbspcommerce. 3 клиента - ср.чек 250$.
-                <br><br>
-                Точка Б - 7 проектов (4 E-com) - ср.чек 250-350$.
-                <br><br>
-                Доход 1800$
-                <br><br>
-                На курс шел с&nbsp;запросом разобраться в&nbsp;нише E&nbsp;-&nbspcommerce и выйти на этот рынок. Сейчас я 70% проектов веду в&nbsp;е-комерсе, LTV клиентов уже 3 месяца.
-                    "
-                    >
-                        <div class="wrapperPhoto">
-                            <div class="photo wow fadeIn"> <img src="/success/resourse/photos/comments/image 1.png" alt="photo"/></div>
-                            <h3>Александр <br> Ясиновский</h3>
-                        </div>
-                        <a href="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link" target="_blank">Instagram</a>
-                        <p>На курс шел с&nbsp;запросом разобраться в&nbsp;нише E&nbsp;-&nbspcommerce и выйти на этот рынок. Сейчас 
-                            я 70% проектов веду в&nbsp;е-комерсе, LTV клиентов уже 3 месяца...<span class="open-comments">Читати докладніше</span> </p>
-                    </div>
-                    <div class="comment"
-                    data-name="Юлиан <br> Лесниченко"
-                    data-link="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link"
-                    data-text='
-                Точка а&nbsp;до курса [количество клиентов / средний чек / доход]
-                <br><br>
-                В рекламе около 3-х лет.
-                <br><br>
-                Уже работал ранее с&nbsp;екомом, но были пробелы в&nbsp;знаниях.
-                <br><br>
-                Точка Б через 1-2 месяца после курса [количество клиентов / средний чек / доход]
-                <br><br>
-                Прошел курс "Милион на Еком" от Димы Прискоки, получил ценные фишки, которые применил в&nbsp;работе и получил результат.
-                <br><br>
-                Я доволен курсом и окупил стоимость курса сразу с&nbsp;1-го проекта.
-                <br><br>
-                Очень качественная обратная связь, даже слишком))
-                <br><br>
-                Никогда не встречал такую на курсах, возможно нам просто повезло как первому потоку.
-                    '
-                    >
-                        <div class="wrapperPhoto">
-                            <div class="photo wow fadeIn"> <img src="/success/resourse/photos/comments/image 2.png" alt="photo"/></div>
-                            <h3>Юлиан <br> Лесниченко</h3>
-                        </div>
-                        <a href="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link" target="_blank">Instagram</a>
-                        <p>Я доволен курсом и окупил стоимость курса сразу с&nbsp;1-го проекта. Очень качественная обратная связь, даже слишком)). Никогда не встречал такую на курсах...<span class="open-comments">Читати докладніше</span> </p>
-                    </div>
-                    <div class="comment"
-                    data-name="Александр  <br> Котляр"
-                    data-link="https://www.instagram.com/a.kotlyar_/"
-                    data-text="
-                Точка а&nbsp;до курса [количество клиентов / средний чек / доход]
-                <br><br>
-                Пришел на обучение без опыта работы с&nbsp;нишами E&nbsp;-&nbspcommerce. Купил обучение не просто в&nbsp;рассрочку, а&nbsp;еще и на пополам с&nbsp;другом. Даже на бесплатном вебе я увидел 90% новой и полезной информации, которая могла помочь мне вырасти.
-                <br><br>
-                Точка Б через 1-2 месяца после курса [количество клиентов / средний чек / доход]
-                <br><br>
-                Нашел первые еком проекты. Получил новые знания и фишки, которые помогли мне находить и закрывать клиентов на более высокие чеки и вести проекты на высоком уровне
-                    "
-                    >
-                        <div class="wrapperPhoto">
-                            <div class="photo wow fadeIn"> <img src="/success/resourse/photos/comments/image 3.png" alt="photo"/></div>
-                            <h3>Александр <br> Котляр</h3>
-                        </div>
-                        <a href="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link" target="_blank">Instagram</a>
-                        <p>Пришел на обучение без опыта работы 
-                            с&nbsp;нишами E&nbsp;-&nbspcommerce. Купил обучение не просто в&nbsp;рассрочку, а&nbsp;еще и на пополам 
-                            с&nbsp;другом...<span class="open-comments">Читати докладніше</span> </p>
-                    </div>
-                    <div class="comment"
-                    data-name="Владислав  <br> Мельничак"
-                    data-link="https://www.instagram.com/vladislav_melnychak/?hl=ru"
-                    data-text="
-                3 клиента/средний чек 600$
-                <br><br>
-                4 клиента/чек тот же
-                <br><br>
-                Запрос был разобрать структуру екома, оптимизацию кампаний и маштабирвоания + изучить гугл аналитику и улучшить знание в&nbsp;динамической рекламы
-                <br><br>
-                Изменилось все, от понимания и структуры до спокойных действий в&nbsp;случаи каких-то проблем, знаю как решать + Дима всегда в&nbsp;чате помогает или в&nbsp;ЛС
-                <br><br>
-                Узнал как рабоать с&nbsp;объявлениями в&nbsp;динамической рекламе, какие виды и как их делать, подтягивать каталог и сегментировать по группам.
-                <br><br>
-                Выстроил полную структруту еком проетка, до этого был хаос.
-                <br><br>
-                Научился правильно вести аналитику, куда смотерть, что учитывать, чтобы понимать чистую прибыль клиента.
-                <br><br>
-                Узнал о новых вариантах масштабирования.
-                Курс очень насыщен нужной инфой для тех кто хочет владеть рекламой в&nbsp;еком.
-                <br><br>
-                Для тех кто знает английский, есть модуль по продаже своих услуг на апворк.
-                <br><br>
-                Главное, что теперь нет паники, все мои запросы закрыты и я понимаю как и на что влиять в&nbsp;своих проектах.
-                    "
-                    >
-                        <div class="wrapperPhoto">
-                            <div class="photo wow fadeIn"> <img src="/success/resourse/photos/comments/image 4.png" alt="photo"/></div>
-                            <h3>Владислав <br> Мельничак</h3>
-                        </div>
-                        <a href="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link" target="_blank">Instagram</a>
-                        <p>Запрос был разобрать структуру екома, оптимизацию кампаний и маштабирвоания + изучить гугл аналитику и улучшить знание 
-                            в&nbsp;динамической рекламы...<span class="open-comments">Читати докладніше</span> </p>
-                    </div>
-                    <div class="comment"
-                    data-name="Даниил <br> Козедуб"
-                    data-link="https://www.instagram.com/kozzedub/"
-                    data-text="
-                Точка а&nbsp;до курса [количество клиентов / средний чек / доход]
-                <br><br>
-                Таргетолог, работал с&nbsp;Инсташопами, залетел еком проект и я технически не понимал как настроить этот проект, но настроил криво коса. Но понял, что мне не хватает знаний и увидел программу курса Димы и понял, что она закрывает все мои боли.
-                <br><br>
-                Средний чек 300-400$, было 4-5 проектов
-                <br><br>
-                Точка Б через 1-2 месяца после курса [количество клиентов / средний чек / доход]
-                <br><br>
-                Сейчас 9-10 проектов, средний чек 400$, вырос LTV проектов. Раньше проекты больше месяца проекты не задерживались, сейчас работаем уже 3-4 месяца спокойно. Клиенты стали ко мне лучше относиться, выделять большие бюджеты, за счет моих знаний и понимания процесса, поэтому не уходят. Планирую договариваться сейчас на % от бюджета.
-                    "
-                    >
-                        <div class="wrapperPhoto">
-                            <div class="photo wow fadeIn"> <img src="/success/resourse/photos/comments/image 5.png" alt="photo"/></div>
-                            <h3>Даниил <br> Козедуб</h3>
-                        </div>
-                        <a href="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link" target="_blank">Instagram</a>
-                        <p>Таргетолог, работал с&nbsp;Инсташопами, залетел еком проект и я технически не понимал как настроить этот проект, но настроил криво коса...<span class="open-comments">Читати докладніше</span> </p>
-                    </div>
-                    <div class="comment"
-                    data-name="Даниил  <br> Боднар"
-                    data-link="https://www.instagram.com/dbodnar.fb/"
-                    data-text="
-                Точка а&nbsp;до курса [количество клиентов / средний чек / доход]
-                <br><br>
-                Был средний чек 300$
-                <br><br>
-                В целом изначально были сомнения по поводу того идти на курс или нет, но чуйка сказала, а&nbsp;чего терять давай на VIP😂
-                <br><br>
-                Шел на обучения с&nbsp;целью повысить уровень своих знаний и лично поработать с&nbsp;Димой.
-                <br><br>
-                Точка Б через 1-2 месяца после курса [количество клиентов / средний чек / доход]
-                <br><br>
-                Были сложности более технической частью, аналитике на обучении нашел ответы на все свои вопросы. Сейчас работаю по большей части с&nbsp;зарубежными проектами, сумарно 10 проектов и все екомы, 2 клиента на проценте и фикс от 400$
-                    "
-                    >
-                        <div class="wrapperPhoto">
-                            <div class="photo wow fadeIn"> <img src="/success/resourse/photos/comments/image 6.png" alt="photo"/></div>
-                            <h3>Владислав <br> Вдовыка</h3>
-                        </div>
-                        <a href="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link" target="_blank">Instagram</a>
-                        <p>В целом изначально были сомнения по поводу того идти на курс или нет, но чуйка сказала, а&nbsp;чего терять давай на VIP😂...<span class="open-comments">Читати докладніше</span> </p>
-                    </div>
-
-                    <div class="comment"
-                    data-name="Владислав <br> Вдовыка"
-                    data-link="https://www.instagram.com/vlad.vdovyka/"
-                    data-text="
-                    Точка А до курса [количество клиентов / средний чек / доход]
-<br><br>
-                    СЕО маркетингового  агенства Ранее не работал с екомами. На курс шел за дополнительной квалификацией. Раньше думал, что еком это геморно, не хватало экспетности. Поэтому в первую очередь брал курс для прокачки навыков. 
-                    <br><br>            
-                    Точка Б через 1-2 месяца после курса [количество клиентов / средний чек / доход]
-                    <br><br>
-                    Закрыл два проекта на еком, одному проекту смогли допродать комплексно наши услуги.  То есть мы закрывали проект на еком, но смогли ему допродать ему услугу по емаил-маркетингу. 
-                    <br><br>
-                    Сейчас вижу свое масштабирование в екоме, а именно в работе с западными рынками. Мы продобавали лидогенерацию с ними ранее, но они не доверяют этому, а еком для них это прозрачно и понятно.
-                    "
-                    >
-                        <div class="wrapperPhoto">
-                            <div class="photo wow fadeIn"> <img src="/success/resourse/photos/comments/image 7.png" alt="photo"/></div>
-                            <h3>Александр <br> Ясиновский</h3>
-                        </div>
-                        <a href="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link" target="_blank">Instagram</a>
-                        <p>Сейчас вижу свое масштабирование в екоме, а именно в работе с западными рынками. Мы продобавали лидогенерацию с ними ранее, но они не доверяют этому, а еком для них это прозрачно и понятно...<span class="open-comments">Читати докладніше</span> </p>
-                    </div>
-
-                    <div class="comment"
-                    data-name="Ігор <br> Галущак"
-                    data-link="https://www.instagram.com/vlad.vdovyka/"
-                    data-text="
-                    Хотів би подякувати Дімі за курс по е-комерсу у Фейсбук.
-                    Я б сказав, що цей курс зроблений «як для своїх».
-                    <br><br>
-                    Інформація подана дуже структуровано та змістовно.
-                    А сам Діма, завжди дослухався до наших прохань і додавав необхідну інформацію, яка нас цікавила. А це автоматично підвищує цінність курсу на ринку, оскільки тільки малий відсоток лекторів працюють за таким підходом.
-                    <br><br>
-                    Подача була без води, лише суха практична інформація.
-                    Оцінка 11/10! Я максимально задоволений курсом та знанням, які отримав.
-                    "
-                    >
-                        <div class="wrapperPhoto">
-                            <div class="photo wow fadeIn"> <img src="/success/resourse/photos/comments/image 8.png" alt="photo"/></div>
-                            <h3>Галущак <br> Галущак</h3>
-                        </div>
-                        <a href="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link" target="_blank">Instagram</a>
-                        <p>Подача була без води, лише суха практична інформація.
-                            Оцінка 11/10! Я максимально задоволений курсом та знанням, які отримав....<span class="open-comments">Читати докладніше</span> </p>
-                    </div>
-
-                    <div class="comment"
-                    data-name="Вадим <br> КотIвець"
-                    data-link="https://t.me/VadimkT"
-                    data-social="telegram"
-                    data-text="
-                    По курсу отлично проделанная работа. Модули были понятные, всю информацию разложил по полочкам. До твоего курса проходил курсы у Таргеториум и знаешь, их уроки были сложные,долгие и многое не запомнилось, хотя перепроходил полностью их)
-<br><br>    
-Твои же были информативнее и понятнее. Уроки были в записи и это огромный плюс. 
-Рассказал все простыми словами и главно показал как должно быть. 
-<br><br>
-Теперь протестили твои идеи в наших E-com проектах, тестируем  Instant Experience, и cross/up sell стратегии пока не внедрили + Очень помог документ с ТЗ для программиста по установке фида и настройке событий. 
-<br><br>
-Все что можем, командой внедряем. Хочу уже блок по гугл аналитике пройти скорее 😄
-<br><br>
-Завтра на 9 утра продолжаем  в изучать модули с курса💪
-<br><br>
-<br><br>
-По курсу думаю хотелось бы увидеть  блок по креативам какие за все время запускали, больше увидеть по нишам что работало, кейсы
-                    "
-                    >
-                        <div class="wrapperPhoto">
-                            <div class="photo wow fadeIn"> <img src="/success/resourse/photos/comments/image 9.png" alt="photo"/></div>
-                            <h3>Вадим <br> Котiвець</h3>
-                        </div>
-                        <a href="https://instagram.com/yasinovsky_alexandr?utm_medium=copy_link" target="_blank">Telegram</a>
-                        <p>Привет, да в любом случаи допройду и дз последнее осталось доздать, заполнил его но там выше сообщением вопрос задавал 👌  и конечно домашку хочу доздать, потому что хочется получить рекомендацию от Жени на UpWork, может клиента подкинет)
-                            <span class="open-comments">Читати докладніше</span> </p>
-                    </div>
-
-                    <div class="comment video" data-link="https://www.youtube.com/embed/s0z2FKqxT9M">
-                        <img src="/success/resourse/photos/comments/prewie_video_1.png" alt="video" />
-                        <div class="play_wrapper">
-                            <img class="play" src="/success/resourse/icons/play.svg" alt="play" />
-                        </div>
-                    </div>
-
-                    <div class="comment video" data-link="https://www.youtube.com/embed/P3l9xEQKGnY">
-                        <img src="/success/resourse/photos/comments/prewie_video_2.png" alt="video" />
-                        <div class="play_wrapper">
-                            <img class="play" src="/success/resourse/icons/play.svg" alt="play" />
-                        </div>
-                    </div>
-
-                    <div class="comment video" data-link="https://www.youtube.com/embed/0wlMOiBS2hE">
-                        <img src="/success/resourse/photos/comments/prewie_video_3.png" alt="video" />
-                        <div class="play_wrapper">
-                            <img class="play" src="/success/resourse/icons/play.svg" alt="play" />
-                        </div>
-                    </div>
-
-                    <div class="comment video" data-link="https://www.youtube.com/embed/WQok1j7hNWc">
-                        <img src="/success/resourse/photos/comments/prewie_video_4.png" alt="video" />
-                        <div class="play_wrapper">
-                            <img class="play" src="/success/resourse/icons/play.svg" alt="play" />
-                        </div>
-                    </div>
+            <div class="container">
+                <span class="textNav">С каждым годом</span>
+                <div class="middle">
+                    <h2>
+                        <span class="text">Рынок электронной </span>
+                        <span class="text">коммерции </span>
+                        <span class="text">стремительно </span>
+                        <span class="text">растет!</span>
+                    </h2>
+                    <p>По данным <a href="#">eMarketer</a> ожидается, что в 2022 году мировой рынок
+                        электронной коммерции составит $5.42 триллиона. </p>
+                    <b>А к 2024 рынок вырастет 
+                        до&nbsp;$6.38 триллиона!</b>
 
                 </div>
+                <img src="/success/resourse/service/images/image_d2.png" class="image" alt="image"/>
             </div>
-    </section>
-    <section class="section-answer">
-        <div class="container">
-            <h2>вIдповIдI на запитання</h2>
-            <ul class="list" id="answer_sect">
-                <li> 
-                    <dec class="open"><div class="left"></div> <div class="right"></div></dec>
-                    <h3>Яка тривалість навчання?</h3>
-                    <div class="block">
-                        <p>Тривалість навчання складає від 5 до 7 залежно від тарифу курсу, який ви обрали.</p>
-                    </div>
-                </li>
-                <li> 
-                    <dec class="open"><div class="left"></div> <div class="right"></div></dec>
-                    <h3>Чи підійде мені навчання, якщо я новачок?</h3>
-                    <div class="block">
-                        <p>Навчання підійде для тих, хто має базові знання у таргетованій рекламі та має досвід роботи хоча б з 1-2 проектами. Для тих, у кого немає зовсім досвіду в рекламі, навчання не підійде.</p>
-                    </div>
-                </li>
-                <li> 
-                    <dec class="open"><div class="left"></div> <div class="right"></div></dec>
-                    <h3>На якій платформі проходитиме навчання?</h3>
-                    <div class="block">
-                        <p>Це класична платформа для навчання у браузері, для учня він майже нічим не відрізняється від Геткурсу/Антитренінгів. Усередині вона досить приємна у використанні. Докладніше ви можете ознайомитись з платформою за посиланням: <a href="https://teachable.com/" target="_blank">https://teachable.com/</a></p>
-                    </div>
-                </li>
-                <li> 
-                    <dec class="open"><div class="left"></div> <div class="right"></div></dec>
-                    <h3>На який час для мене буде доступне навчання?</h3>
-                    <div class="block">
-                        <p>Навчання буде доступним для вас на платформі від 3 до 6 місяців в залежності від тарифу курсу, який ви обрали. Також ми надаємо індивідуальну можливість продовжити доступ до навчання за додаткову оплату. </p>
-                    </div>
-                </li>
-                <li> 
-                    <dec class="open"><div class="left"></div> <div class="right"></div></dec>
-                    <h3>Чи можна буде перевестись на пакет вище під час навчання?</h3>
-                    <div class="block">
-                        <p>Так можна. Для цього потрібно зв'язатися зі спікером курсу. </p>
-                    </div>
-                </li>
-                <li> 
-                    <dec class="open"><div class="left"></div> <div class="right"></div></dec>
-                    <h3>Якщо немає проекту на якому я можу тренуватися?</h3>
-                    <div class="block">
-                        <p> У цьому випадку у вас є 2 варіанти:
-                            <br>
-                            1 – протягом навчання самостійно закрити проект, з яким працюватимете.
-                            <br>
-                            2 – користуватися нашим “симулятором проекту”. З його допомогою ви зможете розібратися, як технічно правильно налаштувати <span class="nowrap">Е-ком</span> і підготувати проект до запуску реклами.</p>
-                    </div>
-                </li>
-                <li> 
-                    <dec class="open"><div class="left"></div> <div class="right"></div></dec>
-                    <h3>Чи можу я потрапити до команди після проходження навчання?</h3>
-                    <div class="block">
-                        <p>Так, найкращі учні тарифу Standart та VIP мають можливість потрапити
-                            до команди після закінчення навчання. </p>
-                    </div>
-                </li>
-                <li> 
-                    <dec class="open"><div class="left"></div> <div class="right"></div></dec>
-                    <h3>Чи зможу я сплатити за навчання частинами (розстрочка)? </h3>
-                    <div class="block">
-                        <p>Є способи оплати розстрочкою:
-                            <br>
-                            — Від банку з розбивкою платежів до 6 місяців
-                            <br>
-                            —  довірча розстрочка на 2 платежі у разі, якщо банк не видав розстрочку.
-                            <br>
-                            Детальну інформацію щодо підключення розстрочки ви можете отримати написавши Дмитру в особисті повідомлення</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="section-callback">
-        
-        <div class="background_images">
-            <img src="/success/resourse/icons/bg_6.svg" class="bg_7" alt="bg"/>
-        </div>
-        <div class="container">
-            <h2>залишилися питання?</h2>
-            <div class="wrapper">
+        </section>
+        <section class="section__brend">
+            <div class="container">
+                <span class="textNav">Вместе с этим стремительным ростом</span>
                 <div class="left">
-                    <p>Якщо виникли питання, заповніть форму і наш менеджер з вами зв'яжеться найближчим часом</p>
+                    <h2>
+                        <span class="text">Появляется</span>
+                        <span class="text">все больше</span>
+                        <span class="text">брендов</span>
+                    </h2>
+                    <span class="small">И агентств</span>
                 </div>
                 <div class="right">
-                        <input id="input_name_callback" type="name" placeholder="Ім'я" class="input-ui-1"/>
-                        <input type="phone" id="input_phone_callback" placeholder="Телефон" class="input-ui-1"/>
-                        <input type="text" id="input_email_callback" placeholder="Пошта" class="input-ui-1"/>
-                        <button class="btn-ui-6" id="form-send"><span>Відправити заявку</span> <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.80215 1.85831L1 10.5843L1.36894 10.9668L10.1711 2.24082L9.80215 1.85831ZM10.7195 10.8702L10.7577 1.28949L10.5886 1.28881V1.21806H1.09188V1.74942H10.2245L10.1881 10.8681L10.7195 10.8702Z" fill="#090B08"/>
-                            <path d="M1 10.5843L0.707364 10.8665L0.428946 10.5779L0.713757 10.2955L1 10.5843ZM9.80215 1.85831L9.5159 1.56957L9.80863 1.27938L10.0948 1.57605L9.80215 1.85831ZM1.36894 10.9668L1.65519 11.2555L1.36246 11.5457L1.07631 11.2491L1.36894 10.9668ZM10.1711 2.24082L10.4637 1.95856L10.7421 2.24721L10.4573 2.52956L10.1711 2.24082ZM10.7577 1.28949L10.7593 0.88291L11.1659 0.884529L11.1643 1.29111L10.7577 1.28949ZM10.7195 10.8702L11.1261 10.8718L11.1245 11.2784L10.7179 11.2768L10.7195 10.8702ZM10.5886 1.28881L10.587 1.69539L10.182 1.69378V1.28881H10.5886ZM10.5886 1.21806V0.811481H10.9952V1.21806H10.5886ZM1.09188 1.21806H0.6853V0.811481H1.09188V1.21806ZM1.09188 1.74942V2.156H0.6853V1.74942H1.09188ZM10.2245 1.74942V1.34284H10.6327L10.6311 1.75104L10.2245 1.74942ZM10.1881 10.8681L10.1865 11.2747L9.77995 11.273L9.78157 10.8665L10.1881 10.8681ZM0.713757 10.2955L9.5159 1.56957L10.0884 2.14705L1.28624 10.873L0.713757 10.2955ZM1.07631 11.2491L0.707364 10.8665L1.29264 10.302L1.66158 10.6845L1.07631 11.2491ZM10.4573 2.52956L1.65519 11.2555L1.0827 10.6781L9.88485 1.95208L10.4573 2.52956ZM10.0948 1.57605L10.4637 1.95856L9.87846 2.52308L9.50951 2.14057L10.0948 1.57605ZM11.1643 1.29111L11.1261 10.8718L10.3129 10.8686L10.3511 1.28787L11.1643 1.29111ZM10.5902 0.882236L10.7593 0.88291L10.7561 1.69606L10.587 1.69539L10.5902 0.882236ZM10.182 1.28881V1.21806H10.9952V1.28881H10.182ZM10.5886 1.62464H1.09188V0.811481H10.5886V1.62464ZM1.49846 1.21806V1.74942H0.6853V1.21806H1.49846ZM1.09188 1.34284H10.2245V2.156H1.09188V1.34284ZM9.78157 10.8665L9.81791 1.7478L10.6311 1.75104L10.5947 10.8697L9.78157 10.8665ZM10.7179 11.2768L10.1865 11.2747L10.1898 10.4615L10.7211 10.4636L10.7179 11.2768Z" fill="white"/>
-                            </svg>
-                            </button>
+                    <div class="image-wrapper">
+                        <img src="/success/resourse/service/images/image_d3.png" alt="image"/>
+                    </div>
+                    <p>Которые выделяют большие рекламные бюджеты 
+                        и платят <span>от $1,000 начинающим и от $2,000 продвинутым</span> специалистам за проектную работу</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="section__work">
+            <div class="background_images">
+                <img class="bg_6" src="/success/resourse/service/backgrunds/p1_bg_display_1.1.svg" alt="bg"/>
+            </div>
+            <div class="container">
+                <div class="background_images">
+                    <img class="bg_5" src="/success/resourse/service/icons/4-1.gif" alt="bg"/>
+                </div>
+                <div class="left">
+                    <h2>Не упускай</h2>
+                </div>
+                <div class="right">
+                    <div class="header">
+                        <div class="dec"></div>
+                        <span class="title mob">Не упускай</span>
+                        <span class="title">возможность</span>
+                        <span class="title">освоить навык работы</span>
+                    </div>
+                    <b>с рекламой для E-commerce ниш</b>
+                    <p>Выйти на зарубежные рынки и зарабатывать деньги 
+                        на быстрорастущем рынке 
+                        в онлайне!</p>
+                    <div class="button__feedback">
+                        <span class="title">Об академии</span>
+                        <button class="ui-button-feedback">
+                            <svg width="167" height="166" viewBox="0 0 167 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="83.6172" cy="83" r="83" fill="#E4622A"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M98.4876 69.4011L98.603 98.3713L69.0066 69L67.6172 70.439L97.4053 100H67.9929V102H99.9581V101.644L100.616 101.641L100.488 69.3932L98.4876 69.4011Z" fill="white"/>
+                                <path d="M98.603 98.3713L98.2508 98.7262L99.1078 99.5767L99.103 98.3693L98.603 98.3713ZM98.4876 69.4011L98.4856 68.9011L97.9856 68.9031L97.9876 69.4031L98.4876 69.4011ZM69.0066 69L69.3588 68.6451L68.999 68.288L68.6469 68.6527L69.0066 69ZM67.6172 70.439L67.2575 70.0916L66.9149 70.4464L67.265 70.7939L67.6172 70.439ZM97.4053 100V100.5H98.6189L97.7575 99.6456L97.4053 100ZM67.9929 100V99.5005H67.4929V100H67.9929ZM67.9929 102H67.4929V102.5H67.9929V102ZM99.9581 102V102.5H100.458V102H99.9581ZM99.9581 101.644L99.9561 101.144L99.4581 101.146V101.644H99.9581ZM100.616 101.641L100.618 102.141L101.118 102.139L101.116 101.639L100.616 101.641ZM100.488 69.3932L100.988 69.3912L100.986 68.8912L100.486 68.8932L100.488 69.3932ZM99.103 98.3693L98.9876 69.3991L97.9876 69.4031L98.103 98.3733L99.103 98.3693ZM68.6544 69.3549L98.2508 98.7262L98.9552 98.0164L69.3588 68.6451L68.6544 69.3549ZM67.9769 70.7863L69.3663 69.3473L68.6469 68.6527L67.2575 70.0916L67.9769 70.7863ZM97.7575 99.6456L67.9694 70.0841L67.265 70.7939L97.0531 100.355L97.7575 99.6456ZM67.9929 100.5H97.4053V99.5005H67.9929V100.5ZM68.4929 102V100H67.4929V102H68.4929ZM99.9581 101.5H67.9929V102.5H99.9581V101.5ZM99.4581 101.644V102H100.458V101.644H99.4581ZM100.614 101.141L99.9561 101.144L99.9601 102.144L100.618 102.141L100.614 101.141ZM99.9875 69.3952L100.116 101.643L101.116 101.639L100.988 69.3912L99.9875 69.3952ZM98.4895 69.9011L100.49 69.8932L100.486 68.8932L98.4856 68.9011L98.4895 69.9011Z" fill="white"/>
+                                </svg>                                
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__about">
+            <div class="background_images">
+                <img src="/success/resourse/service/backgrunds/p1_bg_display_5.1.svg" class="bg_7" alt="bg"/>
+            </div>
+            <div class="container">
+                <div class="middle">
+                    <div class="list">
+                        <div class="left">
+                            <span class="title">привет!</span>
+                            <div class="dec"></div>
+                        </div>
+                        <div class="right">
+                            <h3>Я Дима – основатель образовательной платформы Edu.pro</h3>
+                        </div>
+                    </div>
+                    <div class="listBig">
+                        <span class="title_left">Мой путь начался</span>
+                        <span class="title">еще в 2018 году, </span>
+
+                        <span class="title_left mob_s">Мой путь</span>
+                        <span class="title mob_s">начался еще </span>
+                        <span class="title mob_s">в 2018 году,</span>
+                        <b>когда впервые узнал о таргетированной рекламе</b>
+                        <p>Тогда я посвятил 2 года работы в топовых маркетинговых агентств Украины оттачивая навыки рекламы в нишах интернет-магазинов</p>
+
+                        <div class="wrapper-background-image">
+                            <a href="#" class="youtube">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_369_175)">
+                                    <path d="M21.6933 5.7581C21.5779 4.79477 20.67 3.87104 19.7202 3.74728C13.928 3.0276 8.07093 3.0276 2.28066 3.74728C1.33001 3.87077 0.422164 4.79477 0.306683 5.7581C-0.102228 9.28864 -0.102228 12.7119 0.306683 16.2416C0.422164 17.2049 1.33001 18.1295 2.28066 18.2524C8.07093 18.9721 13.9282 18.9721 19.7202 18.2524C20.67 18.1297 21.5779 17.2049 21.6933 16.2416C22.1023 12.7122 22.1023 9.28864 21.6933 5.7581ZM9.16655 14.6672V7.33363L14.6667 11.0005L9.16655 14.6672Z" fill="#E92B2B"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_369_175">
+                                    <rect width="22" height="22" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>                                    
+                            </a>
+                            <img src="/success/resourse/service/images/image_d5.png" alt="bg"/>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="left">
+                            <span class="title small">позже</span>
+                        </div>
+                        <div class="right">
+                            <h3>создал блог в Инстаграм</h3>
+                            <p>Где начал рассказывать о создании собственного performance-маркетингового агентства, выходы на зарубежные рынки и работу с известными E-commerce брендами</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="left">
+                            <span class="title small">Со временем</span>
+                        </div>
+                        <div class="right">
+                            <h3>блог перерос в&nbsp;образовательную платформу</h3>
+                            <p class="small">Где я впервые поделился опытом работы с рекламой Facebook для E-commerce рынка. Тогда пришла идея создать комплексное обучение по рекламе для ниш электронной коммерции</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__education">
+            <div class="background_images">
+                <img class="bg_8" src="/success/resourse/service/backgrunds/p1_bg_display_6.1.svg" alt="bg"/>
+            </div>
+            <div class="container">
+                <div class="header">
+                    <div class="left">
+                        <img src="/success/resourse/service/icons/text.gif" class="bg_customs" alt="bg"/>
+                    </div>
+                    <div class="right">
+                        <h2><span>Обучайтесь</span> <span>бесплатно!</span></h2>
+                        <div class="wrapper">
+                            <p>Ты сможешь найти полезную информацию о работе с разными рекламными платформами: Google, Facebook, TikTok, Pinterest и не только!</p>
+                            
+                            <a href="#" class="ui-link-2">Перейти в блог</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-blogs swiper">
+                   <div class="swiper-wrapper">
+                    <div class="wrapper-blog swiper-slide big">
+                        <img class="main_img_blog" src="/success/resourse/resours/blogs/1.png" alt="bg" />
+                        <div class="control">
+                            <h3>Что такое Shopify-дропшиппинг</h3>
+
+                            <div class="link">
+                                <span class="title">Читать далее</span>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.561 19.0967V4.58594L2.3894 19.6426L1 18.2036L16.3208 2.99882H1.52304V0.998821H19.5966V2.99882H19.561V19.0967H17.561Z" fill="#06080C"/>
+                                    <path d="M17.561 4.58594L17.3285 4.35171L17.891 3.79352V4.58594H17.561ZM17.561 19.0967V19.4267H17.231V19.0967H17.561ZM2.3894 19.6426L2.62186 19.8768L2.38439 20.1125L2.152 19.8718L2.3894 19.6426ZM1 18.2036L0.762599 18.4328L0.536507 18.1986L0.767544 17.9693L1 18.2036ZM16.3208 2.99882V2.66882H17.1218L16.5533 3.23305L16.3208 2.99882ZM1.52304 2.99882V3.32882H1.19304V2.99882H1.52304ZM1.52304 0.998821H1.19304V0.668821H1.52304V0.998821ZM19.5966 0.998821V0.668821H19.9266V0.998821H19.5966ZM19.5966 2.99882H19.9266V3.32882H19.5966V2.99882ZM19.561 2.99882H19.231V2.66882H19.561V2.99882ZM19.561 19.0967H19.891V19.4267H19.561V19.0967ZM17.891 4.58594V19.0967H17.231V4.58594H17.891ZM2.15695 19.4083L17.3285 4.35171L17.7934 4.82017L2.62186 19.8768L2.15695 19.4083ZM1.2374 17.9744L2.62681 19.4134L2.152 19.8718L0.762599 18.4328L1.2374 17.9744ZM16.5533 3.23305L1.23246 18.4378L0.767544 17.9693L16.0884 2.76459L16.5533 3.23305ZM1.52304 2.66882H16.3208V3.32882H1.52304V2.66882ZM1.85304 0.998821V2.99882H1.19304V0.998821H1.85304ZM19.5966 1.32882H1.52304V0.668821H19.5966V1.32882ZM19.2666 2.99882V0.998821H19.9266V2.99882H19.2666ZM19.561 2.66882H19.5966V3.32882H19.561V2.66882ZM19.231 19.0967V2.99882H19.891V19.0967H19.231ZM17.561 18.7667H19.561V19.4267H17.561V18.7667Z" fill="#F1F1F1"/>
+                                    </svg>  
+                            </div>                              
+                        </div>
+                    </div>
+                    <div class="wrapper-blog swiper-slide">
+                        <img class="main_img_blog" src="/success/resourse/resours/blogs/2.png" alt="bg" />
+                        <div class="control">
+                            <h3>Улучшаем трекинг событий с Omega Multi Facebook</h3>
+
+                            <div class="link">
+                                <span class="title">Читать далее</span>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.561 19.0967V4.58594L2.3894 19.6426L1 18.2036L16.3208 2.99882H1.52304V0.998821H19.5966V2.99882H19.561V19.0967H17.561Z" fill="#06080C"/>
+                                    <path d="M17.561 4.58594L17.3285 4.35171L17.891 3.79352V4.58594H17.561ZM17.561 19.0967V19.4267H17.231V19.0967H17.561ZM2.3894 19.6426L2.62186 19.8768L2.38439 20.1125L2.152 19.8718L2.3894 19.6426ZM1 18.2036L0.762599 18.4328L0.536507 18.1986L0.767544 17.9693L1 18.2036ZM16.3208 2.99882V2.66882H17.1218L16.5533 3.23305L16.3208 2.99882ZM1.52304 2.99882V3.32882H1.19304V2.99882H1.52304ZM1.52304 0.998821H1.19304V0.668821H1.52304V0.998821ZM19.5966 0.998821V0.668821H19.9266V0.998821H19.5966ZM19.5966 2.99882H19.9266V3.32882H19.5966V2.99882ZM19.561 2.99882H19.231V2.66882H19.561V2.99882ZM19.561 19.0967H19.891V19.4267H19.561V19.0967ZM17.891 4.58594V19.0967H17.231V4.58594H17.891ZM2.15695 19.4083L17.3285 4.35171L17.7934 4.82017L2.62186 19.8768L2.15695 19.4083ZM1.2374 17.9744L2.62681 19.4134L2.152 19.8718L0.762599 18.4328L1.2374 17.9744ZM16.5533 3.23305L1.23246 18.4378L0.767544 17.9693L16.0884 2.76459L16.5533 3.23305ZM1.52304 2.66882H16.3208V3.32882H1.52304V2.66882ZM1.85304 0.998821V2.99882H1.19304V0.998821H1.85304ZM19.5966 1.32882H1.52304V0.668821H19.5966V1.32882ZM19.2666 2.99882V0.998821H19.9266V2.99882H19.2666ZM19.561 2.66882H19.5966V3.32882H19.561V2.66882ZM19.231 19.0967V2.99882H19.891V19.0967H19.231ZM17.561 18.7667H19.561V19.4267H17.561V18.7667Z" fill="#F1F1F1"/>
+                                    </svg>  
+                            </div>                              
+                        </div>
+                    </div>
+                    <div class="wrapper-blog swiper-slide">
+                        <img class="main_img_blog" src="/success/resourse/resours/blogs/3.png" alt="bg" />
+                        <div class="control">
+                            <h3>Улучшаем трекинг событий с Omega Multi Facebook</h3>
+
+                            <div class="link">
+                                <span class="title">Читать далее</span>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.561 19.0967V4.58594L2.3894 19.6426L1 18.2036L16.3208 2.99882H1.52304V0.998821H19.5966V2.99882H19.561V19.0967H17.561Z" fill="#06080C"/>
+                                    <path d="M17.561 4.58594L17.3285 4.35171L17.891 3.79352V4.58594H17.561ZM17.561 19.0967V19.4267H17.231V19.0967H17.561ZM2.3894 19.6426L2.62186 19.8768L2.38439 20.1125L2.152 19.8718L2.3894 19.6426ZM1 18.2036L0.762599 18.4328L0.536507 18.1986L0.767544 17.9693L1 18.2036ZM16.3208 2.99882V2.66882H17.1218L16.5533 3.23305L16.3208 2.99882ZM1.52304 2.99882V3.32882H1.19304V2.99882H1.52304ZM1.52304 0.998821H1.19304V0.668821H1.52304V0.998821ZM19.5966 0.998821V0.668821H19.9266V0.998821H19.5966ZM19.5966 2.99882H19.9266V3.32882H19.5966V2.99882ZM19.561 2.99882H19.231V2.66882H19.561V2.99882ZM19.561 19.0967H19.891V19.4267H19.561V19.0967ZM17.891 4.58594V19.0967H17.231V4.58594H17.891ZM2.15695 19.4083L17.3285 4.35171L17.7934 4.82017L2.62186 19.8768L2.15695 19.4083ZM1.2374 17.9744L2.62681 19.4134L2.152 19.8718L0.762599 18.4328L1.2374 17.9744ZM16.5533 3.23305L1.23246 18.4378L0.767544 17.9693L16.0884 2.76459L16.5533 3.23305ZM1.52304 2.66882H16.3208V3.32882H1.52304V2.66882ZM1.85304 0.998821V2.99882H1.19304V0.998821H1.85304ZM19.5966 1.32882H1.52304V0.668821H19.5966V1.32882ZM19.2666 2.99882V0.998821H19.9266V2.99882H19.2666ZM19.561 2.66882H19.5966V3.32882H19.561V2.66882ZM19.231 19.0967V2.99882H19.891V19.0967H19.231ZM17.561 18.7667H19.561V19.4267H17.561V18.7667Z" fill="#F1F1F1"/>
+                                    </svg>  
+                            </div>                              
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__programs">
+            <div class="header-block">
+                <div class="container">
+                    <div class="background_images">
+                        <img src="/success/resourse/service/backgrunds/dec_1.png" class="bg_9" alt="bg"/>
+                    </div>
+                    <div class="textNav">edu.rpo</div>
+                    <h2><span>Программы</span><span> обучения:</span></h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cards">
+                    <div class="background_images">
+                        <img src="/success/resourse/service/backgrunds/p1_bg_display_7.2.svg" class="bg_10" alt="bg"/>
+                    </div>
+                    <div class="card">
+                        <div class="left">
+                            <h3> 
+                                <img src="/success/resourse/service/icons/tb_top.gif" width="50" height="50" alt="alt" />
+                                    
+                                Миллион на еком   
+                                
+                                <img src="/success/resourse/service/icons/tb_bottom.gif" width="50" height="50" alt="alt" />
+                                    
+                            </h3>
+                            <p>Поток закрыт с 01.11.2021</p>
+                        </div>
+                        <div class="right">
+                            <div class="image"> <img src="/success/resourse/resours/programs-photo/1.png" alt="bg"/> </div>
+                            <p>Авторский курс Дмитрия Прискоки о Facebook рекламе для E-commerce</p>
+                            <span class="mobile">Поток закрыт с 01.11.2021</span>
+                            <div class="button__feedback">
+                                <span class="title">Предзапись</span>
+                                <button class="ui-button-feedback">
+                                    <svg width="167" height="166" viewBox="0 0 167 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="83.6172" cy="83" r="83" fill="#E4622A"></circle>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M98.4876 69.4011L98.603 98.3713L69.0066 69L67.6172 70.439L97.4053 100H67.9929V102H99.9581V101.644L100.616 101.641L100.488 69.3932L98.4876 69.4011Z" fill="white"></path>
+                                        <path d="M98.603 98.3713L98.2508 98.7262L99.1078 99.5767L99.103 98.3693L98.603 98.3713ZM98.4876 69.4011L98.4856 68.9011L97.9856 68.9031L97.9876 69.4031L98.4876 69.4011ZM69.0066 69L69.3588 68.6451L68.999 68.288L68.6469 68.6527L69.0066 69ZM67.6172 70.439L67.2575 70.0916L66.9149 70.4464L67.265 70.7939L67.6172 70.439ZM97.4053 100V100.5H98.6189L97.7575 99.6456L97.4053 100ZM67.9929 100V99.5005H67.4929V100H67.9929ZM67.9929 102H67.4929V102.5H67.9929V102ZM99.9581 102V102.5H100.458V102H99.9581ZM99.9581 101.644L99.9561 101.144L99.4581 101.146V101.644H99.9581ZM100.616 101.641L100.618 102.141L101.118 102.139L101.116 101.639L100.616 101.641ZM100.488 69.3932L100.988 69.3912L100.986 68.8912L100.486 68.8932L100.488 69.3932ZM99.103 98.3693L98.9876 69.3991L97.9876 69.4031L98.103 98.3733L99.103 98.3693ZM68.6544 69.3549L98.2508 98.7262L98.9552 98.0164L69.3588 68.6451L68.6544 69.3549ZM67.9769 70.7863L69.3663 69.3473L68.6469 68.6527L67.2575 70.0916L67.9769 70.7863ZM97.7575 99.6456L67.9694 70.0841L67.265 70.7939L97.0531 100.355L97.7575 99.6456ZM67.9929 100.5H97.4053V99.5005H67.9929V100.5ZM68.4929 102V100H67.4929V102H68.4929ZM99.9581 101.5H67.9929V102.5H99.9581V101.5ZM99.4581 101.644V102H100.458V101.644H99.4581ZM100.614 101.141L99.9561 101.144L99.9601 102.144L100.618 102.141L100.614 101.141ZM99.9875 69.3952L100.116 101.643L101.116 101.639L100.988 69.3912L99.9875 69.3952ZM98.4895 69.9011L100.49 69.8932L100.486 68.8932L98.4856 68.9011L98.4895 69.9011Z" fill="white"></path>
+                                        </svg>                                
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="left">
+                            <h3> 
+                                <img src="/success/resourse/service/icons/tb_top.gif" width="50" height="50" alt="alt" />
+                                    
+                                Миллион на еком   
+                                
+                                <img src="/success/resourse/service/icons/tb_bottom.gif" width="50" height="50" alt="alt" />
+                                    
+                            </h3>   
+                        </div>
+                        <div class="right">
+                            <div class="image"> <img src="/success/resourse/resours/programs-photo/2.png" alt="bg"/> <img src="/success/resourse/resours/programs-photo/3.png" alt="bg"/> </div>
+                            <p>Авторский курс Дмитрия Прискоки о Facebook рекламе для E-commerce</p>
+                            <div class="button__feedback">
+                                <span class="title">Принять участие</span>
+                                <button class="ui-button-feedback">
+                                    <svg width="167" height="166" viewBox="0 0 167 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="83.6172" cy="83" r="83" fill="#E4622A"></circle>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M98.4876 69.4011L98.603 98.3713L69.0066 69L67.6172 70.439L97.4053 100H67.9929V102H99.9581V101.644L100.616 101.641L100.488 69.3932L98.4876 69.4011Z" fill="white"></path>
+                                        <path d="M98.603 98.3713L98.2508 98.7262L99.1078 99.5767L99.103 98.3693L98.603 98.3713ZM98.4876 69.4011L98.4856 68.9011L97.9856 68.9031L97.9876 69.4031L98.4876 69.4011ZM69.0066 69L69.3588 68.6451L68.999 68.288L68.6469 68.6527L69.0066 69ZM67.6172 70.439L67.2575 70.0916L66.9149 70.4464L67.265 70.7939L67.6172 70.439ZM97.4053 100V100.5H98.6189L97.7575 99.6456L97.4053 100ZM67.9929 100V99.5005H67.4929V100H67.9929ZM67.9929 102H67.4929V102.5H67.9929V102ZM99.9581 102V102.5H100.458V102H99.9581ZM99.9581 101.644L99.9561 101.144L99.4581 101.146V101.644H99.9581ZM100.616 101.641L100.618 102.141L101.118 102.139L101.116 101.639L100.616 101.641ZM100.488 69.3932L100.988 69.3912L100.986 68.8912L100.486 68.8932L100.488 69.3932ZM99.103 98.3693L98.9876 69.3991L97.9876 69.4031L98.103 98.3733L99.103 98.3693ZM68.6544 69.3549L98.2508 98.7262L98.9552 98.0164L69.3588 68.6451L68.6544 69.3549ZM67.9769 70.7863L69.3663 69.3473L68.6469 68.6527L67.2575 70.0916L67.9769 70.7863ZM97.7575 99.6456L67.9694 70.0841L67.265 70.7939L97.0531 100.355L97.7575 99.6456ZM67.9929 100.5H97.4053V99.5005H67.9929V100.5ZM68.4929 102V100H67.4929V102H68.4929ZM99.9581 101.5H67.9929V102.5H99.9581V101.5ZM99.4581 101.644V102H100.458V101.644H99.4581ZM100.614 101.141L99.9561 101.144L99.9601 102.144L100.618 102.141L100.614 101.141ZM99.9875 69.3952L100.116 101.643L101.116 101.639L100.988 69.3912L99.9875 69.3952ZM98.4895 69.9011L100.49 69.8932L100.486 68.8932L98.4856 68.9011L98.4895 69.9011Z" fill="white"></path>
+                                        </svg>                                
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__rewievs" id="s_r">
+            <div class="container">
+                <div class="header">
+                    <h2>Наши выпускники</h2>
+                    <div class="control">
+                        <div class="pagin_num">
+                            <div class="wrapper_active">01</div>
+                            <div class="wrapper_all">03</div>
+                        </div>
+                        <div class="wrapper_buttons">
+                            <button class="ui-button-swiper" id="swiper-rewies-next">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7199 1.58279L2.62955 13.5771L27.1412 13.6706L27.1206 14.8463L2.4507 14.7522L14.6763 26.9779L13.845 27.8092L0.558113 14.5223L0.706547 14.3739L0.434019 14.0992L13.8919 0.748149L14.7199 1.58279Z" fill="#06080C"/>
+                                    </svg>                                                                 
+                            </button>
+                            <button class="ui-button-swiper" id="swiper-rewies-prev">
+                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2821 1.58279L25.3724 13.5771L0.860751 13.6706L0.881356 14.8463L25.5513 14.7522L13.3256 26.9779L14.1569 27.8092L27.4438 14.5223L27.2954 14.3739L27.5679 14.0992L14.1101 0.748149L13.2821 1.58279Z" fill="#06080C"/>
+                                    <path d="M25.3724 13.5771L25.3735 13.8711L26.0833 13.8683L25.5794 13.3685L25.3724 13.5771ZM13.2821 1.58279L13.0734 1.37578L12.8664 1.58444L13.0751 1.79145L13.2821 1.58279ZM0.860751 13.6706L0.859631 13.3767L0.561653 13.3778L0.566875 13.6757L0.860751 13.6706ZM0.881356 14.8463L0.58748 14.8514L0.592561 15.1413L0.882477 15.1402L0.881356 14.8463ZM25.5513 14.7522L25.7591 14.96L26.2636 14.4556L25.5501 14.4583L25.5513 14.7522ZM13.3256 26.9779L13.1178 26.77L12.9099 26.9779L13.1178 27.1857L13.3256 26.9779ZM14.1569 27.8092L13.9491 28.017L14.1569 28.2249L14.3648 28.017L14.1569 27.8092ZM27.4438 14.5223L27.6517 14.7301L27.8595 14.5223L27.6517 14.3145L27.4438 14.5223ZM27.2954 14.3739L27.0867 14.1669L26.8806 14.3747L27.0876 14.5817L27.2954 14.3739ZM27.5679 14.0992L27.7766 14.3062L27.9836 14.0975L27.7749 13.8905L27.5679 14.0992ZM14.1101 0.748149L14.3171 0.539488L14.1084 0.332484L13.9014 0.541144L14.1101 0.748149ZM25.5794 13.3685L13.4891 1.37413L13.0751 1.79145L25.1654 13.7858L25.5794 13.3685ZM0.861872 13.9645L25.3735 13.8711L25.3713 13.2832L0.859631 13.3767L0.861872 13.9645ZM1.17523 14.8411L1.15463 13.6654L0.566875 13.6757L0.58748 14.8514L1.17523 14.8411ZM25.5501 14.4583L0.880236 14.5523L0.882477 15.1402L25.5524 15.0461L25.5501 14.4583ZM13.5334 27.1857L25.7591 14.96L25.3434 14.5444L13.1178 26.77L13.5334 27.1857ZM14.3648 27.6014L13.5334 26.77L13.1178 27.1857L13.9491 28.017L14.3648 27.6014ZM27.236 14.3145L13.9491 27.6014L14.3648 28.017L27.6517 14.7301L27.236 14.3145ZM27.0876 14.5817L27.236 14.7301L27.6517 14.3145L27.5032 14.166L27.0876 14.5817ZM27.3593 13.8921L27.0867 14.1669L27.5041 14.5809L27.7766 14.3062L27.3593 13.8921ZM13.9031 0.956809L27.3609 14.3078L27.7749 13.8905L14.3171 0.539488L13.9031 0.956809ZM13.4907 1.78979L14.3187 0.955153L13.9014 0.541144L13.0734 1.37578L13.4907 1.78979Z" fill="#06080C"/>
+                                    </svg>                                                                 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper swiper-rewies">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="iframe_wrapper iframe_load">
+                               <button class="play">
+                                <img src="/success/resourse/service/icons/play.png" alt="play"/>
+                               </button>
+                               <div class="serverice" style="display:none">
+                                    <span class="iframe">https://www.youtube.com/embed/WQok1j7hNWc</span>>
+                                </div>
+                                <span class="video-serive">YouTube</span>
+                                <span class="video-timeline">2:33</span>
+                                <div class="info">
+                                    <h3>Владислав мельничак</h3>
+                                    <p>Основатель Digital агентства</p>
+                                </div>
+
+                                <img src="/success/resourse/resours/reviews-previe/1png.png" alt="prewie"/>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iframe_wrapper iframe_load">
+                               <button class="play">
+                                <img src="/success/resourse/service/icons/play.png" alt="play"/>
+                               </button>
+                               <div class="serverice" style="display:none">
+                                    <span class="iframe">https://www.youtube.com/embed/WQok1j7hNWc</span>>
+                                </div>
+                                <span class="video-serive">YouTube</span>
+                                <span class="video-timeline">2:33</span>
+                                <div class="info">
+                                    <h3>Владислав мельничак</h3>
+                                    <p>Основатель Digital агентства</p>
+                                </div>
+
+                                <img src="/success/resourse/resours/reviews-previe/1png.png" alt="prewie"/>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iframe_wrapper iframe_load">
+                               <button class="play">
+                                <img src="/success/resourse/service/icons/play.png" alt="play"/>
+                               </button>
+                               <div class="serverice" style="display:none">
+                                    <span class="iframe">https://www.youtube.com/embed/WQok1j7hNWc</span>>
+                                </div>
+                                <span class="video-serive">YouTube</span>
+                                <span class="video-timeline">2:33</span>
+                                <div class="info">
+                                    <h3>Владислав мельничак</h3>
+                                    <p>Основатель Digital агентства</p>
+                                </div>
+
+                                <img src="/success/resourse/resours/reviews-previe/1png.png" alt="prewie"/>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iframe_wrapper iframe_load">
+                               <button class="play">
+                                <img src="/success/resourse/service/icons/play.png" alt="play"/>
+                               </button>
+                               <div class="serverice" style="display:none">
+                                    <span class="iframe">https://www.youtube.com/embed/WQok1j7hNWc</span>>
+                                </div>
+                                <span class="video-serive">YouTube</span>
+                                <span class="video-timeline">2:33</span>
+                                <div class="info">
+                                    <h3>Владислав мельничак</h3>
+                                    <p>Основатель Digital агентства</p>
+                                </div>
+
+                                <img src="/success/resourse/resours/reviews-previe/1png.png" alt="prewie"/>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iframe_wrapper iframe_load">
+                               <button class="play">
+                                <img src="/success/resourse/service/icons/play.png" alt="play"/>
+                               </button>
+                               <div class="serverice" style="display:none">
+                                    <span class="iframe">https://www.youtube.com/embed/WQok1j7hNWc</span>
+                                </div>
+                                <span class="video-serive">YouTube</span>
+                                <span class="video-timeline">2:33</span>
+                                <div class="info">
+                                    <h3>Владислав мельничак</h3>
+                                    <p>Основатель Digital агентства</p>
+                                </div>
+
+                                <img src="/success/resourse/resours/reviews-previe/1png.png" alt="prewie"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll_bar_mobile"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section__dnt">
+            <div class="container">
+                <div class="background_images">
+                    <img src="/success/resourse/service/backgrunds/dec_2.1.png" class="bg_9_2" alt="bg"/>
+                    <img class="bg_11" src="/success/resourse/service/backgrunds/p1_bg_display_1.1.svg" alt="bg"/>
+                </div>
+                <div class="left">
+                    <h2>Не упускай</h2>
+                </div>
+                <div class="right">
+                    <h3> <span class="text">возможность </span> <span class="text">освоить навык работы </span> </h3>
+                    <b>с рекламой для E-commerce ниш</b>
+                    <p>Выйти на зарубежные рынки и зарабатывать деньги 
+                        на быстрорастущем рынке 
+                        в онлайне!</p>
+                        <div class="button__feedback">
+                            <span class="title">Предзапись</span>
+                            <button class="ui-button-feedback">
+                                <svg width="167" height="166" viewBox="0 0 167 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="83.6172" cy="83" r="83" fill="#E4622A"></circle>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M98.4876 69.4011L98.603 98.3713L69.0066 69L67.6172 70.439L97.4053 100H67.9929V102H99.9581V101.644L100.616 101.641L100.488 69.3932L98.4876 69.4011Z" fill="white"></path>
+                                    <path d="M98.603 98.3713L98.2508 98.7262L99.1078 99.5767L99.103 98.3693L98.603 98.3713ZM98.4876 69.4011L98.4856 68.9011L97.9856 68.9031L97.9876 69.4031L98.4876 69.4011ZM69.0066 69L69.3588 68.6451L68.999 68.288L68.6469 68.6527L69.0066 69ZM67.6172 70.439L67.2575 70.0916L66.9149 70.4464L67.265 70.7939L67.6172 70.439ZM97.4053 100V100.5H98.6189L97.7575 99.6456L97.4053 100ZM67.9929 100V99.5005H67.4929V100H67.9929ZM67.9929 102H67.4929V102.5H67.9929V102ZM99.9581 102V102.5H100.458V102H99.9581ZM99.9581 101.644L99.9561 101.144L99.4581 101.146V101.644H99.9581ZM100.616 101.641L100.618 102.141L101.118 102.139L101.116 101.639L100.616 101.641ZM100.488 69.3932L100.988 69.3912L100.986 68.8912L100.486 68.8932L100.488 69.3932ZM99.103 98.3693L98.9876 69.3991L97.9876 69.4031L98.103 98.3733L99.103 98.3693ZM68.6544 69.3549L98.2508 98.7262L98.9552 98.0164L69.3588 68.6451L68.6544 69.3549ZM67.9769 70.7863L69.3663 69.3473L68.6469 68.6527L67.2575 70.0916L67.9769 70.7863ZM97.7575 99.6456L67.9694 70.0841L67.265 70.7939L97.0531 100.355L97.7575 99.6456ZM67.9929 100.5H97.4053V99.5005H67.9929V100.5ZM68.4929 102V100H67.4929V102H68.4929ZM99.9581 101.5H67.9929V102.5H99.9581V101.5ZM99.4581 101.644V102H100.458V101.644H99.4581ZM100.614 101.141L99.9561 101.144L99.9601 102.144L100.618 102.141L100.614 101.141ZM99.9875 69.3952L100.116 101.643L101.116 101.639L100.988 69.3912L99.9875 69.3952ZM98.4895 69.9011L100.49 69.8932L100.486 68.8932L98.4856 68.9011L98.4895 69.9011Z" fill="white"></path>
+                                    </svg>                                
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__result" id="s_s">
+            <div class="background_images"> <img class="bg_12" src="/success/resourse/service/backgrunds/dec_2.png" alt="bg"/> </div>
+            <div class="background">
+                <div class="container">
+                    <div class="header">
+                        <img src="/success/resourse/service/icons/edit.gif" alt="bg" class="dec">
+                        <div class="text">
+                            <h2>Отзывы и&nbsp;результаты</h2>
+                            <b>наших студентов</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cards swiper-init_001">
+                    <div class="wrapper">
+                        <div class="slide">
+                            <div class="wrapper_slide">
+                                <img src="/success/resourse/resours/results/1.png" alt="bg" class="photo"/>
+
+                                <h3>Александр Ясиновский</h3>
+                                <a href="#" class="ui-link-2">Facebook</a>
+                                <p>Как по мне, этот курс был самый разрывной по уровню знаний из всех которые я проходил. После прохождения , у тебя есть четкая структура как работать с e-com проектами. (Я не ввел раньше проекты по е-кому , но приходишь 
+                                    на встречу и разрываешь клиента своими знаниями)</p>
+                                <p>Хочу выразить тебе огромную благодарность за best-of-the-best знания ...</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="wrapper_slide">
+                                <img src="/success/resourse/resours/results/2.png" alt="bg" class="photo"/>
+
+                            <h3>Александр котляр</h3>
+                            <a href="#" class="ui-link-2">Instagram</a>
+                            <p>Те знания, которые я получил - изменили мой вектор развития как специалиста👌🏻</p>
+                            <p>Во-первых, я определенно наметил для себя сейчас путь в еком + нишуюсь также в инфобизнес. Чувствую кайф в этих двух направлениях и реально кайфую 
+                                от процесса работы над проектами. 
+                                Ты знаешь, что я инфобиз лепил 
+                                под схему екома, спасибо, что вовремя указал на ошибку и сберёг от шишки на голове) Тем не менее, пока я лепил из него еком - мне очень зашло ...</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="wrapper_slide">
+                                <img src="/success/resourse/resours/results/3.png" alt="bg" class="photo"/>
+
+                            <h3>Максим сергеев</h3>
+                            <a href="#" class="ui-link-2">Instagram</a>
+                            <p>На самом деле твоя отдача, сколько доп модулей, 
+                                сколько бонусов, разборы проектов каждого, консультации… 
+                                это супер круто, ты мол!</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                           <div class="wrapper_slide">
+                            <img src="/success/resourse/resours/results/4.png" alt="bg" class="photo"/>
+
+                            <h3>Миша дубчак</h3>
+                            <a href="#" class="ui-link-2">Instagram</a>
+                            <p>Класний матеріал, хороша подача, все по темі - красавчик, ціную твою роботу, тому що і сам запускаюсь, знаю, що це не просто. Окремо дякую за зізвони і матеріал про апворк, вже почав вивчати західний напрямок, планую вийти на ап.
+                                Пройду всі модулі і якщо будуть питання - напиши тобі)</p>
+                           </div>
+                        </div>
+
+                        <div class="slide hide">
+                            <div class="wrapper_slide">
+                                <img src="/success/resourse/resours/results/1.png" alt="bg" class="photo"/>
+
+                            <h3>Александр Ясиновский</h3>
+                            <a href="#" class="ui-link-2">Facebook</a>
+                            <p>Как по мне, этот курс был самый разрывной по уровню знаний из всех которые я проходил. После прохождения , у тебя есть четкая структура как работать с e-com проектами. (Я не ввел раньше проекты по е-кому , но приходишь 
+                                на встречу и разрываешь клиента своими знаниями)</p>
+                            <p>Хочу выразить тебе огромную благодарность за best-of-the-best знания ...</p>
+                            </div>
+                        </div>
+
+                        <div class="slide hide">
+                            <div class="wrapper_slide">
+                                <img src="/success/resourse/resours/results/1.png" alt="bg" class="photo"/>
+
+                            <h3>Александр Ясиновский</h3>
+                            <a href="#" class="ui-link-2">Facebook</a>
+                            <p>Как по мне, этот курс был самый разрывной по уровню знаний из всех которые я проходил. После прохождения , у тебя есть четкая структура как работать с e-com проектами. (Я не ввел раньше проекты по е-кому , но приходишь 
+                                на встречу и разрываешь клиента своими знаниями)</p>
+                            <p>Хочу выразить тебе огромную благодарность за best-of-the-best знания ...</p>
+                            </div>
+                        </div>
+
+                        <div class="slide hide">
+                            <div class="wrapper_slide">
+                                <img src="/success/resourse/resours/results/1.png" alt="bg" class="photo"/>
+
+                            <h3>Александр Ясиновский</h3>
+                            <a href="#" class="ui-link-2">Facebook</a>
+                            <p>Как по мне, этот курс был самый разрывной по уровню знаний из всех которые я проходил. После прохождения , у тебя есть четкая структура как работать с e-com проектами. (Я не ввел раньше проекты по е-кому , но приходишь 
+                                на встречу и разрываешь клиента своими знаниями)</p>
+                            <p>Хочу выразить тебе огромную благодарность за best-of-the-best знания ...</p>
+                            </div>
+                        </div>
+
+                        <div class="slide hide">
+                            <div class="wrapper_slide">
+                                <img src="/success/resourse/resours/results/1.png" alt="bg" class="photo"/>
+
+                            <h3>Александр Ясиновский</h3>
+                            <a href="#" class="ui-link-2">Facebook</a>
+                            <p>Как по мне, этот курс был самый разрывной по уровню знаний из всех которые я проходил. После прохождения , у тебя есть четкая структура как работать с e-com проектами. (Я не ввел раньше проекты по е-кому , но приходишь 
+                                на встречу и разрываешь клиента своими знаниями)</p>
+                            <p>Хочу выразить тебе огромную благодарность за best-of-the-best знания ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button__feedback">
+                    <span class="title">Больше отзывов</span>
+                    <button data-open="false" class="ui-button-more">
+                        <svg width="167" height="166" viewBox="0 0 167 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="83.6172" cy="83" r="83" fill="#E4622A"></circle>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M98.4876 69.4011L98.603 98.3713L69.0066 69L67.6172 70.439L97.4053 100H67.9929V102H99.9581V101.644L100.616 101.641L100.488 69.3932L98.4876 69.4011Z" fill="white"></path>
+                            <path d="M98.603 98.3713L98.2508 98.7262L99.1078 99.5767L99.103 98.3693L98.603 98.3713ZM98.4876 69.4011L98.4856 68.9011L97.9856 68.9031L97.9876 69.4031L98.4876 69.4011ZM69.0066 69L69.3588 68.6451L68.999 68.288L68.6469 68.6527L69.0066 69ZM67.6172 70.439L67.2575 70.0916L66.9149 70.4464L67.265 70.7939L67.6172 70.439ZM97.4053 100V100.5H98.6189L97.7575 99.6456L97.4053 100ZM67.9929 100V99.5005H67.4929V100H67.9929ZM67.9929 102H67.4929V102.5H67.9929V102ZM99.9581 102V102.5H100.458V102H99.9581ZM99.9581 101.644L99.9561 101.144L99.4581 101.146V101.644H99.9581ZM100.616 101.641L100.618 102.141L101.118 102.139L101.116 101.639L100.616 101.641ZM100.488 69.3932L100.988 69.3912L100.986 68.8912L100.486 68.8932L100.488 69.3932ZM99.103 98.3693L98.9876 69.3991L97.9876 69.4031L98.103 98.3733L99.103 98.3693ZM68.6544 69.3549L98.2508 98.7262L98.9552 98.0164L69.3588 68.6451L68.6544 69.3549ZM67.9769 70.7863L69.3663 69.3473L68.6469 68.6527L67.2575 70.0916L67.9769 70.7863ZM97.7575 99.6456L67.9694 70.0841L67.265 70.7939L97.0531 100.355L97.7575 99.6456ZM67.9929 100.5H97.4053V99.5005H67.9929V100.5ZM68.4929 102V100H67.4929V102H68.4929ZM99.9581 101.5H67.9929V102.5H99.9581V101.5ZM99.4581 101.644V102H100.458V101.644H99.4581ZM100.614 101.141L99.9561 101.144L99.9601 102.144L100.618 102.141L100.614 101.141ZM99.9875 69.3952L100.116 101.643L101.116 101.639L100.988 69.3912L99.9875 69.3952ZM98.4895 69.9011L100.49 69.8932L100.486 68.8932L98.4856 68.9011L98.4895 69.9011Z" fill="white"></path>
+                            </svg>                                
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section__team" id="s_t">
+            <div class="background_images">
+                <img src="/success/resourse/service/backgrunds/p1_bg_display_9.1.png" class="bg_13" alt="bg">
+                <img src="/success/resourse/service/backgrunds/p1_bg_display_9.2.png" class="bg_14" alt="bg">
+            </div>
+            <div class="container">
+                <div class="header">
+                    <h2>Наша команда</h2>
+                    <span class="navText2">edu.rpo</span>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper swiper-team">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="dec color1"></div>
+                                    <img src="/success/resourse/resours/team/1.png" alt="bg"/>
+                                    <h3>Дмитрий Прискока</h3>
+                                    <p>Основатель образовательной платформы Edu.pro, руководитель performance маркетингового агентства</p>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="dec color2"></div>
+                                    <img src="/success/resourse/resours/team/2.png" alt="bg"/>
+                                    <h3>Виталий Харечко</h3>
+                                    <p>Специалист по рекламе Google, операционный директор Edu.pro</p>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide reverse-color">
+                                <div class="wrapper">
+                                    <div class="dec color3"></div>
+                                    <img src="/success/resourse/resours/team/3.png" alt="bg"/>
+                                    <h3>Богдан Трянов</h3>
+                                    <p>Специалист по коммуникации с клиентами</p>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide reverse-color">
+                                <div class="wrapper">
+                                    <div class="dec color3"></div>
+                                    <img src="/success/resourse/resours/team/4.png" alt="bg"/>
+                                    <h3>Константин Шерман</h3>
+                                    <p>Технический специалист </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__community">
+            <div class="container">
+                <div class="left">
+                    <h2>Присоединяйтесь <br>
+                        в наше <br>
+                        комьюнити</h2>
+                    <div class="wrapper">
+                        <div class="left">
+                            <p>Edu.pro – комьюнити начинающих 
+                                и продвинутых специалистов по рекламе,</p>
+                        </div>
+                        <div class="right">
+                            <span class="title">в котором вы сможете:</span>
+                            <ul class="list">
+                                <li>Найти себе подрядчика или партнера</li>
+                                <li>Получить актуальную информацию 
+                                    в мире интернет рекламы
+                                    и маркетинга</li>
+                                <li>Получить обратную связь по своему вопросу</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="button__feedback">
+                        <span class="title">Присоединиться</span>
+                        <button class="ui-button-feedback">
+                            <svg width="167" height="166" viewBox="0 0 167 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="83.6172" cy="83" r="83" fill="#E4622A"></circle>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M98.4876 69.4011L98.603 98.3713L69.0066 69L67.6172 70.439L97.4053 100H67.9929V102H99.9581V101.644L100.616 101.641L100.488 69.3932L98.4876 69.4011Z" fill="white"></path>
+                                <path d="M98.603 98.3713L98.2508 98.7262L99.1078 99.5767L99.103 98.3693L98.603 98.3713ZM98.4876 69.4011L98.4856 68.9011L97.9856 68.9031L97.9876 69.4031L98.4876 69.4011ZM69.0066 69L69.3588 68.6451L68.999 68.288L68.6469 68.6527L69.0066 69ZM67.6172 70.439L67.2575 70.0916L66.9149 70.4464L67.265 70.7939L67.6172 70.439ZM97.4053 100V100.5H98.6189L97.7575 99.6456L97.4053 100ZM67.9929 100V99.5005H67.4929V100H67.9929ZM67.9929 102H67.4929V102.5H67.9929V102ZM99.9581 102V102.5H100.458V102H99.9581ZM99.9581 101.644L99.9561 101.144L99.4581 101.146V101.644H99.9581ZM100.616 101.641L100.618 102.141L101.118 102.139L101.116 101.639L100.616 101.641ZM100.488 69.3932L100.988 69.3912L100.986 68.8912L100.486 68.8932L100.488 69.3932ZM99.103 98.3693L98.9876 69.3991L97.9876 69.4031L98.103 98.3733L99.103 98.3693ZM68.6544 69.3549L98.2508 98.7262L98.9552 98.0164L69.3588 68.6451L68.6544 69.3549ZM67.9769 70.7863L69.3663 69.3473L68.6469 68.6527L67.2575 70.0916L67.9769 70.7863ZM97.7575 99.6456L67.9694 70.0841L67.265 70.7939L97.0531 100.355L97.7575 99.6456ZM67.9929 100.5H97.4053V99.5005H67.9929V100.5ZM68.4929 102V100H67.4929V102H68.4929ZM99.9581 101.5H67.9929V102.5H99.9581V101.5ZM99.4581 101.644V102H100.458V101.644H99.4581ZM100.614 101.141L99.9561 101.144L99.9601 102.144L100.618 102.141L100.614 101.141ZM99.9875 69.3952L100.116 101.643L101.116 101.639L100.988 69.3912L99.9875 69.3952ZM98.4895 69.9011L100.49 69.8932L100.486 68.8932L98.4856 68.9011L98.4895 69.9011Z" fill="white"></path>
+                                </svg>                                
+                        </button>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="/success/resourse/service/backgrunds/p1_bg_display_10.1.png" alt="bg">
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="container">
-            <ul class="gridColumn">
-                <li>
-                    <img src="/success/resourse/icons/logo_min.svg" alt="logo"/>
-                    <span class="cop">@ 2021-2022 Edu.pro</span>
-                </li>
-                <li>
-                    <span class="title">Пункти меню:</span>
-                    <ol class="list">
-                        <li class="scrollToElem" data-scroll-to=".section-for"><span>Для кого</span></li>
-                        <li class="scrollToElem" data-scroll-to=".section-result"><span>Результати</span></li>
-                        <li class="scrollToElem" data-scroll-to=".section-modules"><span>Програма</span></li>
-                        <li class="scrollToElem" data-scroll-to=".section-format"><span>Формат</span></li>
-                        <li class="scrollToElem" data-scroll-to=".section-price"><span>Тарифи</span></li>
-                        <li class="scrollToElem" data-scroll-to=".section-answer"><span>Faq</span></li>
-                    </ol>
-                </li>
-                <li>
-                    <span class="title">Дані</span>
-                    <div class="data">
-                        <span>ФОП ПРИСКОКА ДМИТРО ВІТАЛІЙОВИЧ</span>
-                        <span class="number">3685107898</span>
+            <div class="header">
+                <div class="logo">
+                    <img src="/success/resourse/service/icons/logo-min-v2.svg" alt="logo"/>
+                </div>
+                <div class="card">
+                    <span class="title">ФОП Прискока Дмитро Віталійович</span>
+                    <span class="text">3685107898</span>
+                </div>
+                <div class="card">
+                    <span class="title">support@edu.pro</span>
+                    <span class="text2">@ 2021-2022 Edu.pro</span>
+                </div>
+                <div class="card">
+                    <a href="tel:+380635933205">38 063 593 32 05</a>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrapper">
+                    <span class="mobile">@ 2021-2022 Edu.pro</span>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Договор публичной оферты</a>
+                </div>
+                <div class="wrapper">
+                    <span class="title">Разработка сайтов премиум сегмента: </span>
+                    <div class="footer_image">
+                        <img src="/success/resourse/service/icons/footer.png" alt="photo"/>
+                        <span class="name">Любимов Никита</span>
                     </div>
-                </li>
-                <li>
-                    <span class="title">Контакти:</span>
-                    <div class="contacts">
-                        <a class="phone" href="tel:support@edupro.tech">+38 063 593 32 05</a>
-                        <a class="mail" href="mailto:support@edupro.tech">SUPPORT@EDUPRO.TECH</a>
-                    </div>
-                </li>
-            </ul>
-            <div class="info">
-                <ul class="list">
-                    <li><a href="offer.html">Договір публічної оферти</a></li>
-                    <li><a href="polis.html">Політика конфіденційності</a></li>
-                    <li><span class="title">Сайт розроблений: </span><span>Dmytro Mikhailenko</span></li>
-                </ul>
+                </div>
             </div>
         </div>
     </footer>
-    <script>
-        $(window).on('load', function() {
-            $('.preloader').fadeOut(400);
-            new WOW().init();
-
-        });
-    </script>
-    <script src="/success/scripts/init.js"></script>
-    <script src="/success/scripts/script.js"></script>
-    <script src="/success/scripts/magnit.js"></script>
+<script src="/success/js/components/init.js"></script>
 </body>
 </html>
