@@ -2676,4 +2676,19 @@
         width: 100%;
         margin-bottom: 0;
     }
+    .section__result>.background>.container>.header>.text{
+        margin-top: -20px;
+    }
+    .section__team>.container>.header>h2 , .section__community>.container>.left>h2{
+        letter-spacing: -3px;
+    }
+    .section__community{
+        padding-top: 0;
+    }
+    footer>.container>.header>.card>.text{
+        font-size: 20px;
+        color:#C4C4C4 !important;
+        text-decoration: none;
+        font-weight: 400;
+    }
 }
