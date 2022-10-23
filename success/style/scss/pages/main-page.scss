@@ -535,17 +535,11 @@
             position: relative;
             & > .card{
                 &.disabled{
-                    opacity: 1;
-                    background: rgb(37, 37, 37);
-                    color:rgb(146, 146, 146) !important;
                     & button{
                         &:disabled{
                             cursor: default ;
                         }
-                        opacity: .6;
-                    }
-                    & p{
-                        color: rgb(145, 145, 145) !important;
+                        opacity: .4;
                     }
                 }
                 width: 100%;
