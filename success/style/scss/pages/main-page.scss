@@ -176,7 +176,7 @@
                 & > img{
                     position: absolute;
                     top:-400px;
-                    max-width: 1500px;
+                    max-width: 1386px;
                     width: 100%;
                     right: -120px;
                 }
@@ -534,6 +534,20 @@
             margin-top: -100px;
             position: relative;
             & > .card{
+                &.disabled{
+                    opacity: 1;
+                    background: rgb(37, 37, 37);
+                    color:rgb(146, 146, 146) !important;
+                    & button{
+                        &:disabled{
+                            cursor: default ;
+                        }
+                        opacity: .6;
+                    }
+                    & p{
+                        color: rgb(145, 145, 145) !important;
+                    }
+                }
                 width: 100%;
                 max-width: 1120px;
                 margin-bottom: 100px;
@@ -1099,8 +1113,19 @@
 }
 
 @media screen and(max-width:1600px) {
+
     .burger_menu>.container>.main>.left>h1{
-        font-size: 51px;
+        font-size: 49px;
+    }
+    .burger_menu>.container>.header>.right>.close{
+        margin-left: 100px;
+    }
+    .burger_menu>.container>.main>.right{
+        margin-right: 91px;
+    }
+    .burger_menu>.container>.main>.left>img{
+        left: -28px;
+        top:-40px;
     }
     footer>.container>.header > .logo > img{
         max-width: 150px;
@@ -1201,7 +1226,7 @@
         right: -400px;
     }
     .section__brend>.container>.right>.image-wrapper>img{
-        right: -365px;
+        right: -435px;
     }
     .section__brend>.container>.right>p{
         margin-left: 211px;
@@ -1540,7 +1565,7 @@
         top:450px;
     }
     .section__brend>.container>.right>.image-wrapper>img{
-        right: -70px;
+        right: -95px;
     }
     .section__brend>.container>.left>h2{
         margin-top: 170px;
@@ -2629,7 +2654,7 @@
         font-size: 16px;
     }
     .section__brend>.container>.right>.image-wrapper>img{
-        right: -268px;
+        right: -314px;
     }
     .section__work>.container>.right>.header>.dec{
         left: 65px !important;
