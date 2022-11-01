@@ -176,9 +176,8 @@
                 & > img{
                     position: absolute;
                     top:-400px;
-                    max-width: 1386px;
-                    width: 100%;
-                    right: -120px;
+                    width: 1900px;
+                    right: -500px;
                 }
             }
             & > p{
@@ -1175,9 +1174,6 @@
     .section__work>.container>.right>.header>.title{
         font-size: 88px;
     }
-    .section__brend>.container>.right>.image-wrapper>img{
-        right: -222px;
-    }
     .section__main>.container>.header-block>.images > img{
         left: 222px;
     }
@@ -1218,9 +1214,6 @@
     }
     .background_images>img.bg_3{
         right: -400px;
-    }
-    .section__brend>.container>.right>.image-wrapper>img{
-        right: -435px;
     }
     .section__brend>.container>.right>p{
         margin-left: 211px;
@@ -1385,6 +1378,7 @@
         margin-left: 0;
     }
 }
+
 // @media screen and(max-width:1400px) {
 //     .section__result>.background>.container>.header{
 //         display: block;
